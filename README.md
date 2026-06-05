@@ -54,3 +54,5 @@ The [`gtm-regulatory-outlook`](https://dialog.chainalysis.com/workflows/gtm-regu
 ## Configuration
 
 Regional configuration (countries, sub-regions, regulators, RSS feeds, Google News searches) is maintained in [`region_config.json`](https://dialog.chainalysis.com/workflows/gtm-regulatory-outlook) within the workflow package. To add a country or regulator, update the config — no code changes needed.
+
+<!-- Pages build trigger: 2026-06-05T10:22:07.677703+00:00 -->
