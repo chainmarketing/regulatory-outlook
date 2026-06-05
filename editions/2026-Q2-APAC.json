@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Nine Asia-Pacific markets are operationalizing compliance regimes simultaneously across Q3 2026, creating the region's densest institutional procurement window since MiCA passed in Europe. Australia shifts from Travel Rule implementation to active enforcement while Philippines' BSP pushes ongoing VASP registration deadlines and South Korea opens consultation on institutional custody frameworks. Meanwhile, Hong Kong expands retail crypto ETF access, Thailand broadens licensing categories, and Ind",
+  "summary": "Nine Asia-Pacific markets are operationalizing licensing, AML supervision, and custody standards this quarter, creating the region's densest compliance procurement window since Singapore's MPS framework passed. Australia moves from Travel Rule implementation to active AUSTRAC enforcement while Philippines BSP pushes VASP registration deadlines under Circular 1108. South Korea's institutional custody framework and Australia's stablecoin payment licensing consultations will reshape banking-crypto ",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/11IVukQVyibe4j6PttY2nej3B0VX-SY7o3j4xQ13PLRk/edit?usp=drivesdk",
-  "doc_id": "11IVukQVyibe4j6PttY2nej3B0VX-SY7o3j4xQ13PLRk",
+  "doc_url": "https://docs.google.com/document/d/1RXMiHm9XX3AiY0QRmsOtx8YgGW7R00_kzPn-ew-GJQ8/edit?usp=drivesdk",
+  "doc_id": "1RXMiHm9XX3AiY0QRmsOtx8YgGW7R00_kzPn-ew-GJQ8",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-05T13:23:25.997468+00:00"
+  "generated_at": "2026-06-05T13:28:22.827833+00:00"
 }
