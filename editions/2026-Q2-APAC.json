@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Australia's Travel Rule enforcement activation, South Korea's institutional custody framework consultation, and Philippines' BSP supervision deadlines converge to create $185M+ in compliance infrastructure spend across 210+ exchanges, banks, and VASPs through Q4 2026. AUSTRAC's shift from guidance to active enforcement and FSC's custody framework create immediate wallet attribution and entity screening requirements where our 13-year entity graph delivers unfair advantage.",
+  "summary": "Australia's Travel Rule enforcement activation, South Korea's institutional custody framework consultation, and Philippines' BSP supervision deadlines converge with Indonesia's OJK custody standards enforcement to create $185M+ in compliance infrastructure spend across 210+ exchanges, banks, and VASPs through Q4 2026. AUSTRAC's shift from guidance to active enforcement and FSC's custody framework create immediate wallet attribution and entity screening requirements where our 13-year entity graph",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/19B2fKoiH8inU_wsr4iSE8DNu5aHgdeqSwW9NckyYhxs/edit?usp=drivesdk",
-  "doc_id": "19B2fKoiH8inU_wsr4iSE8DNu5aHgdeqSwW9NckyYhxs",
+  "doc_url": "https://docs.google.com/document/d/1IDNWYd24LD_1FJVrWB6nRDBIDVjGosWUM7vOnwiUCJc/edit?usp=drivesdk",
+  "doc_id": "1IDNWYd24LD_1FJVrWB6nRDBIDVjGosWUM7vOnwiUCJc",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -91,5 +91,5 @@
     "South Asia",
     "Oceania"
   ],
-  "generated_at": "2026-06-05T09:58:15.727422+00:00"
+  "generated_at": "2026-06-05T10:16:48.768052+00:00"
 }
