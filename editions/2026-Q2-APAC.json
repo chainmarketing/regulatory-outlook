@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Nine Asia-Pacific markets hit licensing, custody, and VASP registration deadlines across Q3 2026, with Australia's stablecoin payment licensing consultation and South Korea's institutional custody framework creating immediate transaction monitoring procurement cycles. Northeast Asia crypto ETF expansion, Southeast Asia custody standard implementation, and Oceania Travel Rule enforcement represent the region's largest compliance infrastructure buildout since FATF's 2019 guidance, compressing 18 m",
+  "summary": "Nine Asia-Pacific markets are operationalising VASP licensing, custody standards, and Travel Rule enforcement between June and September 2026, with South Korea's institutional custody framework and Australia's stablecoin payment licensing creating the largest compliance procurement windows. AUSTRAC enters active Travel Rule enforcement phase while Philippines, Indonesia, and Thailand tighten exchange supervision and AML requirements. India's crypto securities classification and Hong Kong's expan",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1hAkSSZoFnjd1mwIvrDbpGg2fsB8M1YAujoMsBiZETHo/edit?usp=drivesdk",
-  "doc_id": "1hAkSSZoFnjd1mwIvrDbpGg2fsB8M1YAujoMsBiZETHo",
+  "doc_url": "https://docs.google.com/document/d/1_NglO3I60yI7r71qkLBHQdAdtBN8tlb2LiJW1kj9xyo/edit?usp=drivesdk",
+  "doc_id": "1_NglO3I60yI7r71qkLBHQdAdtBN8tlb2LiJW1kj9xyo",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-05T12:42:49.896560+00:00"
+  "generated_at": "2026-06-05T12:47:36.475619+00:00"
 }
