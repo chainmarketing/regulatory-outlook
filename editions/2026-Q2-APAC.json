@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Australia's dual-enforcement pressure on Travel Rule plus stablecoin payment licensing, South Korea's Q4 custody framework deadline for banks, and Indonesia's Q3 OJK custody standards create a compressed 90-day implementation window across 200+ institutions from Sydney to Seoul. Philippines BSP escalated from registration to active compliance audits while Thailand expands multi-category licensing\u2014all converging on transaction monitoring infrastructure upgrades representing $150M+ addressable mar",
+  "summary": "Australia's simultaneous Travel Rule enforcement and stablecoin PSP licensing prep, South Korea's Q4 custody framework deadline for banks, and Indonesia's Q3 OJK custody standards create a 90-day institutional compliance window spanning 200+ banks, exchanges, and PSPs from Sydney to Seoul. Combined with Philippines BSP active enforcement, Thailand's licensing expansion, and India's securities classification framework, APAC institutional compliance upgrades represent $180M+ addressable market thr",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1JY5XTuWg3a1NtY2OxXtWvii7MIfJStbAlqWtp5i1-XU/edit?usp=drivesdk",
-  "doc_id": "1JY5XTuWg3a1NtY2OxXtWvii7MIfJStbAlqWtp5i1-XU",
+  "doc_url": "https://docs.google.com/document/d/1BGP-SqDosAkPjut2N-2KBFoOs_ODbdpwsej63QH5Z-Y/edit?usp=drivesdk",
+  "doc_id": "1BGP-SqDosAkPjut2N-2KBFoOs_ODbdpwsej63QH5Z-Y",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-05T11:47:12.611332+00:00"
+  "generated_at": "2026-06-05T11:50:16.517570+00:00"
 }
