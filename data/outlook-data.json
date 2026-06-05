@@ -1,79 +1,5 @@
 [
   {
-    "region": "APAC",
-    "quarter": "2026-Q2",
-    "date": "2026-06-05",
-    "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-    "summary": "Australia's dual-track Travel Rule enforcement and stablecoin PSP licensing, South Korea's Q4 custody framework comment deadline, and Indonesia's live Q3 OJK custody standards create a 90-day institutional compliance sprint across 200+ banks, exchanges, and PSPs from Sydney to Seoul. Philippines BSP active audits, Thailand's Q3 licensing expansion, and India's securities classification framework combine to open $180M+ addressable market through September.",
-    "events_analysed": 13,
-    "countries_covered": 13,
-    "doc_url": "https://docs.google.com/document/d/1vm9Lvqv_MCGkFoPz9C4cApBydxmYqafz9NTOMGaSNa8/edit?usp=drivesdk",
-    "edition_url": "editions/2026-Q2-APAC.html",
-    "data_url": "editions/2026-Q2-APAC.json",
-    "regulators": [
-      {
-        "country": "Singapore",
-        "abbr": "MAS",
-        "focus": "Stablecoin licensing, travel rule enforcement, DPT oversight"
-      },
-      {
-        "country": "Hong Kong",
-        "abbr": "HKMA / SFC",
-        "focus": "VASP licensing, crypto ETFs, tokenized securities"
-      },
-      {
-        "country": "Japan",
-        "abbr": "JFSA",
-        "focus": "FIEA reclassification, stablecoin oversight, insider trading"
-      },
-      {
-        "country": "South Korea",
-        "abbr": "FSC / KoFIU",
-        "focus": "DABA Phase 2, travel rule verification, market manipulation"
-      },
-      {
-        "country": "Australia",
-        "abbr": "AUSTRAC / ASIC",
-        "focus": "Travel rule enforcement, token mapping, scam prevention"
-      },
-      {
-        "country": "Thailand",
-        "abbr": "Thai SEC / AMLO",
-        "focus": "Crypto ETF approval, licensing expansion, travel rule"
-      },
-      {
-        "country": "India",
-        "abbr": "SEBI / FIU-IND",
-        "focus": "VDA registration enforcement, crypto securities classification"
-      },
-      {
-        "country": "Malaysia",
-        "abbr": "SC Malaysia / BNM",
-        "focus": "Enhanced custody standards, cyber crime legislation"
-      },
-      {
-        "country": "Indonesia",
-        "abbr": "OJK / Bappebti",
-        "focus": "Custody standards, exchange supervision transition to OJK"
-      },
-      {
-        "country": "Philippines",
-        "abbr": "BSP",
-        "focus": "VASP registration, AML supervision"
-      },
-      {
-        "country": "New Zealand",
-        "abbr": "FMA",
-        "focus": "FMC Act crypto amendments, VASP licensing"
-      },
-      {
-        "country": "Vietnam",
-        "abbr": "SBV / MOF",
-        "focus": "Transaction taxation, digital asset legislation"
-      }
-    ]
-  },
-  {
     "region": "EMEA",
     "quarter": "2026-Q2",
     "date": "2026-06-05",
@@ -154,6 +80,80 @@
         "country": "Nigeria",
         "abbr": "SEC Nigeria",
         "focus": "Crypto securities classification"
+      }
+    ]
+  },
+  {
+    "region": "APAC",
+    "quarter": "2026-Q2",
+    "date": "2026-06-05",
+    "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
+    "summary": "South Korea's H2 2026 custody framework for traditional financial institutions, Australia's dual-track Travel Rule enforcement and stablecoin payment licensing, and the Philippines' ongoing VASP registration deadlines create a 90-day window where 200+ institutions across Northeast Asia, Southeast Asia, and Oceania need compliant transaction monitoring and custody infrastructure operational before Q4 2026.",
+    "events_analysed": 13,
+    "countries_covered": 13,
+    "doc_url": "https://docs.google.com/document/d/1hlL4G0tgN7_Q5fbMN-tXysnzJ-whXPd8c4ch6-ELCLI/edit?usp=drivesdk",
+    "edition_url": "editions/2026-Q2-APAC.html",
+    "data_url": "editions/2026-Q2-APAC.json",
+    "regulators": [
+      {
+        "country": "Singapore",
+        "abbr": "MAS",
+        "focus": "Stablecoin licensing, travel rule enforcement, DPT oversight"
+      },
+      {
+        "country": "Hong Kong",
+        "abbr": "HKMA / SFC",
+        "focus": "VASP licensing, crypto ETFs, tokenized securities"
+      },
+      {
+        "country": "Japan",
+        "abbr": "JFSA",
+        "focus": "FIEA reclassification, stablecoin oversight, insider trading"
+      },
+      {
+        "country": "South Korea",
+        "abbr": "FSC / KoFIU",
+        "focus": "DABA Phase 2, travel rule verification, market manipulation"
+      },
+      {
+        "country": "Australia",
+        "abbr": "AUSTRAC / ASIC",
+        "focus": "Travel rule enforcement, token mapping, scam prevention"
+      },
+      {
+        "country": "Thailand",
+        "abbr": "Thai SEC / AMLO",
+        "focus": "Crypto ETF approval, licensing expansion, travel rule"
+      },
+      {
+        "country": "India",
+        "abbr": "SEBI / FIU-IND",
+        "focus": "VDA registration enforcement, crypto securities classification"
+      },
+      {
+        "country": "Malaysia",
+        "abbr": "SC Malaysia / BNM",
+        "focus": "Enhanced custody standards, cyber crime legislation"
+      },
+      {
+        "country": "Indonesia",
+        "abbr": "OJK / Bappebti",
+        "focus": "Custody standards, exchange supervision transition to OJK"
+      },
+      {
+        "country": "Philippines",
+        "abbr": "BSP",
+        "focus": "VASP registration, AML supervision"
+      },
+      {
+        "country": "New Zealand",
+        "abbr": "FMA",
+        "focus": "FMC Act crypto amendments, VASP licensing"
+      },
+      {
+        "country": "Vietnam",
+        "abbr": "SBV / MOF",
+        "focus": "Transaction taxation, digital asset legislation"
       }
     ]
   }
