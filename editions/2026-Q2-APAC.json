@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Nine Asia-Pacific markets are operationalizing new compliance frameworks this quarter, with Australia moving to active Travel Rule enforcement, South Korea developing institutional custody standards, and the Philippines implementing comprehensive VASP supervision. The region splits between mature licensing regimes (Hong Kong, Thailand) expanding product categories and emerging markets (Indonesia, Philippines) establishing baseline AML infrastructure. This creates distinct procurement cycles: upg",
+  "summary": "Nine Asia-Pacific markets are operationalizing licensing, custody, and AML supervision frameworks Q3 2026, with Australia shifting from implementation to active Travel Rule enforcement while Korea opens institutional custody and Philippines enforces VASP registration deadlines. The 13 active country-level events represent the region's densest compliance procurement cycle since Hong Kong's VASP regime launched, creating immediate opportunities across banking custody, exchange supervision, and pay",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/12f26dtYHHsJRZcZpmdh0veyPV1EMTw8O3z5IB9CdJZY/edit?usp=drivesdk",
-  "doc_id": "12f26dtYHHsJRZcZpmdh0veyPV1EMTw8O3z5IB9CdJZY",
+  "doc_url": "https://docs.google.com/document/d/1d1xpHxrCfh-NK3WDEiodi7yqMDRjASt6ViCSY5QmF2s/edit?usp=drivesdk",
+  "doc_id": "1d1xpHxrCfh-NK3WDEiodi7yqMDRjASt6ViCSY5QmF2s",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-05T13:03:51.005383+00:00"
+  "generated_at": "2026-06-05T13:07:40.605755+00:00"
 }
