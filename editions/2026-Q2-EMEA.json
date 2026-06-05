@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-05",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 2026",
-  "summary": "AMLA launches Q3 with direct supervision over EU's highest-risk crypto firms while France enforces its 1 July MiCA transition cutoff and the UK finalizes authorization rules. Thirteen active consultations\u2014including the critical MiCA review (31 Aug deadline) determining DeFi/NFT treatment\u2014create the largest EMEA compliance procurement window since MiCA passage. Middle East markets (Saudi Arabia, UAE, Israel) operationalize licensing frameworks Q3-Q4 as regional harmonization accelerates.",
+  "summary": "AMLA launches Q3 with direct CASP supervision while MiCA's first major review (31 Aug deadline) will determine DeFi and NFT treatment through 2027\u2014creating the largest EU compliance procurement window since the regulation passed. France enforces its 1 July PSAN transition cutoff as UK finalizes authorization rules and tokenisation frameworks simultaneously. Middle East markets operationalize: Saudi Arabia, UAE, and Israel all go live Q3-Q4 with licensing regimes as regional harmonization acceler",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/1NAM5z2W8PkuYenll_V476e2Z285HeEUZiwO1UBFluAc/edit?usp=drivesdk",
-  "doc_id": "1NAM5z2W8PkuYenll_V476e2Z285HeEUZiwO1UBFluAc",
+  "doc_url": "https://docs.google.com/document/d/1gFPza1_4UVDTQwGiuFv6yoxV9vTddPQjxeo6b3EfXqY/edit?usp=drivesdk",
+  "doc_id": "1gFPza1_4UVDTQwGiuFv6yoxV9vTddPQjxeo6b3EfXqY",
   "edition_url": "editions/2026-Q2-EMEA.html",
   "data_url": "editions/2026-Q2-EMEA.json",
   "regulators": [
@@ -105,5 +105,5 @@
     "Africa"
   ],
   "news_sources": 15,
-  "generated_at": "2026-06-05T12:47:36.475619+00:00"
+  "generated_at": "2026-06-05T12:52:09.403606+00:00"
 }
