@@ -1,0 +1,76 @@
+[
+  {
+    "region": "APAC",
+    "quarter": "2026-Q2",
+    "date": "2026-06-05",
+    "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
+    "summary": "Australia's Travel Rule enforcement activation, South Korea's institutional custody framework consultation, and Philippines' BSP supervision deadlines converge to create $185M+ in compliance infrastructure spend across 210+ exchanges, banks, and VASPs through Q4 2026. AUSTRAC's shift from guidance to active enforcement and FSC's custody framework create immediate wallet attribution and entity screening requirements where our 13-year entity graph delivers unfair advantage.",
+    "events_analysed": 13,
+    "countries_covered": 13,
+    "doc_url": "https://docs.google.com/document/d/19B2fKoiH8inU_wsr4iSE8DNu5aHgdeqSwW9NckyYhxs/edit?usp=drivesdk",
+    "edition_url": "editions/2026-Q2-APAC.html",
+    "data_url": "editions/2026-Q2-APAC.json",
+    "regulators": [
+      {
+        "country": "Singapore",
+        "abbr": "MAS",
+        "focus": "Stablecoin licensing, travel rule enforcement, DPT oversight"
+      },
+      {
+        "country": "Hong Kong",
+        "abbr": "HKMA / SFC",
+        "focus": "VASP licensing, crypto ETFs, tokenized securities"
+      },
+      {
+        "country": "Japan",
+        "abbr": "JFSA",
+        "focus": "FIEA reclassification, stablecoin oversight, insider trading"
+      },
+      {
+        "country": "South Korea",
+        "abbr": "FSC / KoFIU",
+        "focus": "DABA Phase 2, travel rule verification, market manipulation"
+      },
+      {
+        "country": "Australia",
+        "abbr": "AUSTRAC / ASIC",
+        "focus": "Travel rule enforcement, token mapping, scam prevention"
+      },
+      {
+        "country": "Thailand",
+        "abbr": "Thai SEC / AMLO",
+        "focus": "Crypto ETF approval, licensing expansion, travel rule"
+      },
+      {
+        "country": "India",
+        "abbr": "SEBI / FIU-IND",
+        "focus": "VDA registration enforcement, crypto securities classification"
+      },
+      {
+        "country": "Malaysia",
+        "abbr": "SC Malaysia / BNM",
+        "focus": "Enhanced custody standards, cyber crime legislation"
+      },
+      {
+        "country": "Indonesia",
+        "abbr": "OJK / Bappebti",
+        "focus": "Custody standards, exchange supervision transition to OJK"
+      },
+      {
+        "country": "Philippines",
+        "abbr": "BSP",
+        "focus": "VASP registration, AML supervision"
+      },
+      {
+        "country": "New Zealand",
+        "abbr": "FMA",
+        "focus": "FMC Act crypto amendments, VASP licensing"
+      },
+      {
+        "country": "Vietnam",
+        "abbr": "SBV / MOF",
+        "focus": "Transaction taxation, digital asset legislation"
+      }
+    ]
+  }
+]
