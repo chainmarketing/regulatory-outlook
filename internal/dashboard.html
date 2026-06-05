@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regulatory Outlook — Internal Dashboard</title>
+<style>
+  :root { --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af; --border: #2e2e3a; --primary: #60a5fa; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); padding: 1.5rem; }
+  .header { max-width: 1200px; margin: 0 auto 1.5rem; }
+  .header h1 { font-size: 1.4rem; }
+  .header p { color: var(--muted); font-size: 0.85rem; margin-top: 0.2rem; }
+  .dashboard { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .panel { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; }
+  .panel h2 { font-size: 0.95rem; color: var(--muted); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
+  .big-number { font-size: 2.5rem; font-weight: 700; line-height: 1; }
+  .big-label { font-size: 0.8rem; color: var(--muted); margin-top: 0.3rem; }
+  .region-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+  .region-row:last-child { border-bottom: none; }
+  .region-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .region-name { font-weight: 500; flex: 1; }
+  .region-val { font-size: 0.9rem; font-weight: 600; }
+  .region-delta { font-size: 0.75rem; padding: 0.1rem 0.4rem; border-radius: 4px; }
+  .delta-up { background: #14532d; color: #86efac; }
+  .delta-down { background: #7f1d1d; color: #fca5a5; }
+  .delta-flat { background: #374151; color: #d1d5db; }
+  .wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { text-align: left; padding: 0.5rem 0.8rem; color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--border); }
+  td { padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--border); }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .bar-chart { display: flex; flex-direction: column; gap: 0.5rem; }
+  .bar-row { display: flex; align-items: center; gap: 0.5rem; }
+  .bar-label { min-width: 100px; font-size: 0.8rem; }
+  .bar-track { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .bar-val { min-width: 30px; text-align: right; font-size: 0.8rem; color: var(--muted); }
+  .regulator-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.5rem; }
+  .reg-chip { display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.6rem; background: var(--bg); border-radius: 6px; font-size: 0.8rem; }
+  .reg-flag { font-size: 1.1rem; }
+  .reg-name { font-weight: 500; }
+  .reg-body { color: var(--muted); font-size: 0.75rem; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Regulatory Outlook — Internal Dashboard</h1>
+  <p>Cross-regional comparison · auto-updated each quarter</p>
+</div>
+
+<div class="dashboard" id="dashboard">
+  <div class="panel"><h2>Loading...</h2><p style="color:var(--muted)">Fetching outlook-data.json</p></div>
+</div>
+
+<script>
+const COLORS = { APAC: '#3b82f6', NAM: '#22c55e', EMEA: '#f59e0b', GLOBAL: '#a855f7' };
+const FLAGS = {
+  'Japan': '🇯🇵', 'South Korea': '🇰🇷', 'Hong Kong': '🇭🇰', 'Taiwan': '🇹🇼',
+  'Singapore': '🇸🇬', 'Thailand': '🇹🇭', 'Malaysia': '🇲🇾', 'Vietnam': '🇻🇳',
+  'Philippines': '🇵🇭', 'Indonesia': '🇮🇩', 'India': '🇮🇳',
+  'Australia': '🇦🇺', 'New Zealand': '🇳🇿',
+  'USA': '🇺🇸', 'Canada': '🇨🇦',
+  'UK': '🇬🇧', 'France': '🇫🇷', 'Germany': '🇩🇪', 'Switzerland': '🇨🇭',
+  'UAE': '🇦🇪', 'Saudi Arabia': '🇸🇦',
+};
+
+async function init() {
+  let data = [];
+  try {
+    const resp = await fetch('../data/outlook-data.json');
+    data = await resp.json();
+  } catch { }
+  if (!data.length) {
+    document.getElementById('dashboard').innerHTML = '<div class="panel wide"><h2>No Data Yet</h2><p style="color:var(--muted)">Run the GTM Regulatory Outlook workflow to populate this dashboard.</p></div>';
+    return;
+  }
+  render(data);
+}
+
+function render(data) {
+  const latest = {};
+  data.forEach(d => { if (!latest[d.region] || d.date > latest[d.region].date) latest[d.region] = d; });
+  const regions = Object.values(latest).sort((a,b) => (b.events_analysed||0) - (a.events_analysed||0));
+  const totalEvents = regions.reduce((s, r) => s + (r.events_analysed||0), 0);
+  const maxEvents = Math.max(...regions.map(r => r.events_analysed||0), 1);
+
+  // Collect all regulators and countries from latest editions
+  const allRegulators = [];
+  const allCountries = new Set();
+  regions.forEach(r => {
+    (r.regulators || []).forEach(reg => { allRegulators.push(reg); allCountries.add(reg.country); });
+  });
+
+  const db = document.getElementById('dashboard');
+  db.innerHTML = `
+    <div class="panel">
+      <h2>Total Events Tracked</h2>
+      <div class="big-number">${totalEvents}</div>
+      <div class="big-label">across ${regions.length} regions · latest quarter</div>
+    </div>
+    <div class="panel">
+      <h2>Countries Covered</h2>
+      <div class="big-number">${allCountries.size || '—'}</div>
+      <div class="big-label">with active regulatory events</div>
+    </div>
+    <div class="panel">
+      <h2>Editions Generated</h2>
+      <div class="big-number">${data.length}</div>
+      <div class="big-label">total across all quarters</div>
+    </div>
+
+    <div class="panel">
+      <h2>Events by Region</h2>
+      <div class="bar-chart">
+        ${regions.map(r => `
+          <div class="bar-row">
+            <span class="bar-label">${r.region}</span>
+            <div class="bar-track"><div class="bar-fill" style="width:${(r.events_analysed||0)/maxEvents*100}%;background:${COLORS[r.region]||'#6b7280'}"></div></div>
+            <span class="bar-val">${r.events_analysed||0}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="panel" style="grid-column: span 2;">
+      <h2>Regional Summary</h2>
+      ${regions.map(r => `
+        <div class="region-row">
+          <div class="region-dot" style="background:${COLORS[r.region]||'#6b7280'}"></div>
+          <span class="region-name">${r.region}</span>
+          <span class="region-val">${r.events_analysed||0} events</span>
+          <span style="color:var(--muted);font-size:0.8rem">${r.countries_covered||'?'} countries</span>
+          ${r.doc_url ? `<a href="${r.doc_url}" target="_blank" style="font-size:0.8rem">Doc ↗</a>` : ''}
+        </div>
+      `).join('')}
+    </div>
+
+    ${allRegulators.length ? `
+    <div class="panel wide">
+      <h2>Active Regulators (${allRegulators.length})</h2>
+      <div class="regulator-grid">
+        ${allRegulators.map(r => `
+          <div class="reg-chip">
+            <span class="reg-flag">${FLAGS[r.country]||'🏛'}</span>
+            <div>
+              <div class="reg-name">${r.abbr}</div>
+              <div class="reg-body">${r.country} · ${r.focus || ''}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>` : ''}
+
+    <div class="panel wide">
+      <h2>All Editions</h2>
+      <table>
+        <thead><tr><th>Quarter</th><th>Region</th><th>Events</th><th>Countries</th><th>Date</th><th>Links</th></tr></thead>
+        <tbody>
+          ${data.sort((a,b) => b.date.localeCompare(a.date)).map(d => `
+            <tr>
+              <td>${d.quarter || '—'}</td>
+              <td><span style="color:${COLORS[d.region]||'#6b7280'}">${d.region}</span></td>
+              <td>${d.events_analysed||'—'}</td>
+              <td>${d.countries_covered||'—'}</td>
+              <td style="color:var(--muted)">${d.date}</td>
+              <td>
+                ${d.doc_url ? `<a href="${d.doc_url}" target="_blank">Doc</a>` : ''}
+                ${d.confluence_url ? ` · <a href="${d.confluence_url}" target="_blank">Confluence</a>` : ''}
+                ${d.edition_url ? ` · <a href="${d.edition_url}" target="_blank">HTML</a>` : ''}
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+init();
+</script>
+</body>
+</html>
