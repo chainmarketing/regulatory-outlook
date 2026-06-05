@@ -75,6 +75,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 .content th { text-align: left; padding: 10px 12px; font-weight: 500; color: var(--muted); border-bottom: 2px solid var(--border); background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
 .content td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
 
+/* TL;DR highlight */
+.tldr { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; text-align: center; }
+.tldr h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+.tldr p { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.tldr strong { font-weight: 700; }
+
 /* Collapsible sections */
 .card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
 .card-preview.expanded { max-height: none; }
@@ -112,26 +118,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
   <div class="stat"><div class="stat-val">39</div><div class="stat-lbl">Events</div></div>
   <div class="stat"><div class="stat-val">14</div><div class="stat-lbl">Regulators</div></div>
   <div class="stat"><div class="stat-val">5</div><div class="stat-lbl">Sub-Regions</div></div>
-  <div class="stat"><div class="stat-val">23</div><div class="stat-lbl">Consultations</div></div>
+  <div class="stat"><div class="stat-val">16</div><div class="stat-lbl">Consultations</div></div>
 </div>
 
 
-<div class="card"><div class="card-head"><h2>TL;DR</h2><p class="section-desc">30-second version</p></div><div class="card-body content"><p><strong>This quarter: AMLA goes live Q3, MiCA review closes 31 Aug, Middle East licensing wave lands.</strong></p></div></div>
-<div class="card"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">A summary of the key regulatory developments across the region this quarter</p></div><div class="card-body content"><p>AMLA launches Q3 with direct supervision over 400+ high-risk CASPs while the European Commission's MiCA review (31 Aug deadline) determines DeFi protocol treatment through 2027. France enforces its 1 July PSAN transition cutoff simultaneously. UK finalizes crypto authorization rules as Middle East markets operationalize licensing regimes Q3-Q4. 39 active events create the densest compliance procurement window since MiCA passed, with coordinated enforcement across EU, UK, and Gulf states driving institutional buyers toward transaction monitoring and entity screening solutions.</p></div></div>
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: AMLA launches with 400+ CASP supervision, MiCA review closes 31 Aug, Middle East licensing wave.</strong></p></div>
+<div class="card"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">A summary of the key regulatory developments across the region this quarter</p></div><div class="card-body content"><p>AMLA becomes operational Q3 with direct supervision authority over Europe's highest-risk crypto firms while the European Commission's MiCA review consultation (31 Aug deadline) determines how DeFi protocols and NFTs fit into the regulatory framework through 2027. Simultaneously, France enforces its 1 July PSAN transition cutoff, UK finalizes authorization rules, and four Middle East markets operationalize licensing regimes Q3-Q4. Africa's first regional compliance corridor emerges through Kenya and Mauritius VASP frameworks. 39 active events create the densest institutional procurement window since MiCA passed—buyers need transaction monitoring, entity screening, and DeFi security solutions immediately.</p></div></div>
 <div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved since the last edition</p></div><div class="card-body content"><ul>
-<li><span class="country-name">EU</span> 📋 MiCA review consultation (31 Aug) now explicitly covers DeFi protocol authorization requirements and NFT exemption criteria—decisions will shape 2027 compliance scope. AMLA Q3 launch confirmed with immediate supervision authority over highest-risk CASPs.</li>
+<li><span class="country-name">EU</span> 📋 MiCA review consultation (31 Aug) now explicitly covers DeFi authorization and NFT exemption criteria—decisions shape 2027 compliance scope. AMLA Q3 launch confirmed with immediate supervision over 400+ highest-risk CASPs. Central Bank of Ireland tokenisation discussion paper (5 Jun) adds wholesale DLT infrastructure requirements.</li>
 </ul>
 <ul>
-<li><span class="country-name">France</span> ⚡ AMF timeline unchanged but enforcement escalated—1 July is final PSAN application deadline before Q4 operating prohibition for non-compliant firms.</li>
+<li><span class="country-name">UK</span> 📋 Joint FCA/BoE tokenisation consultation opened (3 Jul deadline) alongside crypto authorization rules—wholesale and retail regimes converging into single framework by Q4.</li>
 </ul>
 <ul>
-<li><span class="country-name">UK</span> 📋 Joint FCA/BoE tokenisation framework consultation opened (3 Jul deadline) alongside crypto authorization rules—wholesale and retail regimes converging into single compliance roadmap by Q4.</li>
+<li><strong>Middle East</strong> 🏛️ Regional wave accelerating: Saudi Arabia (SAMA) Q3 licensing, UAE (VARA) Q3 DeFi/staking updates, Israel (ISA) December MiCA-aligned framework, Turkey (CMB) Q4 exchange licensing.</li>
 </ul>
 <ul>
-<li><strong>Middle East</strong> 🆕 Regional harmonization accelerating: Saudi Arabia (SAMA) Q3 licensing go-live, UAE (VARA) Q3 DeFi/staking rulebook updates, Israel (ISA) December MiCA-aligned framework, Turkey (CMB) Q4 exchange licensing after 2021 payment ban.</li>
-</ul>
-<ul>
-<li><strong>Africa</strong> 🏛️ Kenya (CMA) and Mauritius (FSC) both operationalize VASP licensing H2 with FATF-aligned Travel Rule requirements—East African regulatory corridor established.</li>
+<li><strong>Africa</strong> 🆕 Kenya (CMA) and Mauritius (FSC) both operationalize VASP licensing H2 with FATF-aligned Travel Rule—East African regulatory corridor established.</li>
 </ul></div></div>
 <div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><table><thead>
 <tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
@@ -149,97 +152,101 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 </tbody></table></div></div>
 
 <div class="card" style="border-left:3px solid #6366f1"><div class="card-head"><h2 style="font-size:14px">European Union (21 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>EU — EC / ESMA / AMLA</h4>
-<p><strong>What's happening:</strong> MiCA review consultation closes 31 Aug—determines whether DeFi protocols require CASP authorization, how NFT crypto-asset exemptions apply, and operational requirement adjustments through 2027. AMLA launches Q3 with direct supervision over 400+ highest-risk CASPs. Three additional consultations close this quarter: ESMA/EBA suitability guidelines (25 May, retroactive monitoring), EC anti-corruption strategy (6 Jul, crypto financial crime investigation harmonization), and Central Bank of Ireland tokenisation discussion paper (5 Jun, DLT infrastructure standards).</p>
-<p><strong>Deal play:</strong> Reactor entity risk assessment for firms facing AMLA supervision—400+ CASPs need enhanced due diligence immediately. KYT transaction monitoring establishes ongoing compliance for MiCA authorization applications. OSINT verifies management fitness and beneficial ownership for suitability assessments.</p>
+<p><strong>What's happening:</strong> MiCA review consultation closes 31 Aug—determines whether DeFi protocols require CASP authorization, how NFT exemptions apply, and operational adjustments through 2027. AMLA launches Q3 with direct supervision over 400+ highest-risk CASPs across EU27. Three additional consultations close: ESMA/EBA suitability guidelines (25 May), EC anti-corruption strategy (6 Jul), and Central Bank of Ireland tokenisation paper (5 Jun).</p>
+<p><strong>Deal play:</strong> Reactor entity risk assessment for firms facing AMLA supervision—400+ CASPs need enhanced due diligence immediately. KYT establishes ongoing transaction monitoring for MiCA authorization applications. OSINT verifies management fitness for suitability assessments.</p>
 <h4>France — AMF</h4>
-<p><strong>What's happening:</strong> PSAN-to-MiCA transition deadline 1 July—firms must submit applications or face Q4 operating prohibition. AMF providing no grace period extensions.</p>
-<p><strong>Deal play:</strong> KYT establishes MiCA-compliant transaction monitoring baseline for PSAN transitions. OSINT verifies beneficial ownership and management fitness requirements for authorization applications.</p>
+<p><strong>What's happening:</strong> French CASPs operating under PSAN registration must transition to full MiCA authorization by 1 July 2026. AMF enforcement escalating—firms without applications face Q4 operating prohibition.</p>
+<p><strong>Deal play:</strong> KYT transaction monitoring establishes MiCA compliance baseline for authorization applications. Ask: "Do you have your MiCA authorization application ready for the July cutoff?"</p>
 <h4>Germany — BaFin</h4>
-<p><strong>What's happening:</strong> BaFin actively enforcing crypto custody licenses under German Banking Act—ongoing supervision expectations throughout 2026 with no implementation grace period.</p>
-<p><strong>Deal play:</strong> Alterya secures custody infrastructure against smart contract vulnerabilities while KYT monitors custodial transaction flows for suspicious activity reporting.</p>
+<p><strong>What's happening:</strong> BaFin actively enforcing crypto custody license requirements under German Banking Act with ongoing compliance expectations throughout 2026.</p>
+<p><strong>Deal play:</strong> Alterya secures custody infrastructure against regulatory audit. KYT provides transaction monitoring for Banking Act compliance. Ask: "How are you demonstrating custody security to BaFin?"</p>
 <h4>Netherlands — DNB</h4>
 <p><strong>What's happening:</strong> Dutch central bank enhancing supervision of registered crypto firms with focus on AML compliance and Travel Rule implementation Q2.</p>
-<p><strong>Deal play:</strong> KYT Travel Rule module ensures compliant VASP-to-VASP transfers. Data Solutions provides transaction history for DNB audit requests.</p>
+<p><strong>Deal play:</strong> KYT Travel Rule module provides real-time VASP verification for DNB supervision. Data Solutions enables comprehensive Travel Rule reporting. Ask: "Can you demonstrate Travel Rule compliance for DNB audit?"</p>
 <h4>Norway — Finanstilsynet</h4>
-<p><strong>What's happening:</strong> Money Laundering Act amendments extending AML requirements to broader crypto activities and enhanced VASP supervision Q3.</p>
-<p><strong>Deal play:</strong> KYT transaction monitoring baseline for expanded AML scope. Reactor identifies high-risk counterparties before regulatory examinations.</p>
-<h4>Sweden — FI</h4>
-<p><strong>What's happening:</strong> Finansinspektionen implementing enhanced national AML requirements for crypto firms beyond EU minimums H2.</p>
-<p><strong>Deal play:</strong> KYT establishes compliance with Swedish-specific AML thresholds. OSINT verifies Swedish UBO requirements for licensing applications.</p>
+<p><strong>What's happening:</strong> Money Laundering Act amendments extending AML requirements to broader range of crypto activities and enhanced VASP supervision Q3.</p>
+<p><strong>Deal play:</strong> KYT establishes comprehensive transaction monitoring for expanded AML requirements. Reactor provides entity screening for new activity categories.</p>
 <h4>Spain — Bank of Spain</h4>
-<p><strong>What's happening:</strong> Enforcing strict advertising rules for crypto products requiring authorization and risk warnings for marketing campaigns throughout 2026.</p>
-<p><strong>Deal play:</strong> Reactor screens marketing partners for regulatory compliance history. KYT monitors advertised products for sanctions exposure.</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>What's happening:</strong> Bank of Spain enforcing strict advertising rules for crypto products requiring authorization and risk warnings for marketing campaigns throughout 2026.</p>
+<p><strong>Deal play:</strong> KYT provides transaction monitoring evidence supporting authorization applications for marketing compliance.</p>
+<h4>Sweden — FI</h4>
+<p><strong>What's happening:</strong> Finansinspektionen implementing MiCA with enhanced national AML measures beyond EU minimums H2 2026.</p>
+<p><strong>Deal play:</strong> KYT provides transaction monitoring exceeding EU baseline for Swedish requirements. Ask: "Are you prepared for Sweden's enhanced AML standards?"</p>
+<h4>Belgium — RUSI Brussels</h4>
+<p><strong>What's happening:</strong> Speaking engagement 26 June—RUSI Brussels discussion on European AML/CFT framework implementation.</p>
+<p><strong>Deal play:</strong> Networking opportunity for regional regulatory intelligence and government relationships.</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card" style="border-left:3px solid #14b8a6"><div class="card-head"><h2 style="font-size:14px">United Kingdom (6 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>UK — FCA / BoE / HMT</h4>
-<p><strong>What's happening:</strong> FCA consultation on final crypto authorization rules closes June (conduct standards, systems/controls, market abuse, custody requirements). Joint FCA/BoE tokenisation call for input closes 3 July—shapes wholesale DLT infrastructure standards. Separate stablecoin payment framework operational Q4. FCA setting firm deadlines Q3 for existing businesses to submit authorization applications under financial services registration regime.</p>
-<p><strong>Deal play:</strong> Reactor entity due diligence for authorization applications—firms need clean counterparty history. KYT establishes transaction monitoring controls for FCA systems/controls requirements. Hexagate secures tokenised securities infrastructure for wholesale markets consultation positioning.</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>What's happening:</strong> FCA consultation on final crypto authorization rules closes June 2026 covering conduct standards, systems and controls, market abuse, and custody requirements. Joint FCA/BoE tokenisation consultation (3 Jul deadline) seeks input on DLT infrastructure for wholesale markets. Separate stablecoin framework for fiat-backed instruments as payment vehicles Q4. Law Commission bill recognizing crypto as property under English law advances H2.</p>
+<p><strong>Deal play:</strong> Reactor provides entity due diligence for authorization applications. KYT establishes transaction monitoring for FCA conduct standards. Alterya secures custody infrastructure for authorization requirements. Ask: "Do you have your FCA authorization gateway application ready?"</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card" style="border-left:3px solid #f59e0b"><div class="card-head"><h2 style="font-size:14px">Middle East (6 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>Bahrain — CBB</h4>
-<p><strong>What's happening:</strong> Central Bank of Bahrain crypto asset module updates H2 aligning with FATF standards and regional coordination.</p>
-<p><strong>Deal play:</strong> KYT Travel Rule compliance for FATF alignment. Data Solutions provides transaction reporting for CBB rulebook requirements.</p>
+<p><strong>What's happening:</strong> Central Bank of Bahrain updating crypto asset module under CBB rulebook with FATF alignment and regional coordination H2.</p>
+<p><strong>Deal play:</strong> KYT Travel Rule module ensures FATF compliance for CBB supervision. Ask: "Are you aligned with CBB's FATF requirements?"</p>
 <h4>Israel — ISA</h4>
-<p><strong>What's happening:</strong> Israel Securities Authority implementing comprehensive crypto framework December aligned with EU MiCA model—establishes licensing requirements, investor protection standards, and AML/KYC obligations.</p>
-<p><strong>Deal play:</strong> KYT transaction monitoring for AML/KYC compliance. Reactor entity screening for licensing applications.</p>
+<p><strong>What's happening:</strong> Israel Securities Authority implementing comprehensive regulatory framework for crypto assets aligned with EU models—guidelines increasingly mirror MiCA with licensing, investor protection, and AML/KYC obligations by December 2026.</p>
+<p><strong>Deal play:</strong> Reactor entity screening supports licensing applications. KYT provides transaction monitoring for MiCA-aligned AML/KYC requirements. Ask: "Are you preparing for ISA's MiCA-style framework?"</p>
 <h4>Saudi Arabia — SAMA</h4>
-<p><strong>What's happening:</strong> SAMA crypto asset licensing framework implementation Q3—licensing requirements for crypto asset activities finalized.</p>
-<p><strong>Deal play:</strong> KYT establishes baseline transaction monitoring for licensing applications. Reactor verifies counterparty risk profiles before SAMA review.</p>
+<p><strong>What's happening:</strong> Saudi Arabian Monetary Authority finalizing crypto asset regulatory framework with licensing requirements Q3 2026.</p>
+<p><strong>Deal play:</strong> KYT establishes transaction monitoring for licensing readiness. Reactor provides entity risk assessment for SAMA applications. Ask: "When do you plan to submit your SAMA licensing application?"</p>
 <h4>Turkey — CMB</h4>
-<p><strong>What's happening:</strong> Capital Markets Board implementing licensing framework Q4 for crypto exchanges and service providers following 2021 ban on crypto payments.</p>
-<p><strong>Deal play:</strong> KYT exchange transaction monitoring for CMB licensing readiness. Reactor screens exchange counterparties for sanctions/illicit finance exposure.</p>
-<h4>UAE — VARA</h4>
+<p><strong>What's happening:</strong> Capital Markets Board implementing licensing framework for crypto exchanges and service providers Q4 following 2021 ban on crypto payments.</p>
+<p><strong>Deal play:</strong> KYT transaction monitoring demonstrates exchange compliance for CMB licensing. Reactor provides entity screening for service provider applications.</p>
+<h4>UAE — VARA / CBUAE</h4>
 <p><strong>What's happening:</strong> Dubai Virtual Assets Regulatory Authority updating comprehensive rulebook Q3 with specific provisions for DeFi, staking, and new product types.</p>
-<p><strong>Deal play:</strong> Hexagate smart contract security audits for DeFi protocols seeking VARA approval. KYT monitors DeFi protocol transactions for market manipulation under updated rulebook.</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>Deal play:</strong> Hexagate provides smart contract security audits for DeFi product compliance. KYT monitors staking and novel product transactions for VARA requirements. Ask: "How are you addressing VARA's DeFi compliance requirements?"</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card" style="border-left:3px solid #ec4899"><div class="card-head"><h2 style="font-size:14px">Africa (2 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>Kenya — CMA</h4>
-<p><strong>What's happening:</strong> Capital Markets Authority VASP licensing framework operational H2—regulatory framework for crypto exchanges and service providers with AML/CFT requirements aligned to FATF standards.</p>
-<p><strong>Deal play:</strong> KYT Travel Rule compliance for FATF-aligned requirements. Reactor entity screening for VASP licensing applications.</p>
+<p><strong>What's happening:</strong> Capital Markets Authority implementing Virtual Asset Service Providers licensing framework H2 with AML/CFT requirements aligned to FATF standards.</p>
+<p><strong>Deal play:</strong> KYT provides FATF-aligned transaction monitoring for licensing applications. Reactor entity screening supports VASP registration. Ask: "Are you ready for Kenya's VASP licensing?"</p>
 <h4>Mauritius — FSC</h4>
-<p><strong>What's happening:</strong> Financial Services Commission Virtual Asset and Initial Token Offering Services Act implementation Q3—enhanced supervision and Travel Rule compliance for licensed custodians and exchanges.</p>
-<p><strong>Deal play:</strong> KYT Travel Rule module for FSC compliance. Data Solutions provides audit trails for enhanced supervision requirements.</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>What's happening:</strong> Financial Services Commission implementing Virtual Asset and Initial Token Offering Services Act with enhanced supervision and Travel Rule compliance for licensed custodians and exchanges Q3.</p>
+<p><strong>Deal play:</strong> KYT Travel Rule module ensures compliance for FSC licensing. Data Solutions enables comprehensive reporting for custodian requirements.</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><ul>
-<li><strong>EU — AMLA Supervision Targets</strong>: 400+ high-risk CASPs need Reactor entity screening + KYT baseline before Q3 direct supervision begins → Reactor + KYT ($150K-$400K per CASP)</li>
+<li><strong>EU AMLA Supervision</strong>: 400+ highest-risk CASPs need immediate entity due diligence and ongoing transaction monitoring for Q3 AMLA launch → Reactor entity screening + KYT compliance packages ($150K-400K)</li>
 </ul>
 <ul>
-<li><strong>France — PSAN Transition Wave</strong>: 75+ PSAN firms racing to 1 July deadline need compliant transaction monitoring + ownership verification → KYT + OSINT ($120K-$350K)</li>
+<li><strong>France PSAN Transition</strong>: French CASPs racing 1 July deadline need rapid MiCA authorization readiness → KYT transaction monitoring + OSINT beneficial ownership verification ($80K-250K)</li>
 </ul>
 <ul>
-<li><strong>UK — Authorization Gateway</strong>: 200+ existing crypto businesses must submit FCA applications Q3 with systems/controls evidence → Reactor DD + KYT ($180K-$450K)</li>
+<li><strong>UK Authorization Gateway</strong>: Crypto firms submitting FCA applications need custody security, conduct monitoring, and entity screening → Alterya + KYT + Reactor integrated compliance suite ($200K-500K)</li>
 </ul>
 <ul>
-<li><strong>Saudi Arabia / UAE — Licensing Wave</strong>: Gulf state licensing operationalization Q3 creates greenfield VASP market → KYT + Reactor bundled licensing packages ($200K-$500K)</li>
+<li><strong>Saudi Arabia Licensing Wave</strong>: SAMA Q3 framework creates first-mover advantage for firms with licensing-ready compliance infrastructure → KYT + Reactor licensing packages ($100K-300K)</li>
 </ul>
 <ul>
-<li><strong>Germany — Custody Enforcement</strong>: BaFin custody license holders need smart contract security + transaction monitoring upgrades → Alterya + KYT ($250K-$600K)</li>
+<li><strong>UAE DeFi Compliance</strong>: VARA Q3 DeFi/staking rulebook update triggers smart contract security audit demand → Hexagate DeFi protocol audits + KYT novel product monitoring ($120K-350K)</li>
 </ul>
 <ul>
-<li><strong>Israel — MiCA Alignment</strong>: ISA December framework creates 40+ firms needing EU-aligned compliance infrastructure → KYT + Reactor ($140K-$380K)</li>
+<li><strong>Germany Custody Enforcement</strong>: BaFin ongoing Banking Act supervision requires continuous custody security demonstration → Alterya custody security + KYT compliance monitoring ($150K-400K)</li>
 </ul>
 <ul>
-<li><strong>Kenya / Mauritius — East Africa Corridor</strong>: VASP licensing + Travel Rule creates regional compliance opportunity → KYT Travel Rule + Data Solutions ($100K-$280K per jurisdiction)</li>
+<li><strong>Kenya/Mauritius Regional Corridor</strong>: East African VASP licensing creates regional compliance demand for FATF-aligned monitoring → KYT Travel Rule + Data Solutions reporting packages ($60K-180K)</li>
 </ul></div></div>
-<div class="card"><div class="card-head"><h2>90-Day Forward Look</h2><p class="section-desc">Looking ahead — what's coming and what to do about it</p></div><div class="card-body content"><p><strong>Jun 5</strong> — 🇮🇪 Ireland: Central Bank tokenisation discussion paper deadline → Position Hexagate for DLT securities infrastructure responses</p>
-<p><strong>Jun 26</strong> — 🇪🇺 EU: RUSI Brussels speaking engagement → Amplify AMLA supervision readiness messaging to policy audience</p>
-<p><strong>Jul 1</strong> — 🇫🇷 France: PSAN application deadline → Final push for KYT + OSINT deals with non-compliant firms</p>
-<p><strong>Jul 3</strong> — 🇬🇧 UK: Joint FCA/BoE tokenisation call deadline → Submit Hexagate wholesale markets positioning</p>
-<p><strong>Jul 6</strong> — 🇪🇺 EU: EC anti-corruption strategy consultation deadline → Contribute Reactor case studies on crypto financial crime investigation</p>
-<p><strong>Jul 26</strong> — 🇪🇺 EU: DORA operationalisation by firms → Brief Sales EMEA on cyber resilience compliance for CASPs</p>
-<p><strong>Aug 31</strong> — 🇪🇺 EU: MiCA review consultation deadline → Critical response shapes DeFi protocol compliance scope through 2027</p>
-<p><strong>Q3</strong> — 🇸🇦 Saudi Arabia: SAMA licensing framework go-live → Execute Gulf state licensing pipeline with KYT + Reactor bundles</p>
-<p><strong>Q3</strong> — 🇦🇪 UAE: VARA DeFi/staking rulebook updates → Position Hexagate for smart contract compliance requirements</p>
-<p><strong>Q3</strong> — 🇪🇺 EU: AMLA operational launch with direct supervision authority → Activate Reactor entity screening campaigns for 400+ high-risk CASPs</p></div></div>
-<div class="card"><div class="card-head"><h2>Key Dates</h2><p class="section-desc">Calendar view — dates that matter for your deals</p></div><div class="card-body content"><p><strong>Jun 5</strong> — 🇮🇪 Ireland: CBI tokenisation discussion paper deadline</p>
-<p><strong>Jun 26</strong> — 🇪🇺 EU: RUSI Brussels speaking engagement</p>
-<p><strong>Jul 1</strong> — 🇫🇷 France: PSAN-to-MiCA application deadline</p>
-<p><strong>Jul 3</strong> — 🇬🇧 UK: FCA/BoE tokenisation consultation closes</p>
-<p><strong>Jul 6</strong> — 🇪🇺 EU: EC anti-corruption strategy consultation closes</p>
-<p><strong>Jul 26</strong> — 🇪🇺 EU: DORA firm operationalisation deadline</p>
-<p><strong>Aug 31</strong> — 🇪🇺 EU: MiCA review consultation closes</p>
-<p><strong>Q3 2026</strong> — 🇪🇺 EU: AMLA operational launch</p>
-<p><strong>Q3 2026</strong> — 🇸🇦 Saudi Arabia: SAMA licensing framework operational</p>
-<p><strong>Q3 2026</strong> — 🇦🇪 UAE: VARA DeFi/staking rulebook updates</p>
-<p><strong>Q3 2026</strong> — 🇬🇧 UK: FCA crypto authorization application deadlines</p>
-<p><strong>Q4 2026</strong> — 🇹🇷 Turkey: CMB exchange licensing framework operational</p>
-<p><strong>Dec 2026</strong> — 🇮🇱 Israel: ISA MiCA-aligned crypto framework implementation</p></div></div>
+<div class="card"><div class="card-head"><h2>90-Day Forward Look</h2><p class="section-desc">Looking ahead — what's coming and what to do about it</p></div><div class="card-body content"><p><strong>5 June</strong> — 🇮🇪 Ireland: Central Bank of Ireland tokenisation discussion paper deadline → Review customer DLT infrastructure plans and position Data Solutions for wholesale market compliance</p>
+<p><strong>26 June</strong> — 🇧🇪 Belgium: RUSI Brussels speaking engagement → Network with European AML/CFT officials and gather AMLA implementation intelligence</p>
+<p><strong>1 July</strong> — 🇫🇷 France: Final PSAN application deadline before Q4 operating prohibition → Escalate urgency with French prospects lacking MiCA authorization readiness</p>
+<p><strong>3 July</strong> — 🇬🇧 UK: FCA/BoE joint tokenisation consultation deadline → Coordinate with UK customers on wholesale DLT regulatory strategy and compliance architecture</p>
+<p><strong>31 August</strong> — 🇪🇺 EU: European Commission MiCA review consultation closes → Monitor DeFi protocol authorization decisions—shapes 2027 product roadmap for Hexagate and KYT DeFi modules</p>
+<p><strong>Q3 2026</strong> — 🇪🇺 EU: AMLA becomes operational with direct supervision authority → Trigger outreach campaign to 400+ highest-risk CASPs requiring immediate Reactor screening and KYT monitoring</p>
+<p><strong>Q3 2026</strong> — 🇸🇦 Saudi Arabia: SAMA crypto licensing framework goes live → Launch Saudi market entry campaign positioning KYT and Reactor for licensing applications</p>
+<p><strong>Q3 2026</strong> — 🇦🇪 UAE: VARA DeFi/staking rulebook updates published → Position Hexagate smart contract security and KYT DeFi monitoring for compliance</p>
+<p><strong>Q3 2026</strong> — 🇲🇺 Mauritius: FSC Virtual Asset Act implementation with Travel Rule enforcement → Activate East Africa regional strategy with KYT Travel Rule module</p>
+<p><strong>Q4 2026</strong> — 🇬🇧 UK: FCA stablecoin payment framework and crypto authorization decisions → Coordinate UK authorization gateway support and stablecoin compliance positioning</p>
+<p><strong>Q4 2026</strong> — 🇹🇷 Turkey: CMB exchange licensing framework operational → Position KYT exchange monitoring for Turkish market entry</p>
+<p><strong>December 2026</strong> — 🇮🇱 Israel: ISA MiCA-aligned comprehensive framework implementation → Launch Israel campaign with Reactor licensing and KYT AML/KYC packages</p></div></div>
+<div class="card"><div class="card-head"><h2>Key Dates</h2><p class="section-desc">Calendar view — dates that matter for your deals</p></div><div class="card-body content"><p><strong>5 Jun</strong> — 🇮🇪 Ireland: Central Bank tokenisation discussion paper deadline</p>
+<p><strong>26 Jun</strong> — 🇧🇪 Belgium: RUSI Brussels speaking engagement</p>
+<p><strong>1 Jul</strong> — 🇫🇷 France: PSAN to MiCA transition final application deadline</p>
+<p><strong>3 Jul</strong> — 🇬🇧 UK: FCA/BoE tokenisation consultation closes</p>
+<p><strong>31 Aug</strong> — 🇪🇺 EU: MiCA review consultation deadline—DeFi/NFT decisions</p>
+<p><strong>Q3</strong> — 🇪🇺 EU: AMLA operational launch with 400+ CASP supervision</p>
+<p><strong>Q3</strong> — 🇸🇦 Saudi Arabia: SAMA licensing framework go-live</p>
+<p><strong>Q3</strong> — 🇦🇪 UAE: VARA DeFi/staking rulebook updates</p>
+<p><strong>Q3</strong> — 🇲🇺 Mauritius: FSC Virtual Asset Act Travel Rule enforcement</p>
+<p><strong>Q4</strong> — 🇬🇧 UK: FCA authorization decisions and stablecoin framework</p>
+<p><strong>Q4</strong> — 🇹🇷 Turkey: CMB exchange licensing operational</p>
+<p><strong>Dec</strong> — 🇮🇱 Israel: ISA MiCA-aligned framework implementation</p></div></div>
 
 
-<a class='doc-btn' href='https://docs.google.com/document/d/1wAbHezUrlWxpksMxDpRpzmkOghJcJlEuA0F03Ms03wo/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+<a class='doc-btn' href='https://docs.google.com/document/d/18zAFkTDp3Dp3RiTB9nk2HOXQYc0IBpR8U68NVMZATgw/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
 
 <script>
 document.addEventListener('click', function(e) {
@@ -251,6 +258,7 @@ document.addEventListener('click', function(e) {
     }
   }
 });
+</script>
 
 <div class="footer">Chainalysis GTM Regulatory Outlook &middot; 2026-Q2 &middot; 39 events analysed</div>
 
