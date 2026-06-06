@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Nine Asia-Pacific jurisdictions are simultaneously executing VASP licensing, institutional custody standards, and AML enforcement through September 2026. Australia's AUSTRAC transitions from implementation to active Travel Rule enforcement while Treasury consults on stablecoin payment licensing\u2014the first major market to regulate crypto payment gateways as PSPs. Southeast Asian regulators face Q3 custody and registration deadlines creating immediate compliance infrastructure demand across exchang",
+  "summary": "Nine Asia-Pacific jurisdictions are executing simultaneous VASP licensing, institutional custody standards, and AML enforcement through September 2026. Australia transitions from Travel Rule implementation to active enforcement while consulting on stablecoin payment licensing\u2014the first major market to regulate crypto payment gateways as PSPs. Southeast Asian regulators face Q3 custody and registration deadlines creating immediate compliance infrastructure demand across exchanges, banks, and inst",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1ptCyTN4-YzOeaGTcgDNoUM9YYzYdB3PBiULlJkaW9Fs/edit?usp=drivesdk",
-  "doc_id": "1ptCyTN4-YzOeaGTcgDNoUM9YYzYdB3PBiULlJkaW9Fs",
+  "doc_url": "https://docs.google.com/document/d/1lD-EDTTF6nZxZFNQpoLLRa0xN942lvsur14iaMfuj78/edit?usp=drivesdk",
+  "doc_id": "1lD-EDTTF6nZxZFNQpoLLRa0xN942lvsur14iaMfuj78",
   "edition_url": "editions/FY2026-Q2-APAC.html",
   "data_url": "editions/FY2026-Q2-APAC.json",
   "regulators": [
@@ -93,5 +93,5 @@
   ],
   "news_sources": 17,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T14:02:23.589760+00:00"
+  "generated_at": "2026-06-06T14:26:33.526310+00:00"
 }
