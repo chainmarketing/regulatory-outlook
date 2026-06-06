@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Nine Asia-Pacific markets are operationalizing VASP supervision frameworks simultaneously as travel rule enforcement enters active phase across Oceania and Southeast Asia. With Australia's AUSTRAC moving from implementation to enforcement, Philippines BSP managing ongoing Circular 1108 compliance deadlines, and South Korea's FSC drafting institutional custody standards for traditional financial institutions, the region represents the largest compliance infrastructure buildout opportunity since M",
+  "summary": "Nine Asia-Pacific markets are simultaneously operationalizing VASP frameworks and travel rule requirements as regulatory supervision transitions from guidance to enforcement. Australia's AUSTRAC has moved to active penalty phase while Philippines BSP manages ongoing registration deadlines and South Korea's FSC drafts institutional custody standards for traditional financial institutions. The compliance infrastructure buildout represents the region's largest transaction monitoring and custody sec",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1hjss8emVGagHO0msgxfHJQtQ49YHqcXGg5Ie9rU5_5Y/edit?usp=drivesdk",
-  "doc_id": "1hjss8emVGagHO0msgxfHJQtQ49YHqcXGg5Ie9rU5_5Y",
+  "doc_url": "https://docs.google.com/document/d/1P0POYbjBiIbRlLWKMkH37jCCHqe9hZRkMEGykCS6a8o/edit?usp=drivesdk",
+  "doc_id": "1P0POYbjBiIbRlLWKMkH37jCCHqe9hZRkMEGykCS6a8o",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-06T05:57:23.266851+00:00"
+  "generated_at": "2026-06-06T06:04:00.438439+00:00"
 }
