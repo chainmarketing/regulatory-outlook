@@ -3,12 +3,12 @@
   "region_label": "EMEA",
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
-  "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May\u2013Jul)",
-  "summary": "The European Union is executing the largest coordinated crypto compliance buildout in history\u2014211 authorized CASPs across 23 countries face MiCA Level 2 technical standards adoption through Q4 while AMLA becomes operational with direct supervision powers in Q3. Simultaneously, the UK's FCA is enforcing Q3 authorization deadlines, France's July 1 PSAN transition cutoff creates urgent compliance demand, and Middle Eastern regulators in UAE, Saudi Arabia, and Israel finalize comprehensive licensing",
+  "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May \u2013 July 2026)",
+  "summary": "EMEA regulators are executing the world's most coordinated crypto compliance infrastructure buildout\u2014211 authorized CASPs across 23 EU countries face MiCA Level 2 technical standards through September while AMLA becomes operational with direct supervision powers in Q3. The UK's FCA enforces September authorization deadlines, France's July 1 PSAN cutoff creates urgent compliance demand, and Middle Eastern regulators finalize comprehensive licensing frameworks. This synchronized regulatory maturat",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/1fX5b2jUZQ3fDhQaWWqZ1cHU7TQcmEIUD9dzUTNC-7Ng/edit?usp=drivesdk",
-  "doc_id": "1fX5b2jUZQ3fDhQaWWqZ1cHU7TQcmEIUD9dzUTNC-7Ng",
+  "doc_url": "https://docs.google.com/document/d/16e1dZeIEfJGzidTWQb4Z-bSQtMO1ibN0eGJ5uI13Zzw/edit?usp=drivesdk",
+  "doc_id": "16e1dZeIEfJGzidTWQb4Z-bSQtMO1ibN0eGJ5uI13Zzw",
   "edition_url": "editions/FY2026-Q2-EMEA.html",
   "data_url": "editions/FY2026-Q2-EMEA.json",
   "regulators": [
@@ -105,5 +105,6 @@
     "Africa"
   ],
   "news_sources": 15,
-  "generated_at": "2026-06-06T06:57:50.995669+00:00"
+  "quarter_range": "May \u2013 July 2026",
+  "generated_at": "2026-06-06T07:08:39.943983+00:00"
 }
