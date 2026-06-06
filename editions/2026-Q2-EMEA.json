@@ -2,13 +2,13 @@
   "region": "EMEA",
   "region_label": "EMEA",
   "quarter": "2026-Q2",
-  "date": "2026-06-05",
+  "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 2026",
-  "summary": "The EU operationalizes its regulatory infrastructure as AMLA launches Q3 with direct supervision authority while the MiCA review consultation (31 Aug deadline) determines DeFi and NFT treatment through 2027. Simultaneously, France enforces its 1 July PSAN transition cutoff, UK finalizes crypto authorization rules, and four Middle East jurisdictions complete licensing frameworks Q3-Q4. With 39 active policy events and 211 authorized CASPs navigating compliance, this quarter represents the densest",
+  "summary": "The European Union dominates EMEA activity with 21 events as MiCA's first implementation cycle produces the critical August 31 review consultation, AMLA's Q3 operational launch, and 211 CASPs now authorized across 23 EEA countries. UK runs parallel with 6 developments including FCA's crypto authorization gateway finalization, while Middle East markets (UAE, Saudi Arabia, Israel) converge toward MiCA-aligned frameworks. With France's July 1 PSAN-to-MiCA transition deadline and NFT classification ",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/1zkvX3snrKcteFjT2hq3Q3X-GIAh_B0lEUXVeLWlqIDg/edit?usp=drivesdk",
-  "doc_id": "1zkvX3snrKcteFjT2hq3Q3X-GIAh_B0lEUXVeLWlqIDg",
+  "doc_url": "https://docs.google.com/document/d/1XSmE3SRRe8uMRWliwrL-C-ewBHTXF_CqxWUCm0oPJU0/edit?usp=drivesdk",
+  "doc_id": "1XSmE3SRRe8uMRWliwrL-C-ewBHTXF_CqxWUCm0oPJU0",
   "edition_url": "editions/2026-Q2-EMEA.html",
   "data_url": "editions/2026-Q2-EMEA.json",
   "regulators": [
@@ -105,5 +105,5 @@
     "Africa"
   ],
   "news_sources": 15,
-  "generated_at": "2026-06-05T13:38:08.205694+00:00"
+  "generated_at": "2026-06-06T05:57:23.266851+00:00"
 }
