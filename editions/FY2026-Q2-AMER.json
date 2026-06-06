@@ -1,0 +1,78 @@
+{
+  "region": "AMER",
+  "region_label": "Americas",
+  "quarter": "FY2026-Q2",
+  "date": "2026-06-06",
+  "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
+  "summary": "The United States is implementing the most significant AML/CFT modernization in two decades through GENIUS Act stablecoin supervision and Bank Secrecy Act reforms, while 16 simultaneous federal and state-level rulemakings create immediate compliance infrastructure demand. Canada's Travel Rule implementation and Latin American VASP registration regimes (Argentina, Chile, Colombia, Cayman Islands) extend the compliance opportunity across all Americas markets. With FinCEN, FDIC, and NCUA comment pe",
+  "events_analysed": 28,
+  "countries_covered": 9,
+  "doc_url": "https://docs.google.com/document/d/1RyIV26aKjmaeBzM_aV7Zwq0vVibKyo7O0HlJkkf1Axc/edit?usp=drivesdk",
+  "doc_id": "1RyIV26aKjmaeBzM_aV7Zwq0vVibKyo7O0HlJkkf1Axc",
+  "edition_url": "editions/FY2026-Q2-AMER.html",
+  "data_url": "editions/FY2026-Q2-AMER.json",
+  "regulators": [
+    {
+      "country": "USA",
+      "abbr": "SEC / CFTC / FinCEN / OCC",
+      "full": "Securities & Exchange Commission / Commodity Futures Trading Commission / Financial Crimes Enforcement Network / Office of the Comptroller of the Currency",
+      "focus": "GENIUS Act implementation, BSA/AML reform, stablecoin rulemaking, DeFi enforcement"
+    },
+    {
+      "country": "Canada",
+      "abbr": "CSA / FINTRAC / OSFI",
+      "full": "Canadian Securities Administrators / Financial Transactions & Reports Analysis Centre / Office of the Superintendent of Financial Institutions",
+      "focus": "Enhanced registration, Travel Rule, crypto-asset risk weightings"
+    },
+    {
+      "country": "Brazil",
+      "abbr": "BCB / CVM",
+      "full": "Banco Central do Brasil / Comiss\u00e3o de Valores Mobili\u00e1rios",
+      "focus": "VASP reporting requirements, crypto securities framework"
+    },
+    {
+      "country": "Argentina",
+      "abbr": "CNV",
+      "full": "Comisi\u00f3n Nacional de Valores",
+      "focus": "VASP registration regime"
+    },
+    {
+      "country": "Chile",
+      "abbr": "CMF",
+      "full": "Comisi\u00f3n para el Mercado Financiero",
+      "focus": "Fintech Law crypto provisions"
+    },
+    {
+      "country": "Colombia",
+      "abbr": "SFC",
+      "full": "Superintendencia Financiera de Colombia",
+      "focus": "Comprehensive crypto regulatory framework"
+    },
+    {
+      "country": "Mexico",
+      "abbr": "CNBV",
+      "full": "Comisi\u00f3n Nacional Bancaria y de Valores",
+      "focus": "Fintech Law crypto exchange regulation"
+    },
+    {
+      "country": "Bermuda",
+      "abbr": "BMA",
+      "full": "Bermuda Monetary Authority",
+      "focus": "Digital Asset Business Act oversight"
+    },
+    {
+      "country": "Cayman Islands",
+      "abbr": "CIMA",
+      "full": "Cayman Islands Monetary Authority",
+      "focus": "VASP framework implementation"
+    }
+  ],
+  "sub_regions": [
+    "United States",
+    "Canada",
+    "Latin America & Caribbean"
+  ],
+  "news_sources": 12,
+  "quarter_range": "May \u2013 July 2026",
+  "generated_at": "2026-06-06T07:08:39.943983+00:00"
+}
