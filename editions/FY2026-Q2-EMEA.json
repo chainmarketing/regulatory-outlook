@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "EMEA regulators are executing the world's most coordinated crypto compliance infrastructure buildout\u2014211 authorized CASPs across 23 EU countries face MiCA Level 2 technical standards through September while AMLA becomes operational with direct supervision powers in Q3. The UK's FCA enforces September authorization deadlines, France's July 1 PSAN cutoff creates urgent compliance demand, and Middle Eastern regulators finalize comprehensive licensing frameworks. This synchronized regulatory maturat",
+  "summary": "EMEA is executing the world's most coordinated regulatory transformation\u201421 EU events center on MiCA operationalisation while 6 UK consultations finalise the post-Brexit authorisation gateway, and 6 Middle Eastern jurisdictions race to implement FATF-aligned licensing before Q4. The EU's AMLA becomes operational in Q3 with direct CASP supervision, France's PSAN-to-MiCA deadline hits July 1, and the UK's FCA sets firm authorisation cutoffs. This isn't policy debate anymore\u2014it's mass compliance in",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/16e1dZeIEfJGzidTWQb4Z-bSQtMO1ibN0eGJ5uI13Zzw/edit?usp=drivesdk",
-  "doc_id": "16e1dZeIEfJGzidTWQb4Z-bSQtMO1ibN0eGJ5uI13Zzw",
+  "doc_url": "https://docs.google.com/document/d/1BnfT2aTlVwPj0j0DDBCmz8nQ23k7uUuWaiDVSbjCQgg/edit?usp=drivesdk",
+  "doc_id": "1BnfT2aTlVwPj0j0DDBCmz8nQ23k7uUuWaiDVSbjCQgg",
   "edition_url": "editions/FY2026-Q2-EMEA.html",
   "data_url": "editions/FY2026-Q2-EMEA.json",
   "regulators": [
@@ -106,5 +106,5 @@
   ],
   "news_sources": 15,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T07:08:39.943983+00:00"
+  "generated_at": "2026-06-06T13:35:07.513488+00:00"
 }
