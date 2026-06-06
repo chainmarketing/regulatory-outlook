@@ -2,13 +2,13 @@
   "region": "APAC",
   "region_label": "Asia-Pacific",
   "quarter": "2026-Q2",
-  "date": "2026-06-05",
+  "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Asia-Pacific enters active enforcement mode across 9 jurisdictions as Australia shifts from implementation to Travel Rule prosecution, Philippines finalizes VASP registration under BSP Circular 1108, and South Korea unlocks institutional custody for traditional banks. With 13 active policy events spanning licensing expansion (Thailand, Indonesia), securities classification battles (India, Hong Kong), and stablecoin payment frameworks (Australia), the region presents the highest-density complianc",
+  "summary": "Nine Asia-Pacific markets are operationalizing VASP supervision frameworks simultaneously as travel rule enforcement enters active phase across Oceania and Southeast Asia. With Australia's AUSTRAC moving from implementation to enforcement, Philippines BSP managing ongoing Circular 1108 compliance deadlines, and South Korea's FSC drafting institutional custody standards for traditional financial institutions, the region represents the largest compliance infrastructure buildout opportunity since M",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1R54ywzLR9AHqAf2WuYATxGvCmUeBEm-RK1V7KSqttro/edit?usp=drivesdk",
-  "doc_id": "1R54ywzLR9AHqAf2WuYATxGvCmUeBEm-RK1V7KSqttro",
+  "doc_url": "https://docs.google.com/document/d/1hjss8emVGagHO0msgxfHJQtQ49YHqcXGg5Ie9rU5_5Y/edit?usp=drivesdk",
+  "doc_id": "1hjss8emVGagHO0msgxfHJQtQ49YHqcXGg5Ie9rU5_5Y",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-05T13:38:08.205694+00:00"
+  "generated_at": "2026-06-06T05:57:23.266851+00:00"
 }
