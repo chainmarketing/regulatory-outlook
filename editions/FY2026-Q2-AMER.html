@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTM Regulatory Outlook — Americas — Q2 FY2026 (May – July 2026)</title>
+<style>
+:root {
+  --bg: #f8f9fa; --card: #ffffff; --text: #1a1a2e; --muted: #6b7280;
+  --border: #e5e7eb; --accent: #f97316; --accent-soft: #f9731618;
+  --success: #16a34a; --warning: #d97706; --info: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af;
+    --border: #2e2e3a; --accent-soft: #f9731625;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+
+/* Nav */
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 18px; border-bottom: 1px solid var(--border); margin-bottom: 28px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { text-align: center; margin-bottom: 28px; }
+.hero .badge { display: inline-block; padding: 3px 14px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: var(--accent); color: #fff; margin-bottom: 10px; text-transform: uppercase; }
+.hero h1 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+.hero .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* Stat strip */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: none; }
+.stat-val { font-size: 22px; font-weight: 700; line-height: 1; }
+.stat-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
+
+
+
+/* Explainer */
+.explainer { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; margin-bottom: 24px; padding: 0 20px; }
+
+/* Section descriptions */
+.section-desc { font-size: 12px; color: var(--muted); margin: 2px 0 0; font-style: italic; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.card-head { padding: 14px 18px 6px; display: flex; flex-direction: column; gap: 0; }
+.card-head h2 { font-size: 14px; font-weight: 600; }
+.card-head .count { font-size: 12px; color: var(--muted); }
+.card-body { padding: 16px 20px 20px; }
+
+/* Content typography */
+.content h1 { font-size: 20px; font-weight: 700; margin: 20px 0 8px; padding-top: 14px; border-top: 2px solid var(--border); }
+.content h1:first-child { border-top: none; padding-top: 0; }
+.content h2 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+.content h3 { font-size: 14px; font-weight: 600; margin: 14px 0 4px; }
+.content h4 { font-size: 13px; font-weight: 600; margin: 14px 0 6px; }
+.country-header { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.country-name { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.content p { margin: 8px 0 12px; font-size: 13.5px; line-height: 1.75; }
+.content ul, .content ol { margin: 6px 0 6px 18px; font-size: 13.5px; }
+.content li { margin: 6px 0 10px; line-height: 1.65; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.content li:last-child { border-bottom: none; }
+.content strong { font-weight: 600; }
+.content em { font-style: italic; color: var(--muted); }
+.content a { color: var(--accent); text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* Tables */
+.content table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 12px 0; }
+.content th { text-align: left; padding: 10px 12px; font-weight: 500; color: var(--muted); border-bottom: 2px solid var(--border); background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.content td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+
+/* TL;DR highlight */
+.tldr { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; text-align: center; }
+.tldr h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+.tldr p { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.tldr strong { font-weight: 700; }
+
+/* Exec summary accent */
+.exec-summary { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; }
+.exec-summary .card-head h2 { color: var(--accent); }
+.exec-summary .card-body p { font-size: 14.5px; line-height: 1.75; }
+
+/* Section tints */
+.card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #f0fdf4 100%); }
+.card-timeline { background: linear-gradient(135deg, var(--card) 0%, #eff6ff 100%); }
+.card-competitor { background: linear-gradient(135deg, var(--card) 0%, #fef3c7 100%); border-left: 3px solid #f59e0b; }
+@media (prefers-color-scheme: dark) {
+  .card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #0a1f0a 100%); }
+  .card-timeline { background: linear-gradient(135deg, var(--card) 0%, #0a1520 100%); }
+  .card-competitor { background: linear-gradient(135deg, var(--card) 0%, #1a1500 100%); }
+}
+
+/* Theme tags */
+.theme-tag { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.02em; }
+.theme-aml { background: #dbeafe; color: #1e40af; }
+.theme-stablecoin { background: #fef3c7; color: #92400e; }
+.theme-fraud { background: #fee2e2; color: #991b1b; }
+.theme-defi { background: #ede9fe; color: #5b21b6; }
+.theme-ai { background: #e0e7ff; color: #3730a3; }
+.theme-cyber { background: #d1fae5; color: #065f46; }
+.theme-general { background: #f3f4f6; color: #374151; }
+@media (prefers-color-scheme: dark) {
+  .theme-aml { background: #1e3a5f; color: #93c5fd; }
+  .theme-stablecoin { background: #451a03; color: #fde68a; }
+  .theme-fraud { background: #450a0a; color: #fca5a5; }
+  .theme-defi { background: #2e1065; color: #c4b5fd; }
+  .theme-ai { background: #1e1b4b; color: #a5b4fc; }
+  .theme-cyber { background: #022c22; color: #6ee7b7; }
+  .theme-general { background: #1f2937; color: #d1d5db; }
+}
+
+/* Response badge */
+.response-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; font-size: 11px; font-weight: 500; text-decoration: none; margin-top: 4px; }
+.response-badge:hover { background: #bfdbfe; }
+@media (prefers-color-scheme: dark) {
+  .response-badge { background: #1e3a5f; color: #93c5fd; }
+  .response-badge:hover { background: #1e4d8f; }
+}
+
+/* Mini chart */
+.mini-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin: 12px 0 4px; }
+.mini-bar { flex: 1; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; transition: height 0.3s; }
+.mini-bar-label { position: absolute; bottom: -18px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.mini-bar-val { position: absolute; top: -16px; left: 0; right: 0; text-align: center; font-size: 10px; font-weight: 600; }
+
+/* Collapsible sections */
+.card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
+.card-preview.expanded { max-height: none; }
+.card-preview:not(.expanded)::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, var(--card)); pointer-events: none; }
+.show-more { display: block; width: 100%; padding: 8px; background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; margin-top: 8px; transition: all 0.15s; }
+.show-more:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Doc link */
+.doc-btn { display: inline-block; margin-top: 12px; padding: 9px 22px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; transition: opacity .15s; }
+.doc-btn:hover { opacity: .88; }
+
+/* Footer */
+.footer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav">
+  <a href="../">&#8592; Archive</a>
+  <a href="../internal/dashboard.html">Dashboard</a>
+</div>
+
+<div class="hero">
+  <span class="badge">AMER</span>
+  <h1>GTM Regulatory Outlook — Americas — Q2 FY2026 (May – July 2026)</h1>
+  <p class="sub">FY2026-Q2 (May – July 2026) &middot; Generated 2026-06-06</p>
+</div>
+
+<div class="explainer">
+  Reviews what changed last quarter and previews the regulatory landscape for the current quarter. Sourced from the Policy Event Tracker, competitive intelligence, regional news, and monitor workflows.
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val">28</div><div class="stat-lbl">Events</div></div>
+  <div class="stat"><div class="stat-val">9</div><div class="stat-lbl">Regulators</div></div>
+  <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Sub-Regions</div></div>
+  <div class="stat"><div class="stat-val">19</div><div class="stat-lbl">Consultations</div></div>
+</div>
+
+
+<div class="card"><div class="card-body" style="padding-bottom:30px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Events by sub-region</div><div class="mini-chart"><div class="mini-bar" style="height:40px;background:#6366f1"><span class="mini-bar-val">16</span><span class="mini-bar-label">United Sta…</span></div><div class="mini-bar" style="height:7px;background:#14b8a6"><span class="mini-bar-val">3</span><span class="mini-bar-label">Canada</span></div><div class="mini-bar" style="height:12px;background:#f59e0b"><span class="mini-bar-val">5</span><span class="mini-bar-label">Latin Amer…</span></div></div></div></div>
+
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: GENIUS Act stablecoin rules finalize, FinCEN BSA reform closes June 9, state licensing accelerates.</strong></p></div>
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">The big picture — where things stand right now</p></div><div class="card-body content"><p>The United States is implementing the most significant AML/CFT modernization in two decades through GENIUS Act stablecoin supervision and Bank Secrecy Act reforms, while 16 simultaneous federal and state-level rulemakings create immediate compliance infrastructure demand. Canada's Travel Rule implementation and Latin American VASP registration regimes (Argentina, Chile, Colombia, Cayman Islands) extend the compliance opportunity across all Americas markets. With FinCEN, FDIC, and NCUA comment periods closing through July and state stablecoin licensing bills advancing in Delaware and beyond, the next 90 days represent the biggest regulatory implementation window since MiCA.</p></div></div>
+<div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved, resolved, or escalated last quarter</p></div><div class="card-body content"><ul>
+<li><strong>USA — FinCEN/FDIC/NCUA</strong> 🏛️ GENIUS Act implementation accelerating: FinCEN and FDIC NPRMs on payment stablecoin issuer AML/CFT programs published May with 60-day comment periods closing June-July; NCUA credit union subsidiary standards closing July 17; Treasury consulting on state-level crypto regime uniformity principles.</li>
+</ul>
+<ul>
+<li><strong>USA — FinCEN</strong> ⚡ BSA/AML reform NPRM comment period closes June 9 (60 days post-Federal Register)—fundamental restructuring of financial institution AML/CFT programs under AMLA 2020; once-in-a-generation baseline shift affecting every covered institution.</li>
+</ul>
+<ul>
+<li><strong>USA — DOJ/SEC</strong> 🔄 Enforcement expansion: DOJ National Cryptocurrency Enforcement Team focusing on DeFi, mixer services, sanctions evasion with international coordination; SEC releasing staff statement on DeFi broker-dealer registration with comment period; consolidated audit trail consultation for digital assets.</li>
+</ul>
+<ul>
+<li><strong>Canada — FINTRAC</strong> 🔐 Travel Rule phased implementation advancing Q4 2026 with compliance deadlines beyond tax reporting; CSA enhancing registration and custody requirements for crypto trading platforms Q3.</li>
+</ul>
+<ul>
+<li><strong>Latin America</strong> 🆕 Four jurisdictions finalizing VASP frameworks: Argentina CNV registration (Q4), Chile CMF Fintech Law implementing regulations (Dec), Colombia SFC comprehensive framework (Jun), Cayman CIMA VASP regime (Q4)—all include AML/CFT baseline requirements.</li>
+</ul></div></div>
+<div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><div class="card-preview"><table><thead>
+<tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
+</thead><tbody>
+<tr><td>🇺🇸 USA</td><td>FinCEN</td><td>⚡ June 9 BSA reform comment deadline</td><td>KYT program modernization; Reactor risk assessment</td></tr>
+<tr><td>🇺🇸 USA</td><td>FinCEN/FDIC/NCUA</td><td>🏛️ GENIUS Act stablecoin issuer AML rules</td><td>KYT payment flow monitoring; Data Solutions issuer tracking</td></tr>
+<tr><td>🇺🇸 USA</td><td>Treasury</td><td>📋 State-level regime uniformity consultation</td><td>OSINT state licensing intelligence; KYT multi-state coverage</td></tr>
+<tr><td>🇺🇸 USA</td><td>SEC</td><td>📋 DeFi broker-dealer registration comment period</td><td>Hexagate DeFi protocol compliance readiness</td></tr>
+<tr><td>🇺🇸 USA</td><td>DOJ</td><td>🔍 DeFi/mixer sanctions evasion enforcement expansion</td><td>Reactor mixer attribution; KYT sanctions screening</td></tr>
+<tr><td>🇨🇦 Canada</td><td>FINTRAC</td><td>🌐 Q4 Travel Rule phased compliance</td><td>KYT counterparty data collection; Reactor VASP verification</td></tr>
+<tr><td>🇨🇦 Canada</td><td>CSA</td><td>⚖️ Q3 enhanced custody requirements implementation</td><td>Alterya custody security standards</td></tr>
+<tr><td>🇦🇷 Argentina</td><td>CNV</td><td>⚖️ Q4 VASP registration regime launch</td><td>KYT baseline compliance; Reactor Argentina entity mapping</td></tr>
+<tr><td>🇨🇱 Chile</td><td>CMF</td><td>🏛️ December Fintech Law regulations finalization</td><td>KYT licensing preparation; OSINT Chilean VASP tracking</td></tr>
+<tr><td>🇨🇴 Colombia</td><td>SFC</td><td>🏛️ Comprehensive crypto framework finalization</td><td>KYT exchange onboarding; Data Solutions regulatory intelligence</td></tr>
+</tbody></table></div><button class="show-more">Show more ▼</button></div></div>
+
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">United States (16 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇺🇸 <span class="country-header">USA</span> — FinCEN / FDIC / NCUA</h4>
+<p><strong>What's happening:</strong> GENIUS Act implementation—three NPRMs published May defining AML/CFT program requirements for payment stablecoin issuers under federal banking supervision; FinCEN/FDIC comment periods close June-July, NCUA closes July 17.</p>
+<p><strong>Deal play:</strong> Every major stablecoin issuer (Circle, Paxos, others pursuing federal supervision) needs KYT infrastructure for payment flow monitoring and Reactor for issuer-side investigations. Ask: "How are you preparing transaction monitoring infrastructure for GENIUS Act supervision?" Separately, FinCEN's BSA/AML reform NPRM (comment deadline June 9) fundamentally restructures AML program requirements—every bank and MSB will reassess transaction monitoring baselines. This is the biggest compliance infrastructure refresh since BSA inception.</p>
+<h4>🇺🇸 <span class="country-header">USA</span> — Treasury / State regulators</h4>
+<p><strong>What's happening:</strong> Treasury consulting on principles for state-level crypto regulatory uniformity (AML/CFT data similarity standards); Delaware introduced stablecoin licensing bill under banking framework; multiple states advancing money transmitter and stablecoin laws through 2026.</p>
+<p><strong>Deal play:</strong> State-chartered trust companies and money transmitters operating multi-state need OSINT for licensing intelligence and KYT for coverage across fragmented state regimes. Ask: "Which states are you licensed in, and how are you tracking evolving compliance obligations across jurisdictions?"</p>
+<h4>🇺🇸 <span class="country-header">USA</span> — SEC / CFTC</h4>
+<p><strong>What's happening:</strong> SEC staff statement on DeFi broker-dealer registration (comment period open); consolidated audit trail consultation for digital asset transaction reporting and surveillance standards; SAB 121 replacement guidance on crypto custody by banks/broker-dealers (Q4).</p>
+<p><strong>Deal play:</strong> DeFi protocols with US user exposure and broker-dealers custody crypto need Hexagate for protocol-level compliance readiness and Alterya for institutional custody security. Ask: "Are you evaluating broker-dealer registration obligations for your protocol, and what surveillance infrastructure do you have?"</p>
+<h4>🇺🇸 <span class="country-header">USA</span> — DOJ / OCC</h4>
+<p><strong>What's happening:</strong> DOJ National Cryptocurrency Enforcement Team expanding focus on DeFi, mixer services, sanctions evasion with international coordination; OCC reviewing digital asset custody guidance for national banks (Q3); FedNow expansion exploring crypto payment integration implications for stablecoin settlements.</p>
+<p><strong>Deal play:</strong> Banks exploring crypto custody under OCC review and DeFi protocols facing enforcement scrutiny need Reactor for sanctions screening attribution and KYT for real-time sanctions compliance. Ask: "How are you addressing DOJ's heightened DeFi enforcement focus and mixer service attribution?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Canada (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇨🇦 <span class="country-header">Canada</span> — CSA / FINTRAC / OSFI</h4>
+<p><strong>What's happening:</strong> CSA implementing enhanced registration and custody requirements for crypto trading platforms Q3; FINTRAC implementing FATF Travel Rule with phased compliance deadlines Q4; OSFI engaging on whether Group 2a tokenised traditional assets can be recognised as collateral under Capital and Liquidity Treatment guidelines.</p>
+<p><strong>Deal play:</strong> Canadian exchanges and platforms need KYT for Travel Rule counterparty data collection and Alterya for enhanced custody compliance under CSA rules. Banks evaluating tokenised asset collateral recognition need Data Solutions for crypto-asset risk intelligence. Ask: "What's your Travel Rule implementation roadmap, and are you ready for Q4 phased compliance?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Latin America & Caribbean (5 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>Argentina — CNV</h4>
+<p><strong>What's happening:</strong> CNV crypto asset service provider registration regime with phased AML/CFT compliance deadlines through Q4 2026.</p>
+<p><strong>Deal play:</strong> Argentine exchanges and VASPs need KYT baseline transaction monitoring and Reactor for entity verification under CNV registration. Ask: "Are you registered with CNV, and what transaction monitoring infrastructure supports your AML obligations?"</p>
+<h4>Chile — CMF</h4>
+<p><strong>What's happening:</strong> Chilean Financial Market Commission developing implementing regulations for crypto service providers under 2023 Fintech Law (Law 21.521)—licensing and operational framework expected December 2026.</p>
+<p><strong>Deal play:</strong> Chilean platforms operating under Fintech Law need KYT for licensing preparation and OSINT for regulatory intelligence as CMF finalizes rules. Ask: "How are you preparing for CMF's Fintech Law implementing regulations by year-end?"</p>
+<h4>Colombia — SFC</h4>
+<p><strong>What's happening:</strong> Superintendencia Financiera finalizing comprehensive regulatory framework for crypto asset service providers—central bank crypto-asset regulation draft law moving from legal gray area to defined framework with AML/CFT requirements.</p>
+<p><strong>Deal play:</strong> Colombian exchanges transitioning from unregulated to comprehensive SFC oversight need KYT exchange onboarding and Reactor for Colombian entity mapping. Ask: "What's your timeline for SFC framework compliance, and do you have transaction monitoring infrastructure in place?"</p>
+<h4>Cayman Islands — CIMA</h4>
+<p><strong>What's happening:</strong> Cayman Islands Monetary Authority implementing Virtual Asset Service Provider framework with registration and AML compliance requirements through Q4 2026.</p>
+<p><strong>Deal play:</strong> Cayman-domiciled funds, exchanges, and VASPs need KYT for VASP registration compliance and Reactor for beneficial ownership verification under CIMA regime. Ask: "Are you pursuing CIMA VASP registration, and what AML infrastructure supports your application?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs' March "Co-Case Agent" AI assistant launch and aggressive law enforcement engagement (2026 Crypto Crime Report emphasizing victim recovery narratives) directly challenge our investigative workflow positioning—but their silence on smart contract security confirms Hexagate remains a unique differentiator. Elliptic maintains steady regulatory commentary positioning as institutional-grade compliance infrastructure partner (Tapbit integration, DeFi thought leadership) but shows limited product innovation beyond AI Copilot. Both competitors are defining "AI-powered blockchain intelligence" without Chainalysis at the table—we must respond immediately given our superior attribution depth, government adoption scale, and integrated product breadth (Alterya, Hexagate gaps they can't fill).</p></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><strong>USA — Stablecoin issuers</strong> — Circle, Paxos, and others pursuing GENIUS Act federal supervision need issuer-side transaction monitoring infrastructure → KYT + Reactor</p>
+<p><strong>USA — National banks</strong> — OCC-supervised banks re-evaluating crypto custody under updated guidance (Q3) need institutional custody security and surveillance → Alterya + KYT</p>
+<p><strong>USA — State trust companies</strong> — Delaware and multi-state stablecoin licensees need coverage across fragmented state regimes → OSINT + KYT</p>
+<p><strong>USA — DeFi protocols</strong> — Platforms evaluating SEC broker-dealer registration and facing DOJ enforcement scrutiny need protocol compliance and sanctions screening → Hexagate + Reactor</p>
+<p><strong>Canada — Crypto trading platforms</strong> — CSA-registered exchanges need Travel Rule counterparty data infrastructure and enhanced custody compliance → KYT + Alterya</p>
+<p><strong>Chile — Fintech Law platforms</strong> — CMF-regulated crypto service providers preparing for December implementing regulations need licensing readiness → KYT + OSINT</p>
+<p><strong>Colombia — Exchanges transitioning to SFC oversight</strong> — Platforms moving from gray area to comprehensive framework need baseline transaction monitoring → KYT + Reactor</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><p><strong>June 9, 2026</strong> — 🇺🇸 USA: FinCEN BSA/AML reform NPRM comment period closes — AEs identify banks and MSBs reassessing transaction monitoring programs under AMLA 2020 modernization</p>
+<p><strong>Mid-June 2026</strong> — 🇺🇸 USA: FinCEN GENIUS Act stablecoin issuer AML/CFT NPRM comment period closes (60 days post-Federal Register) — AEs engage Circle, Paxos, other issuers on payment flow monitoring infrastructure</p>
+<p><strong>July 17, 2026</strong> — 🇺🇸 USA: NCUA GENIUS Act credit union subsidiary stablecoin standards comment period closes — AEs identify credit unions exploring stablecoin issuance subsidiaries</p>
+<p><strong>July 2026</strong> — 🇺🇸 USA: SEC/BoE joint tokenisation call for input opens — AEs track banks evaluating tokenised traditional assets for collateral recognition opportunities</p>
+<p><strong>August 2026</strong> — 🇺🇸 USA: Treasury state-level crypto regime uniformity consultation ongoing — AEs map multi-state trust companies and money transmitters needing fragmented compliance coverage</p>
+<p><strong>September 2026</strong> — 🇺🇸 USA: OCC digital asset custody interpretive letter update expected Q3 — AEs identify national banks awaiting guidance to launch crypto custody services</p>
+<p><strong>September 2026</strong> — 🇨🇦 Canada: CSA enhanced registration and custody requirements implementation Q3 — AEs engage Canadian exchanges on custody security upgrades under new standards</p>
+<p><strong>Q3 2026</strong> — 🇺🇸 USA: SEC DeFi broker-dealer registration staff statement comment period ongoing — AEs identify DeFi protocols with US exposure evaluating registration obligations</p>
+<p><strong>Q4 2026</strong> — 🇨🇦 Canada: FINTRAC Travel Rule phased compliance deadlines begin — AEs accelerate Canadian VASP Travel Rule infrastructure deals before compliance cutoff</p>
+<p><strong>December 2026</strong> — 🇨🇱 Chile: CMF Fintech Law implementing regulations expected — AEs track Chilean platforms preparing licensing applications under final CMF rules</p></div></div>
+
+
+<a class='doc-btn' href='https://docs.google.com/document/d/1RyIV26aKjmaeBzM_aV7Zwq0vVibKyo7O0HlJkkf1Axc/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+
+<script>
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('show-more')) {
+    var preview = e.target.previousElementSibling;
+    if (preview && preview.classList.contains('card-preview')) {
+      preview.classList.toggle('expanded');
+      e.target.textContent = preview.classList.contains('expanded') ? 'Show less ▲' : 'Show more ▼';
+    }
+  }
+});
+</script>
+
+<div class="footer">Chainalysis GTM Regulatory Outlook &middot; FY2026-Q2 &middot; 28 events analysed</div>
+
+</div>
+</body>
+</html>
