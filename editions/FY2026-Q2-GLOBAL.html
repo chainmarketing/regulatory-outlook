@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTM Regulatory Outlook — Global — Q2 FY2026 (May – July 2026)</title>
+<style>
+:root {
+  --bg: #f8f9fa; --card: #ffffff; --text: #1a1a2e; --muted: #6b7280;
+  --border: #e5e7eb; --accent: #a855f7; --accent-soft: #a855f718;
+  --success: #16a34a; --warning: #d97706; --info: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af;
+    --border: #2e2e3a; --accent-soft: #a855f725;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+
+/* Nav */
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 18px; border-bottom: 1px solid var(--border); margin-bottom: 28px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { text-align: center; margin-bottom: 28px; }
+.hero .badge { display: inline-block; padding: 3px 14px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: var(--accent); color: #fff; margin-bottom: 10px; text-transform: uppercase; }
+.hero h1 { font-size: 28px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+.hero h1::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 10px auto 0; border-radius: 2px; }
+.hero .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* Stat strip */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); cursor: help; position: relative; }
+.stat:last-child { border-right: none; }
+.stat-val { font-size: 22px; font-weight: 700; line-height: 1; }
+.stat-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
+
+
+
+/* Explainer */
+.explainer { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; margin-bottom: 24px; padding: 0 20px; }
+
+/* Section descriptions */
+.section-desc { font-size: 12px; color: var(--muted); margin: 2px 0 0; font-style: italic; }
+.card-head h2 { position: relative; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.card-head { padding: 14px 18px 6px; display: flex; flex-direction: column; gap: 0; }
+.card-head h2 { font-size: 14px; font-weight: 600; }
+.card-head .count { font-size: 12px; color: var(--muted); }
+.card-body { padding: 16px 20px 20px; }
+
+/* Content typography */
+.content h1 { font-size: 20px; font-weight: 700; margin: 20px 0 8px; padding-top: 14px; border-top: 2px solid var(--border); }
+.content h1:first-child { border-top: none; padding-top: 0; }
+.content h2 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+.content h3 { font-size: 14px; font-weight: 600; margin: 14px 0 4px; }
+.content h4 { font-size: 13px; font-weight: 600; margin: 14px 0 6px; }
+.country-header { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.country-name { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.content p { margin: 8px 0 12px; font-size: 13.5px; line-height: 1.75; }
+.content ul, .content ol { margin: 6px 0 6px 18px; font-size: 13.5px; }
+.content li { margin: 6px 0 10px; line-height: 1.65; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.content li:last-child { border-bottom: none; }
+.content strong { font-weight: 600; }
+.content em { font-style: italic; color: var(--muted); }
+.content a { color: var(--accent); text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* Tables */
+.content table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 12px 0; }
+.content th { text-align: left; padding: 10px 12px; font-weight: 500; color: var(--muted); border-bottom: 2px solid var(--border); background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.content td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+
+/* TL;DR highlight */
+.tldr { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; text-align: center; }
+.tldr h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+.tldr p { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.tldr strong { font-weight: 700; }
+
+/* Exec summary accent */
+.exec-summary { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; }
+.exec-summary .card-head h2 { color: var(--accent); }
+.exec-summary .card-body p { font-size: 14.5px; line-height: 1.75; }
+
+/* Section tints */
+.card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #f0fdf4 100%); }
+.card-timeline { background: linear-gradient(135deg, var(--card) 0%, #eff6ff 100%); }
+.card-competitor { background: linear-gradient(135deg, var(--card) 0%, #fef3c7 100%); border-left: 3px solid #f59e0b; }
+@media (prefers-color-scheme: dark) {
+  .card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #0a1f0a 100%); }
+  .card-timeline { background: linear-gradient(135deg, var(--card) 0%, #0a1520 100%); }
+  .card-competitor { background: linear-gradient(135deg, var(--card) 0%, #1a1500 100%); }
+}
+
+/* Theme tags */
+.theme-tag { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.02em; }
+.theme-aml { background: #dbeafe; color: #1e40af; }
+.theme-stablecoin { background: #fef3c7; color: #92400e; }
+.theme-fraud { background: #fee2e2; color: #991b1b; }
+.theme-defi { background: #ede9fe; color: #5b21b6; }
+.theme-ai { background: #e0e7ff; color: #3730a3; }
+.theme-cyber { background: #d1fae5; color: #065f46; }
+.theme-general { background: #f3f4f6; color: #374151; }
+@media (prefers-color-scheme: dark) {
+  .theme-aml { background: #1e3a5f; color: #93c5fd; }
+  .theme-stablecoin { background: #451a03; color: #fde68a; }
+  .theme-fraud { background: #450a0a; color: #fca5a5; }
+  .theme-defi { background: #2e1065; color: #c4b5fd; }
+  .theme-ai { background: #1e1b4b; color: #a5b4fc; }
+  .theme-cyber { background: #022c22; color: #6ee7b7; }
+  .theme-general { background: #1f2937; color: #d1d5db; }
+}
+
+/* Response badge */
+.response-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; font-size: 11px; font-weight: 500; text-decoration: none; margin-top: 4px; }
+.response-badge:hover { background: #bfdbfe; }
+@media (prefers-color-scheme: dark) {
+  .response-badge { background: #1e3a5f; color: #93c5fd; }
+  .response-badge:hover { background: #1e4d8f; }
+}
+
+/* Mini chart */
+.mini-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin: 12px 0 4px; }
+.mini-bar { flex: 1; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; transition: height 0.3s; }
+.mini-bar-label { position: absolute; bottom: -18px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.mini-bar-val { position: absolute; top: -16px; left: 0; right: 0; text-align: center; font-size: 10px; font-weight: 600; }
+
+/* Collapsible sections */
+.card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
+.card-preview.expanded { max-height: none; }
+.card-preview:not(.expanded)::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, var(--card)); pointer-events: none; }
+.show-more { display: block; width: 100%; padding: 8px; background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; margin-top: 8px; transition: all 0.15s; }
+.show-more:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Doc link */
+.doc-btn { display: inline-block; margin-top: 12px; padding: 9px 22px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; transition: opacity .15s; }
+.doc-btn:hover { opacity: .88; }
+
+/* Footer */
+.footer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav">
+  <a href="../">&#8592; Archive</a>
+  <a href="../internal/dashboard.html">Dashboard</a>
+</div>
+
+<div class="hero">
+  <span class="badge">GLOBAL</span>
+  <h1>GTM Regulatory Outlook — Global — Q2 FY2026 (May – July 2026)</h1>
+  <p class="sub">FY2026-Q2 (May – July 2026) &middot; Generated 2026-06-06</p>
+</div>
+
+<div class="explainer">
+  Reviews what changed last quarter and previews the regulatory landscape for the current quarter. Sourced from the Policy Event Tracker, competitive intelligence, regional news, and monitor workflows.
+</div>
+
+<div class="stats">
+  <div class="stat" title="Active regulatory events tracked in the Policy Event Tracker for this region"><div class="stat-val">4</div><div class="stat-lbl">Events</div></div>
+  <div class="stat" title="Key regulators with active developments this quarter"><div class="stat-val">0</div><div class="stat-lbl">Regulators</div></div>
+  <div class="stat" title="Geographic sub-regions covered in this edition"><div class="stat-val">0</div><div class="stat-lbl">Sub-Regions</div></div>
+  <div class="stat" title="Open consultations and comment periods with upcoming deadlines"><div class="stat-val">3</div><div class="stat-lbl">Consultations</div></div>
+</div>
+
+
+
+
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">The big picture — where things stand right now</p></div><div class="card-body content"><p>International standard-setters are synchronizing Q3-Q4 2026 guidance releases across AML/CFT for DeFi (FATF), stablecoin oversight (FSB), and market conduct frameworks (IOSCO)—creating a 90-day window where multinational exchanges, banks, and regulators need compliance infrastructure before hard national implementation deadlines hit in 2027. This is the last quarter to position regulatory intelligence and baseline compliance tooling before budget freezes.</p></div></div>
+<div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved, resolved, or escalated last quarter</p></div><div class="card-body content"><ul>
+<li><strong>FATF DeFi Guidance</strong> ⚡ Accelerated to Q4 2026—first binding international framework for applying Travel Rule and AML/CFT to decentralized protocols, protocol developers, and DeFi frontend operators.</li>
+<li><strong>FSB Stablecoin Update</strong> 🆕 Q3 2026 revision expanding global stablecoin arrangement (GSA) recommendations to include reserve transparency, redemption standards, and cross-border payment interoperability—major issuers and payment processors affected.</li>
+<li><strong>IOSCO Crypto Framework Review</strong> 🔍 Thematic implementation review launched examining how 130+ securities regulators apply IOSCO's 2023 crypto policy recommendations—regulatory arbitrage opportunities closing as jurisdictions align on licensing, custody, and market manipulation standards.</li>
+<li><strong>Competitor AI Narrative</strong> 🤖 TRM Labs and Elliptic now both positioning AI-powered investigation tools (Co-Case Agent, AI Copilot) as core differentiators—Chainalysis response required to defend investigation workflow dominance.</li>
+</ul></div></div>
+
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">1. FATF DeFi Guidance Triggers Enterprise Protocol Compliance Architecture</h2></div><div class="card-body content"><div class="card-preview"><p><strong>What happened:</strong> FATF developing Q4 2026 updated guidance clarifying how Travel Rule, CDD, and AML/CFT obligations apply to DeFi protocols, governance token holders, frontend operators, and liquidity providers.</p>
+<p><strong>Who's affected:</strong> DeFi protocols with legal entities, custodial wallet providers interfacing with DeFi, banks offering DeFi exposure products, exchanges listing DeFi tokens, and regulators building DeFi supervision frameworks.</p>
+<p><strong>Compliance implication:</strong> Protocols must implement counterparty screening and transaction monitoring by Q1 2027 when national regulators transpose FATF guidance into enforceable rules—compliance infrastructure spend $200K-$1.5M per protocol.</p>
+<p><strong>Chainalysis product:</strong> <strong>KYT</strong> for real-time DeFi transaction monitoring integrated via API; <strong>Reactor</strong> for entity attribution and cross-protocol fund tracing; <strong>Data Solutions</strong> for regulatory intelligence on FATF member implementation timelines.</p>
+<p><strong>vs. competitors:</strong> Chainalysis covers 1,500+ DeFi protocols with attribution vs. TRM's ~800 and Elliptic's limited DeFi entity graph—critical for compliance teams needing comprehensive protocol coverage before guidance finalizes.</p>
+<p><strong>Deal angle:</strong> "When FATF's DeFi guidance drops in Q4, how will you demonstrate to regulators that you're monitoring counterparty risk across every DeFi protocol your users interact with?"</p>
+<p><strong>Talking point:</strong> "FATF's Q4 DeFi guidance will make transaction monitoring and entity attribution mandatory for any business touching decentralized protocols—Chainalysis covers 1,500+ protocols with real-time compliance intelligence today."</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">2. FSB Stablecoin Framework Expansion Forces Reserve Transparency Infrastructure</h2></div><div class="card-body content"><div class="card-preview"><p><strong>What happened:</strong> FSB releasing Q3 2026 updated recommendations for global stablecoin arrangements, expanding regulatory expectations around reserve composition disclosure, real-time redemption capabilities, and cross-border payment oversight.</p>
+<p><strong>Compliance implication:</strong> Major stablecoin issuers and payment processors must build reserve monitoring and transaction surveillance infrastructure by Q4 2026 to align with FSB expectations ahead of G20 endorsement—$500K-$2M compliance infrastructure investment per issuer.</p>
+<p><strong>Who's affected:</strong> USDT/USDC/FDUSD issuers, stablecoin-dependent exchanges, payment processors using stablecoins for cross-border settlement, banks piloting stablecoin custody, and central banks evaluating wholesale CBDC interoperability with private stablecoins.</p>
+<p><strong>Chainalysis product:</strong> <strong>KYT</strong> for stablecoin transaction flow monitoring and sanctions screening; <strong>OSINT</strong> for tracking reserve asset holdings and off-chain issuer risk; <strong>Hexagate</strong> for preventing unauthorized stablecoin redemptions or minting exploits.</p>
+<p><strong>vs. competitors:</strong> Chainalysis Hexagate is the only platform offering smart contract security monitoring for stablecoin minting/burning controls—TRM and Elliptic lack pre-deployment and runtime security layers critical for issuers meeting FSB operational resilience standards.</p>
+<p><strong>Deal angle:</strong> "How are you proving to regulators that your stablecoin reserves, issuance controls, and transaction flows meet FSB transparency and security standards before Q4 recommendations finalize?"</p>
+<p><strong>Talking point:</strong> "FSB's Q3 stablecoin update requires issuers to demonstrate reserve transparency and operational security—Hexagate is the only solution monitoring smart contract-level minting and redemption controls in real time."</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">3. IOSCO Implementation Review Closes Regulatory Arbitrage Windows</h2></div><div class="card-body content"><div class="card-preview"><p><strong>What happened:</strong> IOSCO conducting global thematic review through December 2026 on how securities regulators implement its 2023 crypto-asset framework, focusing on VASP licensing, custody standards, and market manipulation prevention—harmonization pressure building across 130+ jurisdictions.</p>
+<p><strong>Who's affected:</strong> Multinational crypto exchanges operating across IOSCO member jurisdictions, asset managers launching crypto products in multiple markets, banks providing cross-border crypto custody, and regulators conducting mutual recognition negotiations.</p>
+<p><strong>Compliance implication:</strong> Exchanges and asset managers must align compliance infrastructure with highest-common-denominator IOSCO standards by H1 2027 as regulatory arbitrage opportunities close—$300K-$1M per jurisdiction for compliance harmonization.</p>
+<p><strong>Chainalysis product:</strong> <strong>Data Solutions</strong> for tracking IOSCO member implementation variations and regulatory convergence; <strong>Alterya</strong> for institutional-grade wallet security meeting IOSCO custody recommendations; <strong>Reactor</strong> for market manipulation detection across cross-listed assets.</p>
+<p><strong>vs. competitors:</strong> Chainalysis Data Solutions provides jurisdiction-by-jurisdiction regulatory intelligence on IOSCO framework implementation—TRM and Elliptic offer generic policy commentary without actionable compliance timelines for multinational operators.</p>
+<p><strong>Deal angle:</strong> "As IOSCO members harmonize crypto frameworks through 2027, which jurisdictions' custody and AML standards will dictate your global compliance baseline?"</p>
+<p><strong>Talking point:</strong> "IOSCO's thematic review is closing regulatory arbitrage windows—Chainalysis Data Solutions maps exactly how 130+ jurisdictions are implementing crypto frameworks so you build compliance infrastructure once, not 130 times."</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><div class="card-preview"><ul>
+<li><strong>Global — Multinational Exchanges</strong> — IOSCO harmonization forcing single compliance baseline across all operating jurisdictions → KYT + Data Solutions + Alterya</li>
+<li><strong>Global — Stablecoin Issuers</strong> — FSB Q3 recommendations requiring reserve transparency and transaction surveillance infrastructure → KYT + OSINT + Hexagate</li>
+<li><strong>Global — DeFi Protocols</strong> — FATF Q4 guidance triggering Travel Rule and entity screening requirements for protocol operators → Reactor + KYT</li>
+<li><strong>Global — Securities Regulators</strong> — IOSCO review creating demand for market surveillance and entity attribution tools for crypto oversight → Reactor + Data Solutions</li>
+<li><strong>Global — Banks/Payment Processors</strong> — FSB stablecoin standards driving institutional custody and payment monitoring infrastructure → Alterya + KYT + Hexagate</li>
+</ul></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs launched "Co-Case Agent" AI assistant (March 2026) and Elliptic continues promoting "AI Copilot"—both positioning AI-powered investigation as core differentiation. Chainalysis response: <strong>Chainalysis Agents</strong> launched with AI-powered investigation and compliance automation built on our 10+ year entity attribution graph (13B+ attributed addresses vs. competitors' fragmented datasets)—our agents deliver accurate results because they're trained on the industry's deepest blockchain intelligence foundation, not generic LLMs. Neither TRM nor Elliptic can match our attribution depth, government adoption scale, or integrated product breadth from investigation (Reactor) through smart contract security (Hexagate).</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><div class="card-preview"><p><strong>June-July 2026</strong> — Global: FSB circulating draft stablecoin recommendations to G20 members — <strong>Action:</strong> Engage stablecoin issuers and payment processors on reserve transparency tooling (KYT + OSINT)</p>
+<p><strong>July 2026</strong> — Global: IOSCO publishing interim findings from crypto framework implementation review — <strong>Action:</strong> Position Data Solutions to multinational exchanges needing jurisdiction-by-jurisdiction compliance mapping</p>
+<p><strong>August 2026</strong> — Global: FSB finalizing Q3 stablecoin framework update for September release — <strong>Action:</strong> Accelerate Hexagate conversations with issuers on smart contract security ahead of operational resilience requirements</p>
+<p><strong>September 2026</strong> — Global: FSB releasing updated global stablecoin recommendations at G20 Finance Ministers meeting — <strong>Action:</strong> Launch post-release advisory engagements with banks and payment processors on implementation roadmaps</p>
+<p><strong>September-October 2026</strong> — Global: FATF member jurisdictions beginning national consultations on DeFi guidance implementation — <strong>Action:</strong> Position KYT and Reactor to DeFi protocols and exchanges anticipating Q1 2027 Travel Rule enforcement</p>
+<p><strong>Q4 2026 (Oct-Dec)</strong> — Global: FATF publishing updated DeFi AML/CFT guidance with protocol operator obligations — <strong>Action:</strong> Execute enterprise deals with protocols needing baseline compliance infrastructure before 2027 enforcement</p>
+<p><strong>December 2026</strong> — Global: IOSCO completing thematic review with member jurisdiction compliance scorecards — <strong>Action:</strong> Use IOSCO findings to drive Q1 2027 pipeline with exchanges facing harmonization pressure</p>
+<p><strong>Q1 2027</strong> — Global: National regulators transposing FATF DeFi guidance into enforceable rules — <strong>Action:</strong> Prioritize deals with entities lacking DeFi monitoring capabilities as enforcement deadlines activate</p></div><button class="show-more">Show more ▼</button></div></div>
+
+
+<a class='doc-btn' href='https://docs.google.com/document/d/1X4Bi-2nZ-ATdhuqMRWwkBERmvEyRzINH4hmhrTEMTIg/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+
+<script>
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('show-more')) {
+    var preview = e.target.previousElementSibling;
+    if (preview && preview.classList.contains('card-preview')) {
+      preview.classList.toggle('expanded');
+      e.target.textContent = preview.classList.contains('expanded') ? 'Show less ▲' : 'Show more ▼';
+    }
+  }
+});
+</script>
+
+<div class="footer">Chainalysis GTM Regulatory Outlook &middot; FY2026-Q2 &middot; 4 events analysed</div>
+
+</div>
+</body>
+</html>
