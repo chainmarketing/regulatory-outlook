@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Asia-Pacific is executing the world's most diverse regulatory buildout\u20149 jurisdictions across four sub-regions are simultaneously finalizing VASP licensing frameworks, institutional custody standards, and AML enforcement regimes through Q3 2026. Australia's AUSTRAC shifts from implementation to active Travel Rule enforcement while Hong Kong, South Korea, and Thailand expand institutional access. Southeast Asian regulators are racing to implement custody standards and VASP registration before Q3 ",
+  "summary": "Nine Asia-Pacific jurisdictions are simultaneously executing VASP licensing, institutional custody standards, and AML enforcement through September 2026. Australia's AUSTRAC switches from implementation to active Travel Rule enforcement while its Treasury consults on stablecoin payment licensing\u2014the first major market to regulate crypto payment gateways under reformed PSP frameworks. Southeast Asian regulators face Q3 custody and registration deadlines creating immediate compliance infrastructur",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1mMr_qGT4xEzRtn7ai9qeYNErq8eQjtPLFLV4sVKXMl4/edit?usp=drivesdk",
-  "doc_id": "1mMr_qGT4xEzRtn7ai9qeYNErq8eQjtPLFLV4sVKXMl4",
+  "doc_url": "https://docs.google.com/document/d/1G-ryfsmmiKvPayGkh-OpAhiMV1TrtVO_yCjQ-v1nXBo/edit?usp=drivesdk",
+  "doc_id": "1G-ryfsmmiKvPayGkh-OpAhiMV1TrtVO_yCjQ-v1nXBo",
   "edition_url": "editions/FY2026-Q2-APAC.html",
   "data_url": "editions/FY2026-Q2-APAC.json",
   "regulators": [
@@ -93,5 +93,5 @@
   ],
   "news_sources": 17,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T07:08:39.943983+00:00"
+  "generated_at": "2026-06-06T13:35:07.513488+00:00"
 }
