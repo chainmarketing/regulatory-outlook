@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Twenty-four regulatory events across the Americas are converging on a single theme: operational compliance infrastructure deployment. The United States is simultaneously finalizing federal stablecoin AML frameworks under the GENIUS Act, reforming Bank Secrecy Act programs at financial institutions, and watching states race to establish crypto licensing regimes\u2014creating immediate demand for transaction monitoring, sanctions screening, and regulatory reporting solutions. Canada and Latin America f",
+  "summary": "The United States dominates Americas regulatory activity with 16 simultaneous federal and state-level actions converging on stablecoin licensing, AML/CFT modernization, and DeFi enforcement through September 2026. FinCEN's Bank Secrecy Act reform closes for public comment June 9\u2014the most fundamental restructuring of financial institution AML programs in two decades. Canada, Argentina, Chile, Colombia, and Cayman Islands are finalizing VASP registration regimes in Q3/Q4, creating concentrated com",
   "events_analysed": 28,
   "countries_covered": 9,
-  "doc_url": "https://docs.google.com/document/d/1OeaJhzj6qHKsnRcIakcKF-L8ITE1HUBax64Kc0zl-Jk/edit?usp=drivesdk",
-  "doc_id": "1OeaJhzj6qHKsnRcIakcKF-L8ITE1HUBax64Kc0zl-Jk",
+  "doc_url": "https://docs.google.com/document/d/1T_LtgfP1ASbezQ8oocW6XiExDykMCMPAdOTjIZOihzM/edit?usp=drivesdk",
+  "doc_id": "1T_LtgfP1ASbezQ8oocW6XiExDykMCMPAdOTjIZOihzM",
   "edition_url": "editions/FY2026-Q2-AMER.html",
   "data_url": "editions/FY2026-Q2-AMER.json",
   "regulators": [
@@ -74,5 +74,5 @@
   ],
   "news_sources": 12,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T13:41:49.617170+00:00"
+  "generated_at": "2026-06-06T14:02:23.589760+00:00"
 }
