@@ -28,12 +28,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 /* Hero */
 .hero { text-align: center; margin-bottom: 28px; }
 .hero .badge { display: inline-block; padding: 3px 14px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: var(--accent); color: #fff; margin-bottom: 10px; text-transform: uppercase; }
-.hero h1 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+.hero h1 { font-size: 28px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+.hero h1::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 10px auto 0; border-radius: 2px; }
 .hero .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
 /* Stat strip */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
-.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); }
+.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); cursor: help; position: relative; }
 .stat:last-child { border-right: none; }
 .stat-val { font-size: 22px; font-weight: 700; line-height: 1; }
 .stat-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
@@ -164,89 +165,90 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 </div>
 
 <div class="stats">
-  <div class="stat"><div class="stat-val">13</div><div class="stat-lbl">Events</div></div>
-  <div class="stat"><div class="stat-val">12</div><div class="stat-lbl">Regulators</div></div>
-  <div class="stat"><div class="stat-val">4</div><div class="stat-lbl">Sub-Regions</div></div>
-  <div class="stat"><div class="stat-val">9</div><div class="stat-lbl">Consultations</div></div>
+  <div class="stat" title="Active regulatory events tracked in the Policy Event Tracker for this region"><div class="stat-val">13</div><div class="stat-lbl">Events</div></div>
+  <div class="stat" title="Key regulators with active developments this quarter"><div class="stat-val">12</div><div class="stat-lbl">Regulators</div></div>
+  <div class="stat" title="Geographic sub-regions covered in this edition"><div class="stat-val">4</div><div class="stat-lbl">Sub-Regions</div></div>
+  <div class="stat" title="Open consultations and comment periods with upcoming deadlines"><div class="stat-val">15</div><div class="stat-lbl">Consultations</div></div>
 </div>
 
 
 <div class="card"><div class="card-body" style="padding-bottom:30px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Events by sub-region</div><div class="mini-chart"><div class="mini-bar" style="height:26px;background:#6366f1"><span class="mini-bar-val">2</span><span class="mini-bar-label">Northeast …</span></div><div class="mini-bar" style="height:40px;background:#14b8a6"><span class="mini-bar-val">3</span><span class="mini-bar-label">Southeast …</span></div><div class="mini-bar" style="height:13px;background:#f59e0b"><span class="mini-bar-val">1</span><span class="mini-bar-label">South Asia</span></div><div class="mini-bar" style="height:40px;background:#ec4899"><span class="mini-bar-val">3</span><span class="mini-bar-label">Oceania</span></div></div></div></div>
 
-<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: Travel Rule enforcement pivots to Australia, institutional custody frameworks activate across 6 markets, VASP licensing windows close.</strong></p></div>
-<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">The big picture — where things stand right now</p></div><div class="card-body content"><p>Asia-Pacific is executing the world's most diverse regulatory buildout—9 jurisdictions across four sub-regions are simultaneously finalizing VASP licensing frameworks, institutional custody standards, and AML enforcement regimes through Q3 2026. Australia's AUSTRAC shifts from implementation to active Travel Rule enforcement while Hong Kong, South Korea, and Thailand expand institutional access. Southeast Asian regulators are racing to implement custody standards and VASP registration before Q3 deadlines, creating urgent compliance infrastructure demand worth hundreds of millions across exchanges, banks, and emerging institutional crypto service providers.</p></div></div>
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: Travel Rule enforcement goes live, six custody frameworks activate, VASP registration windows close.</strong></p></div>
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">The big picture — where things stand right now</p></div><div class="card-body content"><p>Nine Asia-Pacific jurisdictions are simultaneously executing VASP licensing, institutional custody standards, and AML enforcement through September 2026. Australia's AUSTRAC switches from implementation to active Travel Rule enforcement while its Treasury consults on stablecoin payment licensing—the first major market to regulate crypto payment gateways under reformed PSP frameworks. Southeast Asian regulators face Q3 custody and registration deadlines creating immediate compliance infrastructure demand across exchanges, banks, and institutional crypto service providers worth hundreds of millions in aggregate spend.</p></div></div>
 <div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved, resolved, or escalated last quarter</p></div><div class="card-body content"><ul>
-<li><span class="country-name">Australia</span> ⚡ AUSTRAC transitioned from Travel Rule implementation to active enforcement phase Q2; Treasury consultation on stablecoin payment licensing opened H1, positioning Australia as first major market to regulate crypto payment gateways under reformed PSP framework.</li>
+<li><span class="country-name">Australia</span> ⚡ AUSTRAC moved from Travel Rule implementation phase to active enforcement Q2 2026; Treasury opened Tranche 1 consultation on stablecoin and crypto-payment gateway licensing under reformed payments framework—first major market to license crypto as PSPs.</li>
 </ul>
 <ul>
-<li><span class="country-name">Hong Kong</span> 🔄 SFC continuing crypto ETF approvals with retail access expanding beyond initial April 2024 launches—institutional product diversification creating new market surveillance and custody compliance demand.</li>
+<li><span class="country-name">South Korea & Thailand</span> 🆕 FSC developing H2 2026 institutional custody framework allowing traditional banks to provide crypto custody to institutional clients; Thai SEC expanding Q3 licensing for brokers/dealers with enhanced AML requirements.</li>
 </ul>
 <ul>
-<li><span class="country-name">South Korea & Thailand</span> 🆕 FSC developing institutional custody framework for traditional FIs (Q4 launch); Thai SEC expanding licensing categories for brokers and dealers with enhanced AML requirements (Q3 implementation).</li>
+<li><span class="country-name">Philippines & Indonesia</span> ⚡ BSP enforcing rolling VASP registration deadlines under Circular 1108 through H2; OJK implementing Q3 custody standards post-regulatory transfer from Bappebti—both creating urgent exchange compliance pressure.</li>
 </ul>
 <ul>
-<li><span class="country-name">Philippines, Indonesia</span> ⚡ BSP enforcing ongoing VASP registration deadlines under Circular 1108; OJK implementing custody standards post-regulatory transfer from Bappebti—both creating immediate exchange compliance pressure.</li>
+<li><span class="country-name">Hong Kong</span> 🔄 SFC continuing crypto ETF approvals with retail access expanding beyond April 2024 launches—institutional product diversification driving market surveillance and custody compliance demand.</li>
 </ul>
 <ul>
-<li><span class="country-name">India</span> 🏛️ SEBI clarifying crypto securities jurisdiction vs. RBI in H2—regulatory boundary definition will determine which platforms require securities licensing vs. payment/commodity oversight.</li>
+<li><span class="country-name">India</span> 🏛️ SEBI clarifying H2 2026 which crypto assets constitute securities under SEBI jurisdiction vs. RBI—regulatory boundary definition determines securities licensing vs. payment/commodity oversight requirements.</li>
 </ul></div></div>
 <div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><div class="card-preview"><table><thead>
 <tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
 </thead><tbody>
 <tr><td>🇦🇺 Australia</td><td>AUSTRAC</td><td>🔍 Travel Rule active enforcement launch</td><td>KYT counterparty verification; Reactor originator tracing</td></tr>
-<tr><td>🇦🇺 Australia</td><td>Treasury/ASIC</td><td>📋 Stablecoin PSP licensing consultation response</td><td>KYT payment flow monitoring; Data Solutions issuer intelligence</td></tr>
-<tr><td>🇭🇰 Hong Kong</td><td>SFC</td><td>🔐 Crypto ETF retail expansion oversight</td><td>KYT institutional surveillance; Reactor custody audit trails</td></tr>
-<tr><td>🇰🇷 South Korea</td><td>FSC</td><td>⚖️ Q4 institutional custody framework finalization</td><td>Alterya custody security; KYT bank-grade compliance</td></tr>
-<tr><td>🇵🇭 Philippines</td><td>BSP</td><td>🔍 Circular 1108 VASP registration enforcement</td><td>KYT VASP baseline compliance; Reactor entity verification</td></tr>
-<tr><td>🇮🇩 Indonesia</td><td>OJK</td><td>🔐 Q3 custody standards implementation deadline</td><td>Alterya exchange custody; KYT OJK reporting readiness</td></tr>
-<tr><td>🇹🇭 Thailand</td><td>Thai SEC</td><td>⚖️ Q3 licensing expansion and AML requirements</td><td>KYT broker/dealer compliance; Reactor travel rule readiness</td></tr>
-<tr><td>🇮🇳 India</td><td>SEBI/FIU-IND</td><td>🏛️ H2 securities jurisdiction clarification</td><td>Data Solutions regulatory intelligence; KYT classification prep</td></tr>
-<tr><td>🇳🇿 New Zealand</td><td>FMA</td><td>🏛️ H1 2027 FMC Act CASP regime launch</td><td>KYT licensing preparation; Reactor entity mapping</td></tr>
+<tr><td>🇦🇺 Australia</td><td>Treasury/ASIC</td><td>📋 Stablecoin PSP licensing consultation</td><td>KYT payment flow monitoring; Data Solutions</td></tr>
+<tr><td>🇭🇰 Hong Kong</td><td>SFC</td><td>🔐 Crypto ETF retail expansion oversight</td><td>KYT institutional surveillance; Reactor custody trails</td></tr>
+<tr><td>🇰🇷 South Korea</td><td>FSC</td><td>🔐 Q4 institutional custody framework finalization</td><td>Alterya custody security; KYT bank-grade compliance</td></tr>
+<tr><td>🇵🇭 Philippines</td><td>BSP</td><td>🔍 Circular 1108 VASP registration enforcement</td><td>KYT VASP baseline compliance; Reactor verification</td></tr>
+<tr><td>🇮🇩 Indonesia</td><td>OJK</td><td>🔐 Q3 custody standards implementation deadline</td><td>Alterya exchange custody; KYT reporting readiness</td></tr>
+<tr><td>🇹🇭 Thailand</td><td>Thai SEC</td><td>⚖️ Q3 licensing expansion and AML</td><td>KYT broker/dealer compliance; Reactor travel rule</td></tr>
+<tr><td>🇮🇳 India</td><td>SEBI/FIU-IND</td><td>🏛️ H2 securities jurisdiction clarification</td><td>Data Solutions regulatory intel; KYT classification</td></tr>
+<tr><td>🇳🇿 New Zealand</td><td>FMA</td><td>🏛️ H1 2027 FMC Act CASP regime</td><td>KYT licensing preparation; OSINT entity mapping</td></tr>
 </tbody></table></div><button class="show-more">Show more ▼</button></div></div>
 
 <div class="card" style="border-left:3px solid #6366f1"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Northeast Asia (2 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇭🇰 <span class="country-header">Hong Kong</span> — HKMA / SFC</h4>
-<p><strong>What's happening:</strong> SFC approving additional crypto ETFs following initial 2024 launches, with retail investor access expanding beyond institutional-only products.</p>
-<p><strong>Deal play:</strong> Asset managers and custodians need KYT for ETF constituent monitoring and Reactor for custody audit trails—ask: "How are you demonstrating real-time AML surveillance on underlying crypto assets to SFC?"</p>
+<p><strong>What's happening:</strong> SFC approving additional crypto ETFs following initial 2024 launches with retail investor access expanding beyond institutional-only products through Q3.</p>
+<p><strong>Deal play:</strong> Asset managers and custodians need KYT for ETF constituent monitoring and Reactor for custody audit trails—ask: "How are you demonstrating real-time AML surveillance on underlying crypto assets to SFC for retail product approval?"</p>
 <h4>🇰🇷 <span class="country-header">South Korea</span> — FSC / KoFIU</h4>
-<p><strong>What's happening:</strong> FSC developing framework for traditional banks and securities firms to provide institutional crypto custody services, targeting Q4 2026 implementation.</p>
-<p><strong>Deal play:</strong> Banks entering crypto custody need Alterya for institutional-grade wallet security and KYT for bank-level transaction monitoring—ask: "What's your roadmap for FSC institutional custody authorization and how are you proving AML controls exceed retail VASP standards?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>What's happening:</strong> FSC developing framework through Q4 2026 enabling traditional financial institutions to provide crypto custody services to institutional clients.</p>
+<p><strong>Deal play:</strong> Banks entering crypto custody need Alterya for wallet security and KYT for institutional-grade transaction monitoring—ask: "What's your compliance architecture for FSC institutional custody licensing when the framework drops Q4?"</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card" style="border-left:3px solid #14b8a6"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Southeast Asia (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇮🇩 <span class="country-header">Indonesia</span> — OJK / Bappebti</h4>
-<p><strong>What's happening:</strong> Financial Services Authority implementing custody standards for crypto exchanges following regulatory supervision transfer from Bappebti, with Q3 2026 compliance deadlines.</p>
-<p><strong>Deal play:</strong> Indonesian exchanges face immediate custody infrastructure upgrades—Alterya addresses OJK custody security requirements while KYT provides supervisory reporting—ask: "How are you demonstrating custodial wallet security and transaction monitoring under OJK supervision vs. the previous Bappebti commodity framework?"</p>
+<p><strong>What's happening:</strong> OJK implementing Q3 2026 custody standards for crypto exchanges following regulatory supervision transfer from Bappebti.</p>
+<p><strong>Deal play:</strong> Exchanges must meet OJK custody standards by Q3—Alterya provides custody security infrastructure and KYT delivers required transaction monitoring—ask: "Do you have OJK-compliant custody infrastructure ready for Q3 or are you risking license suspension?"</p>
 <h4>🇵🇭 <span class="country-header">Philippines</span> — BSP</h4>
-<p><strong>What's happening:</strong> Bangko Sentral enforcing comprehensive VASP registration and AML supervision under Circular 1108 with ongoing H2 2026 compliance milestones.</p>
-<p><strong>Deal play:</strong> Unregistered VASPs face enforcement—KYT addresses BSP baseline AML requirements and Reactor provides investigation support for suspicious activity reporting—ask: "What's your Circular 1108 registration status and how are you meeting BSP's enhanced transaction monitoring standards?"</p>
+<p><strong>What's happening:</strong> BSP implementing comprehensive VASP registration and AML supervision following Circular 1108 with ongoing compliance deadlines through H2 2026.</p>
+<p><strong>Deal play:</strong> VASPs face rolling registration deadlines requiring full AML compliance infrastructure—KYT for baseline transaction monitoring, Reactor for entity verification, OSINT for beneficial ownership due diligence—ask: "Which Circular 1108 deadline applies to you and what BSP-compliant monitoring infrastructure is deployed today?"</p>
 <h4>🇹🇭 <span class="country-header">Thailand</span> — Thai SEC / AMLO</h4>
-<p><strong>What's happening:</strong> Thai SEC expanding licensing framework to cover crypto brokers and dealers beyond existing exchange licenses, with enhanced AML requirements and Q3 2026 implementation.</p>
-<p><strong>Deal play:</strong> Brokers and dealers entering licensing need KYT for customer due diligence and travel rule compliance—ask: "Are you applying for expanded licensing categories and how are you implementing Thai SEC's enhanced AML requirements including travel rule verification?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<p><strong>What's happening:</strong> Thai SEC expanding Q3 2026 licensing categories for crypto exchanges, brokers, and dealers with enhanced AML requirements.</p>
+<p><strong>Deal play:</strong> New broker/dealer licenses require enhanced AML beyond basic exchange requirements—KYT for broker-grade surveillance, Reactor for travel rule readiness—ask: "Are you pursuing expanded licensing categories and do you have Thai SEC-compliant AML infrastructure that covers broker/dealer obligations?"</p></div><button class="show-more">Show more ▼</button></div></div>
 <div class="card" style="border-left:3px solid #f59e0b"><div class="card-head"><h2 style="font-size:18px;font-weight:700">South Asia (1 event)</h2></div><div class="card-body content"><h4>🇮🇳 <span class="country-header">India</span> — SEBI / FIU-IND</h4>
-<p><strong>What's happening:</strong> Securities and Exchange Board of India clarifying which crypto assets constitute securities (SEBI jurisdiction) versus commodities or payment instruments (RBI jurisdiction) through H2 2026.</p>
-<p><strong>Deal play:</strong> Platforms await jurisdictional clarity to determine licensing pathway—Data Solutions provides regulatory intelligence while KYT prepares for either securities or VDA compliance frameworks—ask: "How are you preparing compliance infrastructure for potential SEBI securities classification versus RBI payment oversight?"</p></div></div>
+<p><strong>What's happening:</strong> SEBI clarifying H2 2026 which crypto assets constitute securities falling under SEBI jurisdiction versus RBI payment/commodity oversight.</p>
+<p><strong>Deal play:</strong> Platforms must prepare for bifurcated compliance depending on asset classification—Data Solutions provides regulatory intelligence on classification decisions, KYT enables segmented monitoring by asset type—ask: "How are you preparing compliance infrastructure for assets that may shift to SEBI securities jurisdiction mid-operation?"</p></div></div>
 <div class="card" style="border-left:3px solid #ec4899"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Oceania (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇦🇺 <span class="country-header">Australia</span> — AUSTRAC / ASIC</h4>
-<p><strong>What's happening:</strong> Two things moving: AUSTRAC shifting from Travel Rule implementation to active enforcement targeting Australian crypto businesses; Treasury consulting on stablecoin and crypto payment gateway licensing under reformed payments framework. Biggest is enforcement—AUSTRAC has published compliance expectations and is conducting audits.</p>
-<p><strong>Deal play:</strong> Australian exchanges and payment providers face immediate Travel Rule enforcement and upcoming PSP licensing—KYT addresses counterparty verification and Reactor enables originator/beneficiary tracing for AUSTRAC reporting—ask: "What's your Travel Rule compliance audit status and are you preparing for stablecoin PSP licensing under Treasury's Tranche 1 framework?"</p>
+<p><strong>What's happening:</strong> Two things moving: AUSTRAC transitioned Q2 2026 from Travel Rule implementation to active enforcement for Australian crypto businesses; Treasury Tranche 1 consultation on stablecoin and crypto-payment gateway licensing as PSPs under reformed payments framework.</p>
+<p><strong>Deal play:</strong> Travel Rule enforcement is live now—KYT provides counterparty screening, Reactor delivers originator/beneficiary tracing—ask: "Do you have Travel Rule-compliant infrastructure deployed or are you operating in active AUSTRAC enforcement risk?" For payment providers: "Treasury consultation closes soon—are you positioned for PSP licensing requirements?"</p>
 <h4>🇳🇿 <span class="country-header">New Zealand</span> — FMA</h4>
-<p><strong>What's happening:</strong> Financial Markets Authority advancing FMC Act amendments creating new CASP licensing regime with AML/CFT requirements, targeting H1 2027 implementation.</p>
-<p><strong>Deal play:</strong> New Zealand crypto platforms need licensing preparation infrastructure—KYT provides baseline AML compliance and Reactor supports entity verification ahead of 2027 regime launch—ask: "How are you preparing for FMC Act CASP licensing and what transaction monitoring infrastructure are you building for FMA compliance?"</p></div><button class="show-more">Show more ▼</button></div></div>
-<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs' Co-Case Agent AI launch (March 2026) and aggressive law enforcement positioning threatens our Asia-Pacific government relationships—their victim recovery narratives resonate with regulators facing consumer protection pressure. Elliptic maintains steady regulatory commentary but shows limited product innovation beyond existing AI Copilot. Critical gap: both competitors remain silent on smart contract security (Hexagate advantage) and institutional custody (Alterya advantage), but we must prevent them from defining "AI-powered blockchain intelligence" in APAC regulatory conversations where Chainalysis attribution depth and government adoption scale remain unmatched.</p></div></div>
-<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><span class="country-name">Australia</span> — Digital Currency Exchanges — AUSTRAC Travel Rule enforcement creating urgent counterparty verification demand → KYT + Reactor</p>
-<p><span class="country-name">Australia</span> — Stablecoin issuers and payment gateways — Treasury PSP licensing consultation response positioning for 2027 framework → KYT + OSINT</p>
-<p><span class="country-name">Hong Kong</span> — Asset managers and ETF custodians — SFC-approved crypto ETF expansion requiring institutional surveillance → KYT + Reactor</p>
-<p><span class="country-name">South Korea</span> — Traditional banks entering crypto custody — FSC institutional framework preparation for Q4 launch → Alterya + KYT</p>
-<p><span class="country-name">Indonesia</span> — Licensed crypto exchanges — OJK custody standards and supervisory reporting compliance → Alterya + KYT</p>
-<p><span class="country-name">Philippines</span> — VASPs under BSP Circular 1108 — Ongoing registration and AML supervision compliance → KYT + Reactor</p>
-<p><span class="country-name">Thailand</span> — Crypto brokers and dealers — Thai SEC licensing expansion and enhanced AML requirements → KYT + Data Solutions</p></div></div>
-<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><p><strong>July 1, 2026</strong> — 🇹🇭 Thailand: Thai SEC licensing expansion implementation begins — Engage brokers/dealers on licensing compliance infrastructure gaps.</p>
-<p><strong>August 15, 2026</strong> — 🇦🇺 Australia: Treasury stablecoin consultation comment period likely closes — Position Chainalysis for PSP licensing framework implementation phase.</p>
-<p><strong>September 1, 2026</strong> — 🇵🇭 Philippines: BSP Circular 1108 next registration compliance milestone — Audit unregistered VASP pipeline for urgent onboarding opportunities.</p>
-<p><strong>September 30, 2026</strong> — 🇮🇩 Indonesia: OJK custody standards compliance deadline (estimated) — Accelerate Indonesian exchange Alterya deployment conversations.</p>
-<p><strong>Q3 2026</strong> — 🇭🇰 Hong Kong: SFC additional crypto ETF approvals expected — Build asset manager and custodian institutional surveillance pipeline.</p>
-<p><strong>Q3 2026</strong> — 🇦🇺 Australia: AUSTRAC Travel Rule enforcement audits intensify — Prepare case studies demonstrating KYT counterparty verification for regulatory compliance.</p>
-<p><strong>Q4 2026</strong> — 🇰🇷 South Korea: FSC institutional custody framework launches — Engage major banks on Alterya institutional custody and KYT bank-grade monitoring.</p>
-<p><strong>H2 2026</strong> — 🇮🇳 India: SEBI crypto securities jurisdiction clarification — Monitor regulatory intelligence and prepare compliance positioning for either SEBI or RBI framework.</p></div></div>
+<p><strong>What's happening:</strong> FMA implementing FMC Act amendments for crypto establishing H1 2027 regime for crypto asset service providers with AML/CFT and licensing requirements.</p>
+<p><strong>Deal play:</strong> CASPs have until H1 2027 to prepare licensing applications—KYT for AML compliance infrastructure, OSINT for entity due diligence, Reactor for transaction monitoring—ask: "FMC Act CASP regime launches H1 2027—are you building licensing-ready compliance infrastructure now or scrambling in Q1 2027?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs launched their "Co-Case Agent" AI assistant March 2026 directly challenging Elliptic's AI Copilot positioning—both competitors now positioning AI as core differentiator requiring immediate Chainalysis response given our superior attribution depth and government adoption scale. TRM continues aggressive law enforcement engagement with victim recovery narratives while Elliptic maintains steady regulatory commentary but shows limited product innovation beyond existing AI tooling. Both competitors remain silent on smart contract security and fraud detection, confirming Hexagate and Alterya remain unique differentiators, but we must prevent competitors from defining "AI-powered blockchain intelligence" narrative without Chainalysis leading the conversation—the AI narrative window is closing.</p></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><div class="card-preview"><p><span class="country-name">Australia</span> — Digital currency exchanges and payment providers — AUSTRAC Travel Rule enforcement creating immediate counterparty verification demand → KYT + Reactor</p>
+<p><span class="country-name">Australia</span> — Stablecoin issuers and crypto payment gateways — Treasury PSP licensing consultation requires payment flow monitoring infrastructure → KYT + Data Solutions</p>
+<p><span class="country-name">Hong Kong</span> — Asset managers and crypto ETF custodians — SFC retail ETF expansion requires constituent monitoring and custody audit capabilities → KYT + Reactor</p>
+<p><span class="country-name">South Korea</span> — Traditional banks entering institutional custody — FSC Q4 framework launch requires institutional-grade custody security and transaction monitoring → Alterya + KYT</p>
+<p><span class="country-name">Indonesia</span> — Crypto exchanges under OJK supervision — Q3 custody standards deadline creating urgent compliance infrastructure requirement → Alterya + KYT</p>
+<p><span class="country-name">Philippines</span> — VASPs facing BSP registration deadlines — Circular 1108 ongoing enforcement requires full AML compliance stack → KYT + Reactor + OSINT</p>
+<p><span class="country-name">Thailand</span> — Crypto brokers and dealers — Thai SEC Q3 licensing expansion requires enhanced AML beyond basic exchange compliance → KYT + Reactor</p>
+<p><span class="country-name">India</span> — Multi-asset crypto platforms — SEBI H2 securities classification decision requires segmented compliance by asset type → Data Solutions + KYT</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><div class="card-preview"><p><strong>July 2026</strong> — 🇦🇺 Australia: Treasury stablecoin PSP licensing consultation closes — AEs should engage payment providers and stablecoin issuers preparing consultation responses now.</p>
+<p><strong>August 2026</strong> — 🇹🇭 Thailand: Thai SEC Q3 licensing expansion and enhanced AML requirements implementation window — AEs should pressure-test broker/dealer licensing candidates on AML infrastructure readiness.</p>
+<p><strong>September 2026</strong> — 🇮🇩 Indonesia: OJK Q3 custody standards implementation deadline for exchanges — AEs should audit exchange custody infrastructure compliance before deadline hits.</p>
+<p><strong>September 2026</strong> — 🇵🇭 Philippines: BSP ongoing VASP registration deadlines under Circular 1108 — AEs should map which VASPs face Q3 deadlines and lack compliant monitoring infrastructure.</p>
+<p><strong>September 2026</strong> — 🇦🇺 Australia: AUSTRAC active Travel Rule enforcement continues — AEs should identify exchanges and payment providers operating without compliant counterparty verification systems.</p>
+<p><strong>October 2026</strong> — 🇰🇷 South Korea: FSC institutional custody framework finalization expected Q4 — AEs should engage traditional banks preparing institutional custody applications for Q4 launch.</p>
+<p><strong>October-December 2026</strong> — 🇮🇳 India: SEBI securities jurisdiction clarification expected H2 — AEs should position regulatory intelligence and segmented monitoring capabilities with multi-asset platforms awaiting classification guidance.</p>
+<p><strong>Q1 2027</strong> — 🇳🇿 New Zealand: FMA FMC Act CASP regime preparation intensifies before H1 2027 launch — AEs should engage CASPs building licensing applications in final preparation window.</p></div><button class="show-more">Show more ▼</button></div></div>
 
 
-<a class='doc-btn' href='https://docs.google.com/document/d/1mMr_qGT4xEzRtn7ai9qeYNErq8eQjtPLFLV4sVKXMl4/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+<a class='doc-btn' href='https://docs.google.com/document/d/1G-ryfsmmiKvPayGkh-OpAhiMV1TrtVO_yCjQ-v1nXBo/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
 
 <script>
 document.addEventListener('click', function(e) {
