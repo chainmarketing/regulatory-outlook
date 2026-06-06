@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 2026",
-  "summary": "Twenty-one European Union members are simultaneously implementing MiCA Level 2 technical standards while AMLA becomes operational with direct supervision authority over highest-risk crypto firms. UK regulators are setting hard authorization deadlines as the FCA consultation on final conduct rules closes in June, and Middle East jurisdictions from UAE to Saudi Arabia are finalizing licensing frameworks. This represents the largest regulatory infrastructure buildout since 5AMLD\u2014and compliance wind",
+  "summary": "Twenty-one EU markets, the UK, and six Middle Eastern jurisdictions are simultaneously operationalizing comprehensive crypto regulatory frameworks\u2014MiCA Level 2 standards, AMLA's direct supervision authority, and national licensing transitions. The EU alone shows 211 authorized CASPs with 149 non-compliant entities facing enforcement, while France's July 1 PSAN transition deadline and UK's Q3 authorization cutoff create compressed compliance windows. This is the largest synchronized regulatory in",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/1LUB3TdVrXouttB0j4PL8AUULg1eKaT1XmrqvqpbwH-U/edit?usp=drivesdk",
-  "doc_id": "1LUB3TdVrXouttB0j4PL8AUULg1eKaT1XmrqvqpbwH-U",
+  "doc_url": "https://docs.google.com/document/d/1aRb7gNFVa9aWwIR35OQpuE2fqqd1xNw5VxY69xWbWoM/edit?usp=drivesdk",
+  "doc_id": "1aRb7gNFVa9aWwIR35OQpuE2fqqd1xNw5VxY69xWbWoM",
   "edition_url": "editions/2026-Q2-EMEA.html",
   "data_url": "editions/2026-Q2-EMEA.json",
   "regulators": [
@@ -105,5 +105,5 @@
     "Africa"
   ],
   "news_sources": 15,
-  "generated_at": "2026-06-06T06:21:34.131841+00:00"
+  "generated_at": "2026-06-06T06:27:41.378740+00:00"
 }
