@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTM Regulatory Outlook — Asia-Pacific — Q2 FY2026 (May – July 2026)</title>
+<style>
+:root {
+  --bg: #f8f9fa; --card: #ffffff; --text: #1a1a2e; --muted: #6b7280;
+  --border: #e5e7eb; --accent: #3b82f6; --accent-soft: #3b82f618;
+  --success: #16a34a; --warning: #d97706; --info: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af;
+    --border: #2e2e3a; --accent-soft: #3b82f625;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+
+/* Nav */
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 18px; border-bottom: 1px solid var(--border); margin-bottom: 28px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { text-align: center; margin-bottom: 28px; }
+.hero .badge { display: inline-block; padding: 3px 14px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: var(--accent); color: #fff; margin-bottom: 10px; text-transform: uppercase; }
+.hero h1 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+.hero .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* Stat strip */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: none; }
+.stat-val { font-size: 22px; font-weight: 700; line-height: 1; }
+.stat-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
+
+
+
+/* Explainer */
+.explainer { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; margin-bottom: 24px; padding: 0 20px; }
+
+/* Section descriptions */
+.section-desc { font-size: 12px; color: var(--muted); margin: 2px 0 0; font-style: italic; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.card-head { padding: 14px 18px 6px; display: flex; flex-direction: column; gap: 0; }
+.card-head h2 { font-size: 14px; font-weight: 600; }
+.card-head .count { font-size: 12px; color: var(--muted); }
+.card-body { padding: 16px 20px 20px; }
+
+/* Content typography */
+.content h1 { font-size: 20px; font-weight: 700; margin: 20px 0 8px; padding-top: 14px; border-top: 2px solid var(--border); }
+.content h1:first-child { border-top: none; padding-top: 0; }
+.content h2 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+.content h3 { font-size: 14px; font-weight: 600; margin: 14px 0 4px; }
+.content h4 { font-size: 13px; font-weight: 600; margin: 14px 0 6px; }
+.country-header { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.country-name { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.content p { margin: 8px 0 12px; font-size: 13.5px; line-height: 1.75; }
+.content ul, .content ol { margin: 6px 0 6px 18px; font-size: 13.5px; }
+.content li { margin: 6px 0 10px; line-height: 1.65; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.content li:last-child { border-bottom: none; }
+.content strong { font-weight: 600; }
+.content em { font-style: italic; color: var(--muted); }
+.content a { color: var(--accent); text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* Tables */
+.content table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 12px 0; }
+.content th { text-align: left; padding: 10px 12px; font-weight: 500; color: var(--muted); border-bottom: 2px solid var(--border); background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.content td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+
+/* TL;DR highlight */
+.tldr { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; text-align: center; }
+.tldr h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+.tldr p { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.tldr strong { font-weight: 700; }
+
+/* Exec summary accent */
+.exec-summary { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; }
+.exec-summary .card-head h2 { color: var(--accent); }
+.exec-summary .card-body p { font-size: 14.5px; line-height: 1.75; }
+
+/* Section tints */
+.card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #f0fdf4 100%); }
+.card-timeline { background: linear-gradient(135deg, var(--card) 0%, #eff6ff 100%); }
+.card-competitor { background: linear-gradient(135deg, var(--card) 0%, #fef3c7 100%); border-left: 3px solid #f59e0b; }
+@media (prefers-color-scheme: dark) {
+  .card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #0a1f0a 100%); }
+  .card-timeline { background: linear-gradient(135deg, var(--card) 0%, #0a1520 100%); }
+  .card-competitor { background: linear-gradient(135deg, var(--card) 0%, #1a1500 100%); }
+}
+
+/* Theme tags */
+.theme-tag { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.02em; }
+.theme-aml { background: #dbeafe; color: #1e40af; }
+.theme-stablecoin { background: #fef3c7; color: #92400e; }
+.theme-fraud { background: #fee2e2; color: #991b1b; }
+.theme-defi { background: #ede9fe; color: #5b21b6; }
+.theme-ai { background: #e0e7ff; color: #3730a3; }
+.theme-cyber { background: #d1fae5; color: #065f46; }
+.theme-general { background: #f3f4f6; color: #374151; }
+@media (prefers-color-scheme: dark) {
+  .theme-aml { background: #1e3a5f; color: #93c5fd; }
+  .theme-stablecoin { background: #451a03; color: #fde68a; }
+  .theme-fraud { background: #450a0a; color: #fca5a5; }
+  .theme-defi { background: #2e1065; color: #c4b5fd; }
+  .theme-ai { background: #1e1b4b; color: #a5b4fc; }
+  .theme-cyber { background: #022c22; color: #6ee7b7; }
+  .theme-general { background: #1f2937; color: #d1d5db; }
+}
+
+/* Response badge */
+.response-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; font-size: 11px; font-weight: 500; text-decoration: none; margin-top: 4px; }
+.response-badge:hover { background: #bfdbfe; }
+@media (prefers-color-scheme: dark) {
+  .response-badge { background: #1e3a5f; color: #93c5fd; }
+  .response-badge:hover { background: #1e4d8f; }
+}
+
+/* Mini chart */
+.mini-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin: 12px 0 4px; }
+.mini-bar { flex: 1; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; transition: height 0.3s; }
+.mini-bar-label { position: absolute; bottom: -18px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.mini-bar-val { position: absolute; top: -16px; left: 0; right: 0; text-align: center; font-size: 10px; font-weight: 600; }
+
+/* Collapsible sections */
+.card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
+.card-preview.expanded { max-height: none; }
+.card-preview:not(.expanded)::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, var(--card)); pointer-events: none; }
+.show-more { display: block; width: 100%; padding: 8px; background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; margin-top: 8px; transition: all 0.15s; }
+.show-more:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Doc link */
+.doc-btn { display: inline-block; margin-top: 12px; padding: 9px 22px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; transition: opacity .15s; }
+.doc-btn:hover { opacity: .88; }
+
+/* Footer */
+.footer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav">
+  <a href="../">&#8592; Archive</a>
+  <a href="../internal/dashboard.html">Dashboard</a>
+</div>
+
+<div class="hero">
+  <span class="badge">APAC</span>
+  <h1>GTM Regulatory Outlook — Asia-Pacific — Q2 FY2026 (May – July 2026)</h1>
+  <p class="sub">FY2026-Q2 (May – July 2026) &middot; Generated 2026-06-06</p>
+</div>
+
+<div class="explainer">
+  Reviews what changed last quarter and previews the regulatory landscape for the current quarter. Sourced from the Policy Event Tracker, competitive intelligence, regional news, and monitor workflows.
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val">13</div><div class="stat-lbl">Events</div></div>
+  <div class="stat"><div class="stat-val">12</div><div class="stat-lbl">Regulators</div></div>
+  <div class="stat"><div class="stat-val">4</div><div class="stat-lbl">Sub-Regions</div></div>
+  <div class="stat"><div class="stat-val">9</div><div class="stat-lbl">Consultations</div></div>
+</div>
+
+
+<div class="card"><div class="card-body" style="padding-bottom:30px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Events by sub-region</div><div class="mini-chart"><div class="mini-bar" style="height:26px;background:#6366f1"><span class="mini-bar-val">2</span><span class="mini-bar-label">Northeast …</span></div><div class="mini-bar" style="height:40px;background:#14b8a6"><span class="mini-bar-val">3</span><span class="mini-bar-label">Southeast …</span></div><div class="mini-bar" style="height:13px;background:#f59e0b"><span class="mini-bar-val">1</span><span class="mini-bar-label">South Asia</span></div><div class="mini-bar" style="height:40px;background:#ec4899"><span class="mini-bar-val">3</span><span class="mini-bar-label">Oceania</span></div></div></div></div>
+
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: Travel Rule enforcement pivots to Australia, institutional custody frameworks activate across 6 markets, VASP licensing windows close.</strong></p></div>
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">The big picture — where things stand right now</p></div><div class="card-body content"><p>Asia-Pacific is executing the world's most diverse regulatory buildout—9 jurisdictions across four sub-regions are simultaneously finalizing VASP licensing frameworks, institutional custody standards, and AML enforcement regimes through Q3 2026. Australia's AUSTRAC shifts from implementation to active Travel Rule enforcement while Hong Kong, South Korea, and Thailand expand institutional access. Southeast Asian regulators are racing to implement custody standards and VASP registration before Q3 deadlines, creating urgent compliance infrastructure demand worth hundreds of millions across exchanges, banks, and emerging institutional crypto service providers.</p></div></div>
+<div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved, resolved, or escalated last quarter</p></div><div class="card-body content"><ul>
+<li><span class="country-name">Australia</span> ⚡ AUSTRAC transitioned from Travel Rule implementation to active enforcement phase Q2; Treasury consultation on stablecoin payment licensing opened H1, positioning Australia as first major market to regulate crypto payment gateways under reformed PSP framework.</li>
+</ul>
+<ul>
+<li><span class="country-name">Hong Kong</span> 🔄 SFC continuing crypto ETF approvals with retail access expanding beyond initial April 2024 launches—institutional product diversification creating new market surveillance and custody compliance demand.</li>
+</ul>
+<ul>
+<li><span class="country-name">South Korea & Thailand</span> 🆕 FSC developing institutional custody framework for traditional FIs (Q4 launch); Thai SEC expanding licensing categories for brokers and dealers with enhanced AML requirements (Q3 implementation).</li>
+</ul>
+<ul>
+<li><span class="country-name">Philippines, Indonesia</span> ⚡ BSP enforcing ongoing VASP registration deadlines under Circular 1108; OJK implementing custody standards post-regulatory transfer from Bappebti—both creating immediate exchange compliance pressure.</li>
+</ul>
+<ul>
+<li><span class="country-name">India</span> 🏛️ SEBI clarifying crypto securities jurisdiction vs. RBI in H2—regulatory boundary definition will determine which platforms require securities licensing vs. payment/commodity oversight.</li>
+</ul></div></div>
+<div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><div class="card-preview"><table><thead>
+<tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
+</thead><tbody>
+<tr><td>🇦🇺 Australia</td><td>AUSTRAC</td><td>🔍 Travel Rule active enforcement launch</td><td>KYT counterparty verification; Reactor originator tracing</td></tr>
+<tr><td>🇦🇺 Australia</td><td>Treasury/ASIC</td><td>📋 Stablecoin PSP licensing consultation response</td><td>KYT payment flow monitoring; Data Solutions issuer intelligence</td></tr>
+<tr><td>🇭🇰 Hong Kong</td><td>SFC</td><td>🔐 Crypto ETF retail expansion oversight</td><td>KYT institutional surveillance; Reactor custody audit trails</td></tr>
+<tr><td>🇰🇷 South Korea</td><td>FSC</td><td>⚖️ Q4 institutional custody framework finalization</td><td>Alterya custody security; KYT bank-grade compliance</td></tr>
+<tr><td>🇵🇭 Philippines</td><td>BSP</td><td>🔍 Circular 1108 VASP registration enforcement</td><td>KYT VASP baseline compliance; Reactor entity verification</td></tr>
+<tr><td>🇮🇩 Indonesia</td><td>OJK</td><td>🔐 Q3 custody standards implementation deadline</td><td>Alterya exchange custody; KYT OJK reporting readiness</td></tr>
+<tr><td>🇹🇭 Thailand</td><td>Thai SEC</td><td>⚖️ Q3 licensing expansion and AML requirements</td><td>KYT broker/dealer compliance; Reactor travel rule readiness</td></tr>
+<tr><td>🇮🇳 India</td><td>SEBI/FIU-IND</td><td>🏛️ H2 securities jurisdiction clarification</td><td>Data Solutions regulatory intelligence; KYT classification prep</td></tr>
+<tr><td>🇳🇿 New Zealand</td><td>FMA</td><td>🏛️ H1 2027 FMC Act CASP regime launch</td><td>KYT licensing preparation; Reactor entity mapping</td></tr>
+</tbody></table></div><button class="show-more">Show more ▼</button></div></div>
+
+<div class="card" style="border-left:3px solid #6366f1"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Northeast Asia (2 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇭🇰 <span class="country-header">Hong Kong</span> — HKMA / SFC</h4>
+<p><strong>What's happening:</strong> SFC approving additional crypto ETFs following initial 2024 launches, with retail investor access expanding beyond institutional-only products.</p>
+<p><strong>Deal play:</strong> Asset managers and custodians need KYT for ETF constituent monitoring and Reactor for custody audit trails—ask: "How are you demonstrating real-time AML surveillance on underlying crypto assets to SFC?"</p>
+<h4>🇰🇷 <span class="country-header">South Korea</span> — FSC / KoFIU</h4>
+<p><strong>What's happening:</strong> FSC developing framework for traditional banks and securities firms to provide institutional crypto custody services, targeting Q4 2026 implementation.</p>
+<p><strong>Deal play:</strong> Banks entering crypto custody need Alterya for institutional-grade wallet security and KYT for bank-level transaction monitoring—ask: "What's your roadmap for FSC institutional custody authorization and how are you proving AML controls exceed retail VASP standards?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid #14b8a6"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Southeast Asia (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇮🇩 <span class="country-header">Indonesia</span> — OJK / Bappebti</h4>
+<p><strong>What's happening:</strong> Financial Services Authority implementing custody standards for crypto exchanges following regulatory supervision transfer from Bappebti, with Q3 2026 compliance deadlines.</p>
+<p><strong>Deal play:</strong> Indonesian exchanges face immediate custody infrastructure upgrades—Alterya addresses OJK custody security requirements while KYT provides supervisory reporting—ask: "How are you demonstrating custodial wallet security and transaction monitoring under OJK supervision vs. the previous Bappebti commodity framework?"</p>
+<h4>🇵🇭 <span class="country-header">Philippines</span> — BSP</h4>
+<p><strong>What's happening:</strong> Bangko Sentral enforcing comprehensive VASP registration and AML supervision under Circular 1108 with ongoing H2 2026 compliance milestones.</p>
+<p><strong>Deal play:</strong> Unregistered VASPs face enforcement—KYT addresses BSP baseline AML requirements and Reactor provides investigation support for suspicious activity reporting—ask: "What's your Circular 1108 registration status and how are you meeting BSP's enhanced transaction monitoring standards?"</p>
+<h4>🇹🇭 <span class="country-header">Thailand</span> — Thai SEC / AMLO</h4>
+<p><strong>What's happening:</strong> Thai SEC expanding licensing framework to cover crypto brokers and dealers beyond existing exchange licenses, with enhanced AML requirements and Q3 2026 implementation.</p>
+<p><strong>Deal play:</strong> Brokers and dealers entering licensing need KYT for customer due diligence and travel rule compliance—ask: "Are you applying for expanded licensing categories and how are you implementing Thai SEC's enhanced AML requirements including travel rule verification?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid #f59e0b"><div class="card-head"><h2 style="font-size:18px;font-weight:700">South Asia (1 event)</h2></div><div class="card-body content"><h4>🇮🇳 <span class="country-header">India</span> — SEBI / FIU-IND</h4>
+<p><strong>What's happening:</strong> Securities and Exchange Board of India clarifying which crypto assets constitute securities (SEBI jurisdiction) versus commodities or payment instruments (RBI jurisdiction) through H2 2026.</p>
+<p><strong>Deal play:</strong> Platforms await jurisdictional clarity to determine licensing pathway—Data Solutions provides regulatory intelligence while KYT prepares for either securities or VDA compliance frameworks—ask: "How are you preparing compliance infrastructure for potential SEBI securities classification versus RBI payment oversight?"</p></div></div>
+<div class="card" style="border-left:3px solid #ec4899"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Oceania (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇦🇺 <span class="country-header">Australia</span> — AUSTRAC / ASIC</h4>
+<p><strong>What's happening:</strong> Two things moving: AUSTRAC shifting from Travel Rule implementation to active enforcement targeting Australian crypto businesses; Treasury consulting on stablecoin and crypto payment gateway licensing under reformed payments framework. Biggest is enforcement—AUSTRAC has published compliance expectations and is conducting audits.</p>
+<p><strong>Deal play:</strong> Australian exchanges and payment providers face immediate Travel Rule enforcement and upcoming PSP licensing—KYT addresses counterparty verification and Reactor enables originator/beneficiary tracing for AUSTRAC reporting—ask: "What's your Travel Rule compliance audit status and are you preparing for stablecoin PSP licensing under Treasury's Tranche 1 framework?"</p>
+<h4>🇳🇿 <span class="country-header">New Zealand</span> — FMA</h4>
+<p><strong>What's happening:</strong> Financial Markets Authority advancing FMC Act amendments creating new CASP licensing regime with AML/CFT requirements, targeting H1 2027 implementation.</p>
+<p><strong>Deal play:</strong> New Zealand crypto platforms need licensing preparation infrastructure—KYT provides baseline AML compliance and Reactor supports entity verification ahead of 2027 regime launch—ask: "How are you preparing for FMC Act CASP licensing and what transaction monitoring infrastructure are you building for FMA compliance?"</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs' Co-Case Agent AI launch (March 2026) and aggressive law enforcement positioning threatens our Asia-Pacific government relationships—their victim recovery narratives resonate with regulators facing consumer protection pressure. Elliptic maintains steady regulatory commentary but shows limited product innovation beyond existing AI Copilot. Critical gap: both competitors remain silent on smart contract security (Hexagate advantage) and institutional custody (Alterya advantage), but we must prevent them from defining "AI-powered blockchain intelligence" in APAC regulatory conversations where Chainalysis attribution depth and government adoption scale remain unmatched.</p></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><span class="country-name">Australia</span> — Digital Currency Exchanges — AUSTRAC Travel Rule enforcement creating urgent counterparty verification demand → KYT + Reactor</p>
+<p><span class="country-name">Australia</span> — Stablecoin issuers and payment gateways — Treasury PSP licensing consultation response positioning for 2027 framework → KYT + OSINT</p>
+<p><span class="country-name">Hong Kong</span> — Asset managers and ETF custodians — SFC-approved crypto ETF expansion requiring institutional surveillance → KYT + Reactor</p>
+<p><span class="country-name">South Korea</span> — Traditional banks entering crypto custody — FSC institutional framework preparation for Q4 launch → Alterya + KYT</p>
+<p><span class="country-name">Indonesia</span> — Licensed crypto exchanges — OJK custody standards and supervisory reporting compliance → Alterya + KYT</p>
+<p><span class="country-name">Philippines</span> — VASPs under BSP Circular 1108 — Ongoing registration and AML supervision compliance → KYT + Reactor</p>
+<p><span class="country-name">Thailand</span> — Crypto brokers and dealers — Thai SEC licensing expansion and enhanced AML requirements → KYT + Data Solutions</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><p><strong>July 1, 2026</strong> — 🇹🇭 Thailand: Thai SEC licensing expansion implementation begins — Engage brokers/dealers on licensing compliance infrastructure gaps.</p>
+<p><strong>August 15, 2026</strong> — 🇦🇺 Australia: Treasury stablecoin consultation comment period likely closes — Position Chainalysis for PSP licensing framework implementation phase.</p>
+<p><strong>September 1, 2026</strong> — 🇵🇭 Philippines: BSP Circular 1108 next registration compliance milestone — Audit unregistered VASP pipeline for urgent onboarding opportunities.</p>
+<p><strong>September 30, 2026</strong> — 🇮🇩 Indonesia: OJK custody standards compliance deadline (estimated) — Accelerate Indonesian exchange Alterya deployment conversations.</p>
+<p><strong>Q3 2026</strong> — 🇭🇰 Hong Kong: SFC additional crypto ETF approvals expected — Build asset manager and custodian institutional surveillance pipeline.</p>
+<p><strong>Q3 2026</strong> — 🇦🇺 Australia: AUSTRAC Travel Rule enforcement audits intensify — Prepare case studies demonstrating KYT counterparty verification for regulatory compliance.</p>
+<p><strong>Q4 2026</strong> — 🇰🇷 South Korea: FSC institutional custody framework launches — Engage major banks on Alterya institutional custody and KYT bank-grade monitoring.</p>
+<p><strong>H2 2026</strong> — 🇮🇳 India: SEBI crypto securities jurisdiction clarification — Monitor regulatory intelligence and prepare compliance positioning for either SEBI or RBI framework.</p></div></div>
+
+
+<a class='doc-btn' href='https://docs.google.com/document/d/1mMr_qGT4xEzRtn7ai9qeYNErq8eQjtPLFLV4sVKXMl4/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+
+<script>
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('show-more')) {
+    var preview = e.target.previousElementSibling;
+    if (preview && preview.classList.contains('card-preview')) {
+      preview.classList.toggle('expanded');
+      e.target.textContent = preview.classList.contains('expanded') ? 'Show less ▲' : 'Show more ▼';
+    }
+  }
+});
+</script>
+
+<div class="footer">Chainalysis GTM Regulatory Outlook &middot; FY2026-Q2 &middot; 13 events analysed</div>
+
+</div>
+</body>
+</html>
