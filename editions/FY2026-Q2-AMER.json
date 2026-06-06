@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "The United States is implementing the most significant AML/CFT modernization in two decades through GENIUS Act stablecoin supervision and Bank Secrecy Act reforms, while 16 simultaneous federal and state-level rulemakings create immediate compliance infrastructure demand. Canada's Travel Rule implementation and Latin American VASP registration regimes (Argentina, Chile, Colombia, Cayman Islands) extend the compliance opportunity across all Americas markets. With FinCEN, FDIC, and NCUA comment pe",
+  "summary": "The Americas is executing the world's most consequential stablecoin and AML/CFT regulatory buildout simultaneously. Sixteen U.S. federal and state-level rulemakings converge through Q3 2026\u2014led by FinCEN's GENIUS Act implementation for payment stablecoin issuers and the once-in-a-generation BSA/AML program reform (comment period closes June 9). Canada advances Travel Rule enforcement and custody standards while four Latin American markets finalize VASP licensing regimes before Q4 deadlines. This",
   "events_analysed": 28,
   "countries_covered": 9,
-  "doc_url": "https://docs.google.com/document/d/1RyIV26aKjmaeBzM_aV7Zwq0vVibKyo7O0HlJkkf1Axc/edit?usp=drivesdk",
-  "doc_id": "1RyIV26aKjmaeBzM_aV7Zwq0vVibKyo7O0HlJkkf1Axc",
+  "doc_url": "https://docs.google.com/document/d/1_lovk0LsKAKYw1jx58aIly8XJUIHOxW2Wm2RLx_2Ny8/edit?usp=drivesdk",
+  "doc_id": "1_lovk0LsKAKYw1jx58aIly8XJUIHOxW2Wm2RLx_2Ny8",
   "edition_url": "editions/FY2026-Q2-AMER.html",
   "data_url": "editions/FY2026-Q2-AMER.json",
   "regulators": [
@@ -74,5 +74,5 @@
   ],
   "news_sources": 12,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T07:08:39.943983+00:00"
+  "generated_at": "2026-06-06T13:35:07.513488+00:00"
 }
