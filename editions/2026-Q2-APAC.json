@@ -4,11 +4,11 @@
   "quarter": "2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-  "summary": "Nine Asia-Pacific markets are simultaneously moving from compliance planning to active enforcement across Travel Rule, VASP licensing, and institutional custody frameworks. Australia's AUSTRAC is issuing penalties while South Korea opens traditional financial institutions to crypto custody services and Indonesia transfers exchange supervision to banking regulators. The infrastructure buildout window closes Q3 as regulators shift from guidance to enforcement\u2014which means buying decisions accelerat",
+  "summary": "Nine Asia-Pacific markets are simultaneously moving from policy consultation to active enforcement across VASP licensing, Travel Rule compliance, and institutional custody frameworks. Australia's AUSTRAC is now issuing penalties while South Korea opens traditional financial institutions to crypto services and Indonesia transfers exchange supervision to banking regulators. The compliance infrastructure buildout window closes Q3 as regulators shift from guidance to enforcement\u2014which means buying d",
   "events_analysed": 13,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1KbUJLP3KXICJWwhButJ_m0kUaadcscq2qbo53sjJ6jg/edit?usp=drivesdk",
-  "doc_id": "1KbUJLP3KXICJWwhButJ_m0kUaadcscq2qbo53sjJ6jg",
+  "doc_url": "https://docs.google.com/document/d/1Yio07lSJqynFfihpG7Kv0YP9ltgQW-litwkTUuCmq_M/edit?usp=drivesdk",
+  "doc_id": "1Yio07lSJqynFfihpG7Kv0YP9ltgQW-litwkTUuCmq_M",
   "edition_url": "editions/2026-Q2-APAC.html",
   "data_url": "editions/2026-Q2-APAC.json",
   "regulators": [
@@ -92,5 +92,5 @@
     "Oceania"
   ],
   "news_sources": 17,
-  "generated_at": "2026-06-06T06:27:41.378740+00:00"
+  "generated_at": "2026-06-06T06:38:24.309484+00:00"
 }
