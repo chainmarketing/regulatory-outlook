@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-06",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Twenty-one EU member states are executing MiCA implementation while AMLA becomes operational with direct CASP supervision authority\u2014the largest simultaneous regulatory activation in crypto history. UK finalizes its separate authorization gateway while Middle Eastern markets (UAE, Saudi Arabia, Israel) converge on EU-aligned frameworks. This creates immediate compliance infrastructure spend across 200+ authorized CASPs and hundreds more racing toward Q3-Q4 transition deadlines.",
+  "summary": "Twenty-one EU jurisdictions execute MiCA Level 2 standards while AMLA becomes operational with direct supervision authority over highest-risk CASPs. UK's FCA sets hard authorization deadlines for existing crypto businesses, forcing firms to submit applications or exit. Middle East regulators finalize licensing frameworks across Saudi Arabia, UAE, and Israel, while France's July 1 PSAN-to-MiCA transition creates immediate compliance infrastructure demand.",
   "events_analysed": 39,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/1uU5pmJF-J0Jo_2k55vTzDwflOpDrVLKyMI31pwQVkOU/edit?usp=drivesdk",
-  "doc_id": "1uU5pmJF-J0Jo_2k55vTzDwflOpDrVLKyMI31pwQVkOU",
+  "doc_url": "https://docs.google.com/document/d/1RxkfWpWUrjYpNFQq2mBIyMZDtjFst24-zWHf4QhoWzY/edit?usp=drivesdk",
+  "doc_id": "1RxkfWpWUrjYpNFQq2mBIyMZDtjFst24-zWHf4QhoWzY",
   "edition_url": "editions/FY2026-Q2-EMEA.html",
   "data_url": "editions/FY2026-Q2-EMEA.json",
   "regulators": [
@@ -106,5 +106,5 @@
   ],
   "news_sources": 15,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-06T14:02:23.589760+00:00"
+  "generated_at": "2026-06-06T14:26:33.526310+00:00"
 }
