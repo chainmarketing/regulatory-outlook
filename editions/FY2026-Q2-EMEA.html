@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTM Regulatory Outlook — EMEA — Q2 2026</title>
+<style>
+:root {
+  --bg: #f8f9fa; --card: #ffffff; --text: #1a1a2e; --muted: #6b7280;
+  --border: #e5e7eb; --accent: #22c55e; --accent-soft: #22c55e18;
+  --success: #16a34a; --warning: #d97706; --info: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af;
+    --border: #2e2e3a; --accent-soft: #22c55e25;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 16px 60px; }
+
+/* Nav */
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 18px; border-bottom: 1px solid var(--border); margin-bottom: 28px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { text-align: center; margin-bottom: 28px; }
+.hero .badge { display: inline-block; padding: 3px 14px; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; background: var(--accent); color: #fff; margin-bottom: 10px; text-transform: uppercase; }
+.hero h1 { font-size: 22px; font-weight: 700; line-height: 1.3; }
+.hero .sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* Stat strip */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+.stat { text-align: center; padding: 14px 6px; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: none; }
+.stat-val { font-size: 22px; font-weight: 700; line-height: 1; }
+.stat-lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 5px; }
+
+
+
+/* Explainer */
+.explainer { font-size: 13px; color: var(--muted); text-align: center; line-height: 1.6; margin-bottom: 24px; padding: 0 20px; }
+
+/* Section descriptions */
+.section-desc { font-size: 12px; color: var(--muted); margin: 2px 0 0; font-style: italic; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.card-head { padding: 14px 18px 6px; display: flex; flex-direction: column; gap: 0; }
+.card-head h2 { font-size: 14px; font-weight: 600; }
+.card-head .count { font-size: 12px; color: var(--muted); }
+.card-body { padding: 16px 20px 20px; }
+
+/* Content typography */
+.content h1 { font-size: 20px; font-weight: 700; margin: 20px 0 8px; padding-top: 14px; border-top: 2px solid var(--border); }
+.content h1:first-child { border-top: none; padding-top: 0; }
+.content h2 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+.content h3 { font-size: 14px; font-weight: 600; margin: 14px 0 4px; }
+.content h4 { font-size: 13px; font-weight: 600; margin: 14px 0 6px; }
+.country-header { font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.country-name { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.content p { margin: 8px 0 12px; font-size: 13.5px; line-height: 1.75; }
+.content ul, .content ol { margin: 6px 0 6px 18px; font-size: 13.5px; }
+.content li { margin: 6px 0 10px; line-height: 1.65; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.content li:last-child { border-bottom: none; }
+.content strong { font-weight: 600; }
+.content em { font-style: italic; color: var(--muted); }
+.content a { color: var(--accent); text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* Tables */
+.content table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 12px 0; }
+.content th { text-align: left; padding: 10px 12px; font-weight: 500; color: var(--muted); border-bottom: 2px solid var(--border); background: var(--bg); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.content td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+
+/* TL;DR highlight */
+.tldr { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; text-align: center; }
+.tldr h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+.tldr p { font-size: 17px; line-height: 1.5; font-weight: 500; }
+.tldr strong { font-weight: 700; }
+
+/* Exec summary accent */
+.exec-summary { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 12px; }
+.exec-summary .card-head h2 { color: var(--accent); }
+.exec-summary .card-body p { font-size: 14.5px; line-height: 1.75; }
+
+/* Section tints */
+.card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #f0fdf4 100%); }
+.card-timeline { background: linear-gradient(135deg, var(--card) 0%, #eff6ff 100%); }
+.card-competitor { background: linear-gradient(135deg, var(--card) 0%, #fef3c7 100%); border-left: 3px solid #f59e0b; }
+@media (prefers-color-scheme: dark) {
+  .card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #0a1f0a 100%); }
+  .card-timeline { background: linear-gradient(135deg, var(--card) 0%, #0a1520 100%); }
+  .card-competitor { background: linear-gradient(135deg, var(--card) 0%, #1a1500 100%); }
+}
+
+/* Theme tags */
+.theme-tag { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.02em; }
+.theme-aml { background: #dbeafe; color: #1e40af; }
+.theme-stablecoin { background: #fef3c7; color: #92400e; }
+.theme-fraud { background: #fee2e2; color: #991b1b; }
+.theme-defi { background: #ede9fe; color: #5b21b6; }
+.theme-ai { background: #e0e7ff; color: #3730a3; }
+.theme-cyber { background: #d1fae5; color: #065f46; }
+.theme-general { background: #f3f4f6; color: #374151; }
+@media (prefers-color-scheme: dark) {
+  .theme-aml { background: #1e3a5f; color: #93c5fd; }
+  .theme-stablecoin { background: #451a03; color: #fde68a; }
+  .theme-fraud { background: #450a0a; color: #fca5a5; }
+  .theme-defi { background: #2e1065; color: #c4b5fd; }
+  .theme-ai { background: #1e1b4b; color: #a5b4fc; }
+  .theme-cyber { background: #022c22; color: #6ee7b7; }
+  .theme-general { background: #1f2937; color: #d1d5db; }
+}
+
+/* Response badge */
+.response-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; font-size: 11px; font-weight: 500; text-decoration: none; margin-top: 4px; }
+.response-badge:hover { background: #bfdbfe; }
+@media (prefers-color-scheme: dark) {
+  .response-badge { background: #1e3a5f; color: #93c5fd; }
+  .response-badge:hover { background: #1e4d8f; }
+}
+
+/* Mini chart */
+.mini-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin: 12px 0 4px; }
+.mini-bar { flex: 1; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; transition: height 0.3s; }
+.mini-bar-label { position: absolute; bottom: -18px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.mini-bar-val { position: absolute; top: -16px; left: 0; right: 0; text-align: center; font-size: 10px; font-weight: 600; }
+
+/* Collapsible sections */
+.card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
+.card-preview.expanded { max-height: none; }
+.card-preview:not(.expanded)::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, var(--card)); pointer-events: none; }
+.show-more { display: block; width: 100%; padding: 8px; background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; margin-top: 8px; transition: all 0.15s; }
+.show-more:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Doc link */
+.doc-btn { display: inline-block; margin-top: 12px; padding: 9px 22px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-size: 13px; font-weight: 600; transition: opacity .15s; }
+.doc-btn:hover { opacity: .88; }
+
+/* Footer */
+.footer { text-align: center; font-size: 11px; color: var(--muted); padding: 20px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav">
+  <a href="../">&#8592; Archive</a>
+  <a href="../internal/dashboard.html">Dashboard</a>
+</div>
+
+<div class="hero">
+  <span class="badge">EMEA</span>
+  <h1>GTM Regulatory Outlook — EMEA — Q2 2026</h1>
+  <p class="sub">FY2026-Q2 &middot; Generated 2026-06-06</p>
+</div>
+
+<div class="explainer">
+  A quarterly regulatory outlook for Account Executives. Each section covers what happened, what's coming, and what it means for your deals. Regulatory events sourced from the Policy Event Tracker, enriched with competitive intelligence and regional news.
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val">39</div><div class="stat-lbl">Events</div></div>
+  <div class="stat"><div class="stat-val">14</div><div class="stat-lbl">Regulators</div></div>
+  <div class="stat"><div class="stat-val">5</div><div class="stat-lbl">Sub-Regions</div></div>
+  <div class="stat"><div class="stat-val">18</div><div class="stat-lbl">Consultations</div></div>
+</div>
+
+
+<div class="card"><div class="card-body" style="padding-bottom:30px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Events by sub-region</div><div class="mini-chart"><div class="mini-bar" style="height:40px;background:#6366f1"><span class="mini-bar-val">21</span><span class="mini-bar-label">European U…</span></div><div class="mini-bar" style="height:11px;background:#14b8a6"><span class="mini-bar-val">6</span><span class="mini-bar-label">United Kin…</span></div><div class="mini-bar" style="height:11px;background:#f59e0b"><span class="mini-bar-val">6</span><span class="mini-bar-label">Middle East</span></div><div class="mini-bar" style="height:4px;background:#ec4899"><span class="mini-bar-val">2</span><span class="mini-bar-label">Africa</span></div></div></div></div>
+
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: MiCA Level 2 finalizes, AMLA launches with direct supervision, UK authorization gateway closes.</strong></p></div>
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">A summary of the key regulatory developments across the region this quarter</p></div><div class="card-body content"><p>The European Union is executing the largest coordinated crypto compliance buildout in history—211 authorized CASPs across 23 countries face MiCA Level 2 technical standards while AMLA becomes operational with direct supervision powers in Q3. Simultaneously, the UK's FCA is closing its authorization gateway with firm Q3 deadlines, France enforces its July 1 PSAN transition cutoff, and Middle Eastern regulators in UAE, Saudi Arabia, and Israel finalize comprehensive licensing frameworks. This represents a synchronized regulatory maturation across 35+ EMEA jurisdictions, creating immediate compliance infrastructure demand.</p></div></div>
+<div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved since the last edition</p></div><div class="card-body content"><ul>
+<li><span class="country-name">EU</span> 🏛️ AMLA becomes operational Q3 2026 with direct supervision authority over highest-risk CASPs; MiCA Level 2 RTS packages on custody, stablecoins, operational resilience, and market abuse publish through Q4; three major consultations opened including MiCA review (Aug 31), AMLA group-wide AML standards, and ESMA/EBA suitability guidelines for CASP management.</li>
+</ul>
+<ul>
+<li><span class="country-name">France</span> ⚡ AMF's July 1 deadline for PSAN-to-MiCA transitions now public enforcement priority—firms still operating under pre-MiCA registration must complete full authorization or cease operations, with AMF issuing public warnings to laggards.</li>
+</ul>
+<ul>
+<li><span class="country-name">UK</span> 📋 FCA consultation on final crypto authorization rules closes June while Law Commission bill recognizing crypto as property under English law advances H2—improved legal remedies for theft/fraud accelerate institutional adoption confidence alongside tokenisation call for input (July).</li>
+</ul>
+<ul>
+<li><span class="country-name">UAE & Saudi Arabia</span> 🆕 VARA updates comprehensive rulebook with DeFi and staking provisions (Q3) while SAMA finalizes licensing requirements for crypto asset activities—both creating first-mover windows for compliant infrastructure providers in high-growth Gulf markets.</li>
+</ul>
+<ul>
+<li><span class="country-name">Israel</span> 🏛️ ISA implementing MiCA-aligned comprehensive framework by December with licensing, investor protection, and AML obligations—regulatory convergence with EU creates cross-border compliance efficiency for firms operating in both jurisdictions.</li>
+</ul></div></div>
+<div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><div class="card-preview"><table><thead>
+<tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
+</thead><tbody>
+<tr><td>🇪🇺 EU</td><td>AMLA</td><td>🔍 Q3 operational launch, direct CASP supervision</td><td>KYT highest-risk entity monitoring; Reactor investigations</td></tr>
+<tr><td>🇪🇺 EU</td><td>ESMA</td><td>📋 MiCA review consultation (Aug 31 deadline)</td><td>Data Solutions market structure intelligence; KYT DeFi readiness</td></tr>
+<tr><td>🇬🇧 UK</td><td>FCA</td><td>⚡ Q3 authorization application deadlines closing</td><td>KYT gateway compliance; Reactor entity verification</td></tr>
+<tr><td>🇬🇧 UK</td><td>BoE</td><td>🔐 Q4 stablecoin payment framework finalization</td><td>KYT payment flow monitoring; OSINT issuer tracking</td></tr>
+<tr><td>🇫🇷 France</td><td>AMF</td><td>⚡ July 1 PSAN transition enforcement</td><td>KYT authorization readiness; Alterya custody compliance</td></tr>
+<tr><td>🇩🇪 Germany</td><td>BaFin</td><td>🔐 Ongoing custody license enforcement</td><td>Alterya custody security assessments; KYT institutional surveillance</td></tr>
+<tr><td>🇦🇪 UAE</td><td>VARA</td><td>⚖️ Q3 DeFi and staking rulebook updates</td><td>Hexagate DeFi protocol security; KYT staking monitoring</td></tr>
+<tr><td>🇸🇦 Saudi Arabia</td><td>SAMA</td><td>⚖️ Q3 licensing framework implementation</td><td>KYT exchange baseline; Reactor VASP verification</td></tr>
+<tr><td>🇮🇱 Israel</td><td>ISA</td><td>🏛️ December MiCA-aligned framework launch</td><td>KYT licensing preparation; Data Solutions regulatory intelligence</td></tr>
+</tbody></table></div><button class="show-more">Show more ▼</button></div></div>
+
+<div class="card" style="border-left:3px solid #6366f1"><div class="card-head"><h2 style="font-size:18px;font-weight:700">European Union (21 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇪🇺 <span class="country-header">EU</span> — AMLA / ESMA / EC</h4>
+<p><strong>What's happening:</strong> AMLA becomes operational Q3 with direct supervision over highest-risk CASPs while ESMA publishes MiCA Level 2 RTS packages through Q4 on custody standards, stablecoin reserves, operational resilience (DORA), and market abuse. Three consultations opened: MiCA review (Aug 31), AMLA group-wide AML/CFT standards (May 26), and anti-corruption strategy (July).</p>
+<p><strong>Deal play:</strong> The 211 authorized CASPs need KYT transaction monitoring that scales to AMLA's direct supervision scrutiny—ask whether their current stack can handle supervisor-grade reporting requirements. Reactor investigations become critical for demonstrating robust source-of-funds verification. The MiCA review consultation explicitly covers DeFi, NFTs, and stablecoins—firms submitting responses need Data Solutions intelligence on market structure trends and Hexagate security assessments for DeFi protocol compliance.</p>
+<h4>🇫🇷 <span class="country-header">France</span> — AMF</h4>
+<p><strong>What's happening:</strong> July 1 deadline for PSAN-to-MiCA transitions now active enforcement priority—firms operating under pre-MiCA registration must complete full authorization or cease operations.</p>
+<p><strong>Deal play:</strong> French exchanges and custodians rushing to meet July 1 need immediate KYT baseline compliance and Alterya custody security assessments to pass AMF's enhanced authorization requirements.</p>
+<h4>🇩🇪 <span class="country-header">Germany</span> — BaFin</h4>
+<p><strong>What's happening:</strong> BaFin actively supervising and enforcing crypto custody license requirements under German Banking Act with ongoing compliance expectations throughout 2026.</p>
+<p><strong>Deal play:</strong> German custodians need Alterya to demonstrate secure key management and operational controls that satisfy BaFin's banking-grade custody standards—ask whether their current custody setup would pass a BaFin audit.</p>
+<h4>🇳🇱 <span class="country-header">Netherlands</span> — DNB</h4>
+<p><strong>What's happening:</strong> Dutch central bank enhancing supervision of registered crypto firms with focus on AML compliance and Travel Rule implementation in Q2.</p>
+<p><strong>Deal play:</strong> Dutch VASPs need KYT with comprehensive Travel Rule compliance to meet DNB's enhanced supervision standards—ask how they're currently handling cross-border Travel Rule messages for CASP-to-CASP transfers.</p>
+<h4>🇳🇴 <span class="country-header">Norway</span> — Finanstilsynet</h4>
+<p><strong>What's happening:</strong> Money Laundering Act amendments for crypto extend AML requirements to broader range of crypto activities with enhanced VASP supervision in Q3.</p>
+<p><strong>Deal play:</strong> Norwegian firms expanding into new crypto services need KYT that covers the extended AML scope—ask whether their transaction monitoring captures all activities now falling under the amended Money Laundering Act.</p>
+<h4>🇪🇸 <span class="country-header">Spain</span> — Bank of Spain</h4>
+<p><strong>What's happening:</strong> Bank of Spain enforcing strict advertising rules for crypto products requiring authorization and risk warnings for marketing campaigns throughout 2026.</p>
+<p><strong>Deal play:</strong> Spanish exchanges need OSINT monitoring to ensure marketing campaigns comply with Bank of Spain advertising authorization requirements—ask how they're currently tracking and verifying crypto product marketing compliance.</p>
+<h4>🇸🇪 <span class="country-header">Sweden</span> — FI</h4>
+<p><strong>What's happening:</strong> Finansinspektionen implementing MiCA with enhanced national AML measures for crypto firms beyond EU minimums in H2.</p>
+<p><strong>Deal play:</strong> Swedish CASPs need KYT that exceeds baseline MiCA requirements to satisfy FI's enhanced national AML standards—ask whether their current transaction monitoring meets Sweden's stricter thresholds.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid #14b8a6"><div class="card-head"><h2 style="font-size:18px;font-weight:700">United Kingdom (6 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇬🇧 <span class="country-header">UK</span> — FCA / BoE / HMT</h4>
+<p><strong>What's happening:</strong> FCA consultation on final crypto authorization rules closes June with firm Q3 deadlines for existing businesses to submit applications under the financial services gateway. Law Commission bill recognizing crypto as property under English law advances H2, enabling improved legal remedies for theft and fraud. Bank of England developing separate Q4 framework for fiat-backed stablecoins as payment instruments. FCA and BoE joint call for input on tokenisation in wholesale markets opens July.</p>
+<p><strong>Deal play:</strong> UK crypto firms facing Q3 authorization deadlines need KYT transaction monitoring and Reactor investigations ready for FCA gateway submissions—ask whether their compliance stack demonstrates the "conduct standards, systems and controls" the FCA consultation specifies. The Law Commission property recognition creates immediate demand for Reactor asset tracing in theft/fraud cases. Stablecoin issuers preparing for Q4 payment framework need KYT payment flow monitoring. The tokenisation call for input creates opportunity for Data Solutions intelligence on DLT infrastructure and post-trade processes.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid #f59e0b"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Middle East (6 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇧🇭 <span class="country-header">Bahrain</span> — CBB</h4>
+<p><strong>What's happening:</strong> Central Bank of Bahrain updating crypto asset module under CBB rulebook for FATF alignment and regional coordination in H2.</p>
+<p><strong>Deal play:</strong> Bahraini crypto firms need KYT with FATF-compliant Travel Rule implementation to meet CBB's updated crypto asset module standards.</p>
+<h4>🇮🇱 <span class="country-header">Israel</span> — ISA</h4>
+<p><strong>What's happening:</strong> ISA implementing comprehensive MiCA-aligned regulatory framework by December with licensing requirements, investor protection standards, and AML/KYC obligations for crypto businesses.</p>
+<p><strong>Deal play:</strong> Israeli crypto firms need KYT licensing preparation and Data Solutions regulatory intelligence to navigate ISA's MiCA-aligned framework—firms operating in both EU and Israel can leverage same compliance infrastructure across jurisdictions.</p>
+<h4>🇸🇦 <span class="country-header">Saudi Arabia</span> — SAMA</h4>
+<p><strong>What's happening:</strong> SAMA finalizing crypto asset regulatory framework with licensing requirements for crypto asset activities in Q3.</p>
+<p><strong>Deal play:</strong> Saudi exchanges and custodians need KYT baseline compliance and Reactor VASP verification to meet SAMA's licensing requirements—ask whether they're ready for Q3 licensing applications.</p>
+<h4>🇹🇷 <span class="country-header">Turkey</span> — CMB</h4>
+<p><strong>What's happening:</strong> CMB implementing licensing framework for crypto exchanges and service providers in Q4 following 2021 ban on crypto payments.</p>
+<p><strong>Deal play:</strong> Turkish exchanges preparing for Q4 licensing need KYT transaction monitoring that demonstrates AML compliance despite the payment ban—ask how they're currently separating investment activity from prohibited payment use cases.</p>
+<h4>🇦🇪 <span class="country-header">UAE</span> — VARA</h4>
+<p><strong>What's happening:</strong> Dubai Virtual Assets Regulatory Authority updating comprehensive rulebook with specific provisions for DeFi, staking, and new product types in Q3.</p>
+<p><strong>Deal play:</strong> Dubai VASPs expanding into DeFi and staking need Hexagate protocol security assessments and KYT staking flow monitoring to meet VARA's updated rulebook—ask whether their current compliance covers smart contract risk and validator compliance.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid #ec4899"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Africa (2 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇰🇪 <span class="country-header">Kenya</span> — CMA</h4>
+<p><strong>What's happening:</strong> Capital Markets Authority implementing Virtual Asset Service Providers licensing framework with AML/CFT requirements aligned to FATF standards in H2.</p>
+<p><strong>Deal play:</strong> Kenyan exchanges and mobile money crypto integrations need KYT with FATF-compliant AML/CFT monitoring to meet CMA's VASP licensing framework.</p>
+<h4>🇲🇺 <span class="country-header">Mauritius</span> — FSC</h4>
+<p><strong>What's happening:</strong> Financial Services Commission implementing Virtual Asset and Initial Token Offering Services Act with enhanced supervision and Travel Rule compliance for licensed custodians and exchanges in Q3.</p>
+<p><strong>Deal play:</strong> Mauritius custodians and exchanges need KYT with comprehensive Travel Rule compliance to meet FSC's enhanced supervision requirements under the Virtual Asset Act.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-competitor"><div class="card-head"><h2>Competitor Watch</h2><p class="section-desc">How we stack up against TRM, Elliptic, and others in this region</p></div><div class="card-body content"><p>TRM Labs launched their "Co-Case Agent" AI assistant in March, directly challenging Elliptic's AI Copilot and attempting to define the "AI-powered blockchain intelligence" narrative without Chainalysis at the table—both competitors are positioning AI as core differentiator while remaining silent on smart contract security and fraud detection, confirming Hexagate and Alterya remain unique advantages. Elliptic maintains institutional-grade compliance positioning through enterprise integrations and DeFi compliance thought leadership, while TRM emphasizes AI agent compliance and real-time screening with broader financial system integration partnerships. Chainalysis retains clear advantages in attribution depth, government adoption scale, and integrated product breadth, but we must prevent competitors from owning the AI narrative while we have superior data foundations.</p></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><strong>EU — Authorized CASPs (211 firms across 23 countries)</strong> — AMLA direct supervision creates immediate demand for supervisor-grade transaction monitoring and investigations infrastructure → KYT + Reactor</p>
+<p><strong>France — PSAN transition firms</strong> — July 1 deadline creates urgent need for authorization-ready compliance stack including custody security assessments → KYT + Alterya</p>
+<p><strong>UK — FCA gateway applicants</strong> — Q3 authorization deadlines drive demand for conduct standards and systems/controls documentation → KYT + Reactor + Data Solutions</p>
+<p><strong>UAE — DeFi and staking service providers</strong> — VARA Q3 rulebook update creates first-mover advantage for compliant DeFi infrastructure → Hexagate + KYT</p>
+<p><strong>Israel — MiCA-aligned licensing applicants</strong> — December framework launch creates cross-border compliance efficiency opportunity for firms in both EU and Israel → KYT + Data Solutions</p>
+<p><strong>Saudi Arabia — SAMA licensing applicants</strong> — Q3 framework finalization creates greenfield licensing opportunity for exchanges and custodians → KYT + Reactor</p>
+<p><strong>Germany — BaFin custody licensees</strong> — Ongoing enforcement drives demand for banking-grade custody operational controls → Alterya</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Timeline — Key Dates & Forward Look</h2><p class="section-desc">The next 90 days — what’s coming and when to act</p></div><div class="card-body content"><p><strong>June 26</strong> — 🇧🇪 Belgium: Chainalysis speaking engagement at RUSI Brussels on AML/CFT and Travel Rule — Use to showcase AMLA direct supervision readiness messaging</p>
+<p><strong>June 26</strong> — 🇪🇺 EU: Central Bank of Ireland DLT and Tokenisation discussion paper comment period closes — Submit Chainalysis position on DLT transaction monitoring requirements</p>
+<p><strong>July 1</strong> — 🇫🇷 France: AMF PSAN-to-MiCA transition deadline — Immediate enforcement action against non-compliant firms creates urgency pipeline</p>
+<p><strong>July 26</strong> — 🇪🇺 EU: DORA operationalisation deadline for firms — Position KYT as part of digital resilience and incident reporting infrastructure</p>
+<p><strong>July 26</strong> — 🇪🇺 EU: European Commission Anti-Corruption Strategy consultation opens — Submit Chainalysis position on harmonised penalties and investigation measures for crypto-enabled financial crime</p>
+<p><strong>July 26</strong> — 🇬🇧 UK: FCA and Bank of England Joint Call for Input on tokenisation in wholesale markets opens — Submit Data Solutions intelligence on DLT infrastructure and regulatory clarity needs</p>
+<p><strong>August 26</strong> — 🇪🇺 EU: European Commission MiCA Review Targeted Consultation closes — Submit comprehensive position on DeFi, NFTs, stablecoins, and CASP requirements including Hexagate DeFi security framework</p>
+<p><strong>September 4</strong> — 🇦🇪 UAE: VARA DeFi and staking rulebook updates expected publication — Position Hexagate and KYT for Dubai VASPs expanding into new product categories</p></div></div>
+
+
+<a class='doc-btn' href='https://docs.google.com/document/d/16a4m7RlSINAJSqUNdXiZVXJRA_Lx6j1dzgacJuTnYFE/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+
+<script>
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('show-more')) {
+    var preview = e.target.previousElementSibling;
+    if (preview && preview.classList.contains('card-preview')) {
+      preview.classList.toggle('expanded');
+      e.target.textContent = preview.classList.contains('expanded') ? 'Show less ▲' : 'Show more ▼';
+    }
+  }
+});
+</script>
+
+<div class="footer">Chainalysis GTM Regulatory Outlook &middot; FY2026-Q2 &middot; 39 events analysed</div>
+
+</div>
+</body>
+</html>
