@@ -59,88 +59,14 @@
     ]
   },
   {
-    "region": "APAC",
-    "quarter": "2026-Q2",
-    "date": "2026-06-05",
-    "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
-    "summary": "Asia-Pacific enters active enforcement mode across 9 jurisdictions as Australia shifts from implementation to Travel Rule prosecution, Philippines finalizes VASP registration under BSP Circular 1108, and South Korea unlocks institutional custody for traditional banks. With 13 active policy events spanning licensing expansion (Thailand, Indonesia), securities classification battles (India, Hong Kong), and stablecoin payment frameworks (Australia), the region presents the highest-density complianc",
-    "events_analysed": 13,
-    "countries_covered": 13,
-    "doc_url": "https://docs.google.com/document/d/1R54ywzLR9AHqAf2WuYATxGvCmUeBEm-RK1V7KSqttro/edit?usp=drivesdk",
-    "edition_url": "editions/2026-Q2-APAC.html",
-    "data_url": "editions/2026-Q2-APAC.json",
-    "regulators": [
-      {
-        "country": "Singapore",
-        "abbr": "MAS",
-        "focus": "Stablecoin licensing, travel rule enforcement, DPT oversight"
-      },
-      {
-        "country": "Hong Kong",
-        "abbr": "HKMA / SFC",
-        "focus": "VASP licensing, crypto ETFs, tokenized securities"
-      },
-      {
-        "country": "Japan",
-        "abbr": "JFSA",
-        "focus": "FIEA reclassification, stablecoin oversight, insider trading"
-      },
-      {
-        "country": "South Korea",
-        "abbr": "FSC / KoFIU",
-        "focus": "DABA Phase 2, travel rule verification, market manipulation"
-      },
-      {
-        "country": "Australia",
-        "abbr": "AUSTRAC / ASIC",
-        "focus": "Travel rule enforcement, token mapping, scam prevention"
-      },
-      {
-        "country": "Thailand",
-        "abbr": "Thai SEC / AMLO",
-        "focus": "Crypto ETF approval, licensing expansion, travel rule"
-      },
-      {
-        "country": "India",
-        "abbr": "SEBI / FIU-IND",
-        "focus": "VDA registration enforcement, crypto securities classification"
-      },
-      {
-        "country": "Malaysia",
-        "abbr": "SC Malaysia / BNM",
-        "focus": "Enhanced custody standards, cyber crime legislation"
-      },
-      {
-        "country": "Indonesia",
-        "abbr": "OJK / Bappebti",
-        "focus": "Custody standards, exchange supervision transition to OJK"
-      },
-      {
-        "country": "Philippines",
-        "abbr": "BSP",
-        "focus": "VASP registration, AML supervision"
-      },
-      {
-        "country": "New Zealand",
-        "abbr": "FMA",
-        "focus": "FMC Act crypto amendments, VASP licensing"
-      },
-      {
-        "country": "Vietnam",
-        "abbr": "SBV / MOF",
-        "focus": "Transaction taxation, digital asset legislation"
-      }
-    ]
-  },
-  {
     "region": "EMEA",
     "quarter": "2026-Q2",
-    "date": "2026-06-05",
+    "date": "2026-06-06",
     "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 2026",
-    "summary": "The EU operationalizes its regulatory infrastructure as AMLA launches Q3 with direct supervision authority while the MiCA review consultation (31 Aug deadline) determines DeFi and NFT treatment through 2027. Simultaneously, France enforces its 1 July PSAN transition cutoff, UK finalizes crypto authorization rules, and four Middle East jurisdictions complete licensing frameworks Q3-Q4. With 39 active policy events and 211 authorized CASPs navigating compliance, this quarter represents the densest",
+    "summary": "The European Union dominates EMEA activity with 21 events as MiCA's first implementation cycle produces the critical August 31 review consultation, AMLA's Q3 operational launch, and 211 CASPs now authorized across 23 EEA countries. UK runs parallel with 6 developments including FCA's crypto authorization gateway finalization, while Middle East markets (UAE, Saudi Arabia, Israel) converge toward MiCA-aligned frameworks. With France's July 1 PSAN-to-MiCA transition deadline and NFT classification ",
     "events_analysed": 39,
     "countries_covered": 18,
-    "doc_url": "https://docs.google.com/document/d/1zkvX3snrKcteFjT2hq3Q3X-GIAh_B0lEUXVeLWlqIDg/edit?usp=drivesdk",
+    "doc_url": "https://docs.google.com/document/d/1XSmE3SRRe8uMRWliwrL-C-ewBHTXF_CqxWUCm0oPJU0/edit?usp=drivesdk",
     "edition_url": "editions/2026-Q2-EMEA.html",
     "data_url": "editions/2026-Q2-EMEA.json",
     "regulators": [
@@ -213,6 +139,80 @@
         "country": "Nigeria",
         "abbr": "SEC Nigeria",
         "focus": "Crypto securities classification"
+      }
+    ]
+  },
+  {
+    "region": "APAC",
+    "quarter": "2026-Q2",
+    "date": "2026-06-06",
+    "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 2026",
+    "summary": "Nine Asia-Pacific markets are operationalizing VASP supervision frameworks simultaneously as travel rule enforcement enters active phase across Oceania and Southeast Asia. With Australia's AUSTRAC moving from implementation to enforcement, Philippines BSP managing ongoing Circular 1108 compliance deadlines, and South Korea's FSC drafting institutional custody standards for traditional financial institutions, the region represents the largest compliance infrastructure buildout opportunity since M",
+    "events_analysed": 13,
+    "countries_covered": 13,
+    "doc_url": "https://docs.google.com/document/d/1hjss8emVGagHO0msgxfHJQtQ49YHqcXGg5Ie9rU5_5Y/edit?usp=drivesdk",
+    "edition_url": "editions/2026-Q2-APAC.html",
+    "data_url": "editions/2026-Q2-APAC.json",
+    "regulators": [
+      {
+        "country": "Singapore",
+        "abbr": "MAS",
+        "focus": "Stablecoin licensing, travel rule enforcement, DPT oversight"
+      },
+      {
+        "country": "Hong Kong",
+        "abbr": "HKMA / SFC",
+        "focus": "VASP licensing, crypto ETFs, tokenized securities"
+      },
+      {
+        "country": "Japan",
+        "abbr": "JFSA",
+        "focus": "FIEA reclassification, stablecoin oversight, insider trading"
+      },
+      {
+        "country": "South Korea",
+        "abbr": "FSC / KoFIU",
+        "focus": "DABA Phase 2, travel rule verification, market manipulation"
+      },
+      {
+        "country": "Australia",
+        "abbr": "AUSTRAC / ASIC",
+        "focus": "Travel rule enforcement, token mapping, scam prevention"
+      },
+      {
+        "country": "Thailand",
+        "abbr": "Thai SEC / AMLO",
+        "focus": "Crypto ETF approval, licensing expansion, travel rule"
+      },
+      {
+        "country": "India",
+        "abbr": "SEBI / FIU-IND",
+        "focus": "VDA registration enforcement, crypto securities classification"
+      },
+      {
+        "country": "Malaysia",
+        "abbr": "SC Malaysia / BNM",
+        "focus": "Enhanced custody standards, cyber crime legislation"
+      },
+      {
+        "country": "Indonesia",
+        "abbr": "OJK / Bappebti",
+        "focus": "Custody standards, exchange supervision transition to OJK"
+      },
+      {
+        "country": "Philippines",
+        "abbr": "BSP",
+        "focus": "VASP registration, AML supervision"
+      },
+      {
+        "country": "New Zealand",
+        "abbr": "FMA",
+        "focus": "FMC Act crypto amendments, VASP licensing"
+      },
+      {
+        "country": "Vietnam",
+        "abbr": "SBV / MOF",
+        "focus": "Transaction taxation, digital asset legislation"
       }
     ]
   }
