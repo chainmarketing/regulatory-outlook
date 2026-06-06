@@ -7,13 +7,13 @@
 <style>
 :root {
   --bg: #f8f9fa; --card: #ffffff; --text: #1a1a2e; --muted: #6b7280;
-  --border: #e5e7eb; --accent: #6b7280; --accent-soft: #6b728018;
+  --border: #e5e7eb; --accent: #f97316; --accent-soft: #f9731618;
   --success: #16a34a; --warning: #d97706; --info: #2563eb;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0f0f17; --card: #1c1c27; --text: #e4e4e7; --muted: #9ca3af;
-    --border: #2e2e3a; --accent-soft: #6b728025;
+    --border: #2e2e3a; --accent-soft: #f9731625;
   }
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,6 +87,49 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
 .exec-summary .card-head h2 { color: var(--accent); }
 .exec-summary .card-body p { font-size: 14.5px; line-height: 1.75; }
 
+/* Section tints */
+.card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #f0fdf4 100%); }
+.card-timeline { background: linear-gradient(135deg, var(--card) 0%, #eff6ff 100%); }
+.card-competitor { background: linear-gradient(135deg, var(--card) 0%, #fef3c7 100%); border-left: 3px solid #f59e0b; }
+@media (prefers-color-scheme: dark) {
+  .card-pipeline { background: linear-gradient(135deg, var(--card) 0%, #0a1f0a 100%); }
+  .card-timeline { background: linear-gradient(135deg, var(--card) 0%, #0a1520 100%); }
+  .card-competitor { background: linear-gradient(135deg, var(--card) 0%, #1a1500 100%); }
+}
+
+/* Theme tags */
+.theme-tag { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.02em; }
+.theme-aml { background: #dbeafe; color: #1e40af; }
+.theme-stablecoin { background: #fef3c7; color: #92400e; }
+.theme-fraud { background: #fee2e2; color: #991b1b; }
+.theme-defi { background: #ede9fe; color: #5b21b6; }
+.theme-ai { background: #e0e7ff; color: #3730a3; }
+.theme-cyber { background: #d1fae5; color: #065f46; }
+.theme-general { background: #f3f4f6; color: #374151; }
+@media (prefers-color-scheme: dark) {
+  .theme-aml { background: #1e3a5f; color: #93c5fd; }
+  .theme-stablecoin { background: #451a03; color: #fde68a; }
+  .theme-fraud { background: #450a0a; color: #fca5a5; }
+  .theme-defi { background: #2e1065; color: #c4b5fd; }
+  .theme-ai { background: #1e1b4b; color: #a5b4fc; }
+  .theme-cyber { background: #022c22; color: #6ee7b7; }
+  .theme-general { background: #1f2937; color: #d1d5db; }
+}
+
+/* Response badge */
+.response-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; background: #dbeafe; color: #1e40af; border-radius: 6px; font-size: 11px; font-weight: 500; text-decoration: none; margin-top: 4px; }
+.response-badge:hover { background: #bfdbfe; }
+@media (prefers-color-scheme: dark) {
+  .response-badge { background: #1e3a5f; color: #93c5fd; }
+  .response-badge:hover { background: #1e4d8f; }
+}
+
+/* Mini chart */
+.mini-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin: 12px 0 4px; }
+.mini-bar { flex: 1; border-radius: 3px 3px 0 0; min-width: 20px; position: relative; transition: height 0.3s; }
+.mini-bar-label { position: absolute; bottom: -18px; left: 0; right: 0; text-align: center; font-size: 9px; color: var(--muted); white-space: nowrap; overflow: hidden; }
+.mini-bar-val { position: absolute; top: -16px; left: 0; right: 0; text-align: center; font-size: 10px; font-weight: 600; }
+
 /* Collapsible sections */
 .card-preview { max-height: 180px; overflow: hidden; position: relative; transition: max-height 0.3s ease; }
 .card-preview.expanded { max-height: none; }
@@ -124,97 +167,108 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sa
   <div class="stat"><div class="stat-val">28</div><div class="stat-lbl">Events</div></div>
   <div class="stat"><div class="stat-val">9</div><div class="stat-lbl">Regulators</div></div>
   <div class="stat"><div class="stat-val">3</div><div class="stat-lbl">Sub-Regions</div></div>
-  <div class="stat"><div class="stat-val">15</div><div class="stat-lbl">Consultations</div></div>
+  <div class="stat"><div class="stat-val">34</div><div class="stat-lbl">Consultations</div></div>
 </div>
 
 
-<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: FinCEN BSA reform closes June 9, GENIUS Act stablecoin rules finalize Q3, state VASP registries activate.</strong></p></div>
-<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">A summary of the key regulatory developments across the region this quarter</p></div><div class="card-body content"><p>The United States dominates Americas regulatory activity with 16 events as federal agencies operationalize the GENIUS Act stablecoin framework and fundamentally reform AML/CFT programs under the Bank Secrecy Act. Canada advances Travel Rule enforcement while Latin American markets including Chile, Colombia, and Argentina finalize VASP registration regimes. This represents the largest compliance infrastructure buildout since 2020—buyers need transaction monitoring, entity verification, and sanctions screening tools immediately as Q3 deadlines compress.</p></div></div>
+<div class="card"><div class="card-body" style="padding-bottom:30px"><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px">Events by sub-region</div><div class="mini-chart"><div class="mini-bar" style="height:40px;background:#6366f1"><span class="mini-bar-val">16</span><span class="mini-bar-label">United Sta…</span></div><div class="mini-bar" style="height:7px;background:#14b8a6"><span class="mini-bar-val">3</span><span class="mini-bar-label">Canada</span></div><div class="mini-bar" style="height:12px;background:#f59e0b"><span class="mini-bar-val">5</span><span class="mini-bar-label">Latin Amer…</span></div></div></div></div>
+
+<div class="tldr"><h2>TL;DR</h2><p><strong>This quarter: FinCEN BSA reform closes June 9, GENIUS Act stablecoin AML rules live, state licensing sprint accelerates.</strong></p></div>
+<div class="card exec-summary"><div class="card-head"><h2>Executive Summary</h2><p class="section-desc">A summary of the key regulatory developments across the region this quarter</p></div><div class="card-body content"><p>Twenty-four Americas markets are operationalizing AML/CFT frameworks as U.S. federal agencies finalize GENIUS Act stablecoin supervision and fundamental BSA reform while states race to establish competing crypto licensing regimes. The U.S. accounts for 16 of 28 regional events, with FinCEN's June 9 comment deadline on BSA/AML program reform representing the most significant compliance infrastructure overhaul since the Bank Secrecy Act's inception. Latin America's licensing buildout and Canada's Travel Rule enforcement create parallel transaction monitoring opportunities across all three sub-regions—and federal rulemaking windows close fast.</p></div></div>
 <div class="card"><div class="card-head"><h2>What Changed Since Last Quarter</h2><p class="section-desc">Looking back — what moved since the last edition</p></div><div class="card-body content"><ul>
-<li><strong>United States</strong> 🏛️ GENIUS Act implementation accelerates—FinCEN, FDIC, and NCUA all published NPRMs on stablecoin issuer AML/CFT program requirements for Q3 finalization, while DOJ expanded cryptocurrency enforcement team focused on DeFi and mixer sanctions evasion.</li>
+<li><strong>United States</strong> ⚡ FinCEN's BSA/AML reform NPRM comment period closes June 9—fundamental restructuring of financial institution compliance programs requires immediate industry input before 60-day window shuts.</li>
 </ul>
 <ul>
-<li><strong>United States</strong> ⚡ FinCEN's fundamental BSA/AML reform comment period closes June 9, 2026—impacts every financial institution's compliance program architecture under Anti-Money Laundering Act of 2020.</li>
+<li><strong>United States</strong> 🏛️ GENIUS Act operationalization accelerates with three parallel NPRMs from FinCEN, FDIC, and NCUA establishing stablecoin issuer AML/CFT supervision—FDIC comment period closes July 17.</li>
 </ul>
 <ul>
-<li><span class="country-name">Canada</span> 🔄 FINTRAC Travel Rule phased compliance deadlines extend beyond tax reporting through Q4, while CSA implements enhanced custody requirements for crypto trading platforms in Q3.</li>
+<li><strong>United States</strong> 📋 Treasury opened state-level crypto regime consultation on AML/CFT data uniformity principles while SEC consultations target DeFi broker-dealer registration and consolidated audit trail digital asset reporting.</li>
 </ul>
 <ul>
-<li><strong>Chile</strong> 📋 CMF finalizing Fintech Law (21.521) implementing regulations for crypto service provider licensing—establishes operational framework for VASPs after January 2023 law effective date.</li>
+<li><span class="country-name">Canada</span> 🔄 FINTRAC implements FATF Travel Rule with phased compliance deadlines extending through Q4, while CSA enhances crypto trading platform custody requirements in Q3.</li>
 </ul>
 <ul>
-<li><strong>Colombia</strong> 🆕 SFC comprehensive crypto regulatory framework moves from legal gray area to defined VASP regime—central bank draft law aligns with 2025 AML/CFT baseline trends.</li>
+<li><strong>Latin America</strong> 🆕 Argentina CNV, Chile CMF, and Colombia SFC all finalize VASP registration frameworks with Q4 compliance deadlines—region-wide licensing sprint creates coordinated transaction monitoring opportunity.</li>
 </ul></div></div>
 <div class="card"><div class="card-head"><h2>Regulators to Watch</h2><p class="section-desc">Key regulators and what they mean for your pipeline</p></div><div class="card-body content"><div class="card-preview"><table><thead>
 <tr><th>Country</th><th>Regulator</th><th>What to watch</th><th>Product play</th></tr>
 </thead><tbody>
-<tr><td>🇺🇸 USA</td><td>FinCEN</td><td>⚡ BSA reform NPRM closes June 9</td><td>KYT compliance program redesign; OSINT risk assessment</td></tr>
-<tr><td>🇺🇸 USA</td><td>FinCEN / FDIC / NCUA</td><td>🏛️ GENIUS Act stablecoin issuer rules Q3</td><td>KYT issuer monitoring; Reactor sanctions screening</td></tr>
-<tr><td>🇺🇸 USA</td><td>DOJ</td><td>🔍 DeFi/mixer enforcement expansion 2026</td><td>Reactor protocol tracing; OSINT mixer exposure</td></tr>
-<tr><td>🇺🇸 USA</td><td>Treasury</td><td>📋 State crypto regime consultation H1</td><td>Data Solutions state compliance mapping</td></tr>
-<tr><td>🇺🇸 USA</td><td>OCC</td><td>🔐 Digital asset custody letter update H2</td><td>Alterya bank custody assessment</td></tr>
+<tr><td>🇺🇸 USA</td><td>FinCEN</td><td>🔍 BSA reform comment deadline June 9</td><td>KYT program redesign; Reactor risk assessment</td></tr>
+<tr><td>🇺🇸 USA</td><td>FinCEN/FDIC/NCUA</td><td>🏛️ GENIUS Act stablecoin AML supervision</td><td>KYT issuer monitoring; OSINT reserve verification</td></tr>
+<tr><td>🇺🇸 USA</td><td>SEC</td><td>📋 DeFi broker-dealer consultation ongoing</td><td>Data Solutions protocol surveillance; KYT DeFi flows</td></tr>
+<tr><td>🇺🇸 USA</td><td>Treasury</td><td>📋 State regime uniformity consultation H1</td><td>KYT multi-jurisdiction compliance; Reactor state baseline</td></tr>
+<tr><td>🇺🇸 USA</td><td>DOJ</td><td>🔍 Crypto enforcement expansion—DeFi/mixers</td><td>Reactor sanctions screening; KYT mixer detection</td></tr>
 <tr><td>🇨🇦 Canada</td><td>FINTRAC</td><td>🌐 Travel Rule phased deadlines Q4</td><td>KYT counterparty screening; Reactor VASP verification</td></tr>
-<tr><td>🇨🇦 Canada</td><td>CSA</td><td>⚖️ Enhanced platform custody requirements Q3</td><td>Alterya custody standards; KYT platform flows</td></tr>
-<tr><td>🇨🇱 Chile</td><td>CMF</td><td>⚖️ Fintech Law VASP licensing framework</td><td>KYT licensing readiness; OSINT entity DD</td></tr>
-<tr><td>🇨🇴 Colombia</td><td>SFC</td><td>🏛️ Comprehensive crypto framework finalization</td><td>KYT VASP baseline; Reactor AML monitoring</td></tr>
+<tr><td>🇨🇦 Canada</td><td>CSA</td><td>🔐 Enhanced custody requirements Q3</td><td>Alterya platform assessment; KYT exchange flows</td></tr>
+<tr><td>🇦🇷 Argentina</td><td>CNV</td><td>⚖️ VASP registration deadline Q4</td><td>KYT exchange compliance; Reactor entity screening</td></tr>
+<tr><td>🇨🇱 Chile</td><td>CMF</td><td>🏛️ Fintech Law implementation regulations</td><td>KYT licensing readiness; OSINT platform DD</td></tr>
+<tr><td>🇨🇴 Colombia</td><td>SFC</td><td>⚖️ Comprehensive VASP framework Q2</td><td>KYT registration baseline; Reactor AML program</td></tr>
 </tbody></table></div><button class="show-more">Show more ▼</button></div></div>
 
 <div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">United States (16 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇺🇸 <span class="country-header"></span> — FinCEN</h4>
-<p><strong>What's happening:</strong> BSA/AML reform NPRM public comment closes June 9—fundamentally restructures financial institution compliance programs under AMLA 2020. GENIUS Act NPRM on payment stablecoin issuer AML/CFT requirements under FinCEN supervision also live H1 for Q3 finalization.</p>
-<p><strong>Deal play:</strong> Banks, broker-dealers, and stablecoin issuers need KYT transaction monitoring architecture review and OSINT third-party risk assessment frameworks—ask compliance teams whether their current vendor stack supports risk-based program requirements FinCEN is codifying.</p>
-<h4>🇺🇸 <span class="country-header"></span> — DOJ / Treasury</h4>
-<p><strong>What's happening:</strong> Department of Justice National Cryptocurrency Enforcement Team expanding focus on DeFi protocols, mixer services, and sanctions evasion with enhanced international coordination. Treasury consultation on state-level crypto regime data similarity principles for AML/CFT uniformity runs H1.</p>
-<p><strong>Deal play:</strong> DeFi protocols, wallet providers, and VASPs operating multi-state need Reactor mixer exposure analysis and OSINT sanctions risk screening—enforcement expansion creates attribution urgency for platforms in regulatory gray areas.</p>
-<h4>🇺🇸 <span class="country-header"></span> — FDIC / NCUA / OCC</h4>
-<p><strong>What's happening:</strong> Three banking regulators operationalizing GENIUS Act simultaneously—FDIC published BSA and sanctions compliance standards NPRM for supervised stablecoin issuers, NCUA issued credit union subsidiary standards, OCC reviewing digital asset custody guidance for national banks through H2.</p>
-<p><strong>Deal play:</strong> Banks exploring custody or stablecoin issuance need Alterya custody security assessments and KYT issuer-grade transaction monitoring—ask whether they're building to FDIC supervision standards now or scrambling at Q4 enforcement.</p>
-<h4>🇺🇸 <span class="country-header"></span> — SEC / CFTC</h4>
-<p><strong>What's happening:</strong> SEC consultation on consolidated audit trail requirements for digital asset transactions proposes reporting and surveillance standards. Staff statement on DeFi broker-dealer registration comment period active H1. Delaware introduces stablecoin licensing bill under banking framework for September consideration.</p>
-<p><strong>Deal play:</strong> Trading platforms and DeFi protocols need Data Solutions market surveillance infrastructure and KYT institutional flow monitoring—broker-dealer designation triggers surveillance obligations competitors aren't ready for.</p>
-<h4>🇺🇸 <span class="country-header"></span> — State Registries</h4>
-<p><strong>What's happening:</strong> Corporate Transparency Act beneficial ownership registries being established at state level—impacts crypto company ownership disclosure requirements. Multiple states advancing stablecoin and money transmitter licensing frameworks Q2-Q4 including Delaware's banking-framework bill.</p>
-<p><strong>Deal play:</strong> Multi-state VASPs and stablecoin projects need OSINT entity verification for beneficial ownership filings and Data Solutions state compliance mapping—ask legal teams whether they've stress-tested ownership structures against CTA disclosure thresholds.</p></div><button class="show-more">Show more ▼</button></div></div>
-<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Canada (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇨🇦 <span class="country-header"></span> — CSA / OSFI</h4>
-<p><strong>What's happening:</strong> Canadian Securities Administrators implementing enhanced registration and custody requirements for crypto trading platforms Q3. OSFI industry engagement on risk weightings for Group 2a tokenized traditional assets—whether recognized as collateral under Capital and Liquidity Treatment guidelines.</p>
-<p><strong>Deal play:</strong> Exchanges and institutional custody providers need Alterya custody standards compliance and KYT institutional-grade monitoring—ask whether their custody architecture meets CSA's enhanced standards or requires infrastructure overhaul before Q3.</p>
+<p><strong>What's happening:</strong> BSA/AML reform NPRM fundamentally restructures financial institution compliance programs—public comment closes June 9 after April 10 Federal Register publication. Parallel GENIUS Act NPRM establishes stablecoin issuer AML/CFT supervision.</p>
+<p><strong>Deal play:</strong> Banks, stablecoin issuers, and MSBs need KYT program redesign and Reactor risk assessment infrastructure before comment window closes—ask whether their current BSA/AML architecture survives FinCEN's effectiveness-based framework shift or requires complete rebuild. We've already submitted positions on GENIUS Act implementation.</p>
+<h4>🇺🇸 <span class="country-header"></span> — FDIC / NCUA</h4>
+<p><strong>What's happening:</strong> Two GENIUS Act NPRMs establish AML/CFT standards for FDIC-supervised stablecoin issuers and credit union subsidiaries—FDIC comment period closes July 17, NCUA follows.</p>
+<p><strong>Deal play:</strong> Regional banks and credit unions eyeing stablecoin issuance need KYT transaction monitoring and OSINT reserve verification before Q3 comment deadlines—ask whether their current AML infrastructure scales to payment stablecoin velocity or requires dedicated monitoring layer.</p>
+<h4>🇺🇸 <span class="country-header"></span> — SEC</h4>
+<p><strong>What's happening:</strong> Three consultations moving: consolidated audit trail digital asset reporting requirements, DeFi broker-dealer registration guidance, and SAB 121 replacement on crypto custody accounting for banks.</p>
+<p><strong>Deal play:</strong> Exchanges and DeFi protocols need Data Solutions market surveillance and KYT protocol flow monitoring—ask whether their compliance team has capacity to respond to three simultaneous SEC consultations while maintaining existing surveillance obligations.</p>
+<h4>🇺🇸 <span class="country-header"></span> — Treasury / State Regulators</h4>
+<p><strong>What's happening:</strong> Treasury consultation on state-level AML/CFT uniformity principles addresses fragmented licensing landscape while Delaware, Wyoming, and multiple states advance competing stablecoin and money transmitter bills through H2.</p>
+<p><strong>Deal play:</strong> Multi-state crypto businesses need KYT multi-jurisdiction compliance infrastructure and Reactor state-by-state baseline monitoring—ask whether their current compliance architecture handles 50-state licensing fragmentation or collapses under conflicting reporting requirements.</p>
+<h4>🇺🇸 <span class="country-header"></span> — Department of Justice</h4>
+<p><strong>What's happening:</strong> National Cryptocurrency Enforcement Team expansion targets DeFi protocols, mixer services, and sanctions evasion with enhanced international coordination.</p>
+<p><strong>Deal play:</strong> DeFi platforms and privacy-focused protocols need Reactor sanctions screening and KYT mixer detection before DOJ enforcement wave hits—ask whether their current compliance posture withstands enhanced scrutiny or exposes them to enforcement risk.</p>
+<h4>🇺🇸 <span class="country-header"></span> — OCC / Federal Reserve</h4>
+<p><strong>What's happening:</strong> OCC reviewing digital asset custody guidance for national banks in Q3 while Federal Reserve explores FedNow crypto integration implications for stablecoin settlement infrastructure.</p>
+<p><strong>Deal play:</strong> National banks planning custody services need Alterya custody security assessment and KYT institutional flow monitoring—ask whether their custody infrastructure meets updated OCC standards before Q4 guidance release.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Canada (3 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>🇨🇦 <span class="country-header"></span> — CSA</h4>
+<p><strong>What's happening:</strong> Enhanced registration and custody requirements for crypto trading platforms implementing Q3—compliance standards rising to institutional-grade operational controls.</p>
+<p><strong>Deal play:</strong> Canadian exchanges need Alterya platform security assessment and KYT exchange flow monitoring before Q3 deadlines—ask whether their current custody architecture meets CSA's enhanced standards or requires infrastructure overhaul.</p>
 <h4>🇨🇦 <span class="country-header"></span> — FINTRAC</h4>
-<p><strong>What's happening:</strong> FATF Travel Rule phased compliance deadlines for Canadian crypto firms extend beyond tax reporting through Q4—multi-stage rollout creates ongoing implementation urgency.</p>
-<p><strong>Deal play:</strong> Canadian VASPs and exchanges need KYT counterparty screening and Reactor originator/beneficiary verification—Travel Rule isn't one deadline, it's cascading requirements through year-end that most firms are underestimating.</p></div><button class="show-more">Show more ▼</button></div></div>
-<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Latin America & Caribbean (5 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>Chile — CMF</h4>
-<p><strong>What's happening:</strong> Financial Market Commission developing implementing regulations for crypto service providers under Fintech Law 21.521 effective January 2023—establishes licensing and operational framework for VASPs with December 2026 regulation target.</p>
-<p><strong>Deal play:</strong> Chilean exchanges and wallet providers need KYT licensing-grade compliance baselines and OSINT entity due diligence—ask whether they're building to CMF's final framework or retrofitting after December publication.</p>
+<p><strong>What's happening:</strong> FATF Travel Rule implementation with phased compliance deadlines extending through Q4—counterparty data collection and screening obligations expand beyond existing tax reporting.</p>
+<p><strong>Deal play:</strong> VASPs and exchanges need KYT counterparty screening and Reactor VASP verification infrastructure before Q4 deadlines—ask whether their current transaction monitoring handles Travel Rule data validation at scale or breaks under screening volume.</p>
+<h4>🇨🇦 <span class="country-header"></span> — OSFI</h4>
+<p><strong>What's happening:</strong> Industry engagement on risk weightings for tokenized traditional assets—whether Group 2a crypto-assets qualify as collateral in cross-market hedges under Capital and Liquidity Treatment guidelines.</p>
+<p><strong>Deal play:</strong> Banks holding tokenized securities need Data Solutions asset classification infrastructure and OSINT issuer due diligence—ask whether their risk management framework distinguishes tokenized traditional assets from native crypto under OSFI's capital treatment.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card" style="border-left:3px solid var(--accent)"><div class="card-head"><h2 style="font-size:18px;font-weight:700">Latin America & Caribbean (5 events)</h2></div><div class="card-body content"><div class="card-preview"><h4>Argentina — CNV</h4>
+<p><strong>What's happening:</strong> VASP registration regime compliance deadlines hit Q4 with phased AML/CFT requirements—exchanges and service providers must register under CNV supervision.</p>
+<p><strong>Deal play:</strong> Argentine exchanges need KYT transaction monitoring and Reactor entity screening before Q4 registration deadline—ask whether their compliance infrastructure meets CNV's AML standards or leaves them unregistered and unable to operate legally.</p>
+<h4>Chile — CMF</h4>
+<p><strong>What's happening:</strong> CMF finalizing Fintech Law (Law 21.521) implementing regulations for crypto service providers—licensing and operational framework establishes Q4 compliance baselines.</p>
+<p><strong>Deal play:</strong> Chilean platforms need KYT licensing readiness infrastructure and OSINT platform due diligence before CMF regulations finalize—ask whether their current operational controls meet Fintech Law standards or require significant remediation before launch.</p>
 <h4>Colombia — SFC</h4>
-<p><strong>What's happening:</strong> Financial regulator finalizing comprehensive framework for crypto asset service providers—central bank draft law moves market from legal gray area to defined VASP regime with AML/CFT requirements aligned to 2025 regional trends.</p>
-<p><strong>Deal play:</strong> Colombian platforms need KYT VASP compliance infrastructure and Reactor transaction monitoring—first-mover advantage goes to platforms ready at framework publication, not six months later.</p>
-<h4>Argentina — CNV</h4>
-<p><strong>What's happening:</strong> Crypto asset service provider registration regime entering phased implementation through Q4—compliance deadlines and AML/CFT requirements rolling out H2.</p>
-<p><strong>Deal play:</strong> Argentine VASPs need KYT exchange monitoring and Reactor entity screening—ask whether compliance teams have CNV registration timeline mapped or are waiting for enforcement to clarify requirements.</p>
+<p><strong>What's happening:</strong> Comprehensive regulatory framework for crypto asset service providers finalizes Q2—central bank draft law transitions market from legal gray area to defined AML/CFT licensing regime.</p>
+<p><strong>Deal play:</strong> Colombian exchanges need KYT exchange compliance baseline and Reactor AML program infrastructure before SFC framework goes live—ask whether they're operating in regulatory gray area with no compliance infrastructure or have head start on competitors.</p>
 <h4>Cayman Islands — CIMA</h4>
-<p><strong>What's happening:</strong> Virtual Asset Service Provider framework implementation active H2—VASP regime with registration and AML compliance requirements for funds and platforms domiciled in jurisdiction.</p>
-<p><strong>Deal play:</strong> Cayman-domiciled funds and exchanges need KYT VASP-grade monitoring and OSINT entity verification for CIMA registration—offshore doesn't mean unregulated anymore.</p></div><button class="show-more">Show more ▼</button></div></div>
-<div class="card"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><strong>United States</strong> — Stablecoin issuers and banks exploring issuance — GENIUS Act creates immediate need for issuer-grade transaction monitoring, sanctions screening, and beneficial ownership verification → KYT issuer monitoring + Reactor sanctions screening + OSINT entity DD.</p>
-<p><strong>United States</strong> — Multi-state VASPs and exchanges — State licensing proliferation and CTA beneficial ownership registries require entity verification and multi-jurisdiction compliance mapping → OSINT entity verification + Data Solutions state compliance tracking.</p>
-<p><strong>United States</strong> — DeFi protocols and wallet providers — DOJ enforcement expansion on mixers and sanctions evasion creates attribution urgency for platforms in gray areas → Reactor mixer exposure + Hexagate smart contract security.</p>
-<p><span class="country-name">Canada</span> — Crypto trading platforms — CSA enhanced custody requirements and FINTRAC Travel Rule phased deadlines demand infrastructure upgrades → Alterya custody assessment + KYT counterparty screening.</p>
-<p><strong>Chile</strong> — VASPs and exchanges — CMF Fintech Law implementing regulations finalize December, creating licensing readiness sprint → KYT licensing baseline + OSINT entity due diligence.</p>
-<p><strong>Colombia</strong> — Crypto platforms — SFC comprehensive framework moves market from gray area to defined regime—first movers win → KYT VASP compliance + Reactor transaction monitoring.</p>
-<p><strong>Argentina</strong> — VASPs — CNV registration regime phased implementation through Q4 creates compliance infrastructure demand → KYT exchange monitoring + Reactor entity screening.</p></div></div>
-<div class="card"><div class="card-head"><h2>90-Day Forward Look</h2><p class="section-desc">Looking ahead — what's coming and what to do about it</p></div><div class="card-body content"><p><strong>June 9</strong> — USA: FinCEN BSA/AML reform NPRM comment period closes—final rule impacts every financial institution's compliance architecture → Brief NAM sales on customer program redesign implications and KYT positioning.</p>
-<p><strong>July-August</strong> — USA: GENIUS Act stablecoin NPRMs from FinCEN, FDIC, NCUA move toward Q3 finalization—issuer AML/CFT program requirements crystallize → Coordinate Product and Legal on issuer-grade monitoring standards and prepare customer guidance.</p>
-<p><strong>September</strong> — USA: Delaware stablecoin licensing bill under banking framework consideration—state-level regime fragmentation accelerates → Monitor legislative outcome and assess multi-state compliance mapping demand for Data Solutions.</p>
-<p><strong>Q3</strong> — Canada: CSA enhanced custody requirements for crypto trading platforms implementation—platforms must upgrade infrastructure → Escalate Alterya custody assessment pipeline with Canadian exchanges.</p>
-<p><strong>Q4</strong> — Chile: CMF Fintech Law VASP implementing regulations target December publication—licensing framework finalized → Pre-position with Chilean platforms on KYT licensing readiness before framework drops.</p></div></div>
-<div class="card"><div class="card-head"><h2>Key Dates</h2><p class="section-desc">Calendar view — dates that matter for your deals</p></div><div class="card-body content"><p><strong>June 9, 2026</strong> — 🇺🇸 USA: FinCEN BSA/AML reform NPRM comment period closes</p>
-<p><strong>July 2026</strong> — 🇺🇸 USA: Treasury state crypto regime consultation closes H1</p>
-<p><strong>Q3 2026</strong> — 🇺🇸 USA: FinCEN/FDIC/NCUA GENIUS Act stablecoin issuer rules finalize</p>
-<p><strong>Q3 2026</strong> — 🇨🇦 Canada: CSA enhanced custody requirements for platforms effective</p>
-<p><strong>September 2026</strong> — 🇺🇸 USA: Delaware stablecoin licensing bill consideration</p>
-<p><strong>Q4 2026</strong> — 🇨🇦 Canada: FINTRAC Travel Rule phased compliance deadlines continue</p>
-<p><strong>December 2026</strong> — 🇨🇱 Chile: CMF Fintech Law VASP implementing regulations target</p>
-<p><strong>Q4 2026</strong> — 🇦🇷 Argentina: CNV VASP registration regime phased implementation continues</p></div></div>
+<p><strong>What's happening:</strong> Virtual Asset Service Provider framework implementation continues through H2—VASP regime establishes registration and AML compliance requirements for offshore crypto businesses.</p>
+<p><strong>Deal play:</strong> Cayman-domiciled funds and platforms need KYT VASP monitoring and Reactor registration verification—ask whether their offshore structure survives CIMA's enhanced supervision or requires restructuring before compliance deadlines hit.</p></div><button class="show-more">Show more ▼</button></div></div>
+<div class="card card-pipeline"><div class="card-head"><h2>Pipeline Opportunities</h2><p class="section-desc">Where the deals are — sized and mapped to products</p></div><div class="card-body content"><p><strong>United States</strong> — Stablecoin issuers (Circle, Paxos, regional banks) — GENIUS Act AML supervision requires dedicated transaction monitoring and reserve verification infrastructure → KYT + OSINT</p>
+<p><strong>United States</strong> — Multi-state MSBs and exchanges (Coinbase, Kraken, Gemini) — State licensing fragmentation creates demand for unified compliance infrastructure across 50 jurisdictions → KYT + Reactor</p>
+<p><strong>United States</strong> — National banks exploring custody (JPM, BNY Mellon, State Street) — OCC guidance update and SAB 121 replacement drive institutional custody security assessment → Alterya + KYT</p>
+<p><span class="country-name">Canada</span> — Registered crypto trading platforms (Bitbuy, Coinsquare, NDAX) — CSA enhanced custody requirements and FINTRAC Travel Rule create dual compliance sprint → Alterya + KYT</p>
+<p><span class="country-name">Canada</span> — Traditional banks evaluating crypto custody (RBC, TD, Scotiabank) — OSFI tokenized asset risk weighting consultation signals institutional custody opportunity → Data Solutions + OSINT</p>
+<p><strong>Latin America</strong> — Regional exchanges across Argentina/Chile/Colombia — Coordinated VASP registration deadlines in Q4 create transaction monitoring buildout wave → KYT + Reactor</p>
+<p><strong>United States</strong> — DeFi protocols with U.S. users (Uniswap, Aave, Compound) — SEC broker-dealer consultation and DOJ enforcement expansion force compliance infrastructure decisions → Data Solutions + Hexagate</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>90-Day Forward Look</h2></div><div class="card-body content"><p><strong>June 9</strong> — USA: FinCEN BSA/AML reform NPRM comment deadline → AEs should identify banks and MSBs without submitted comments and position KYT program redesign before window closes</p>
+<p><strong>July 17</strong> — USA: FDIC GENIUS Act stablecoin issuer AML standards comment deadline → Target regional banks exploring stablecoin issuance with KYT transaction monitoring and OSINT reserve verification</p>
+<p><strong>September</strong> — USA: Delaware stablecoin licensing bill expected passage → Position KYT state-level compliance infrastructure with multi-state MSBs anticipating fragmented licensing landscape</p>
+<p><strong>Q3</strong> — Canada: CSA enhanced custody requirements effective → Target registered platforms needing Alterya security assessment before compliance deadline hits</p>
+<p><strong>Q4</strong> — Latin America: Argentina CNV, Chile CMF, and Colombia SFC VASP registration deadlines converge → Coordinate regional transaction monitoring opportunity across three markets simultaneously</p></div></div>
+<div class="card card-timeline"><div class="card-head"><h2>Key Dates</h2></div><div class="card-body content"><p><strong>June 9, 2026</strong> — 🇺🇸 USA: FinCEN BSA/AML reform NPRM public comment period closes</p>
+<p><strong>July 17, 2026</strong> — 🇺🇸 USA: FDIC GENIUS Act stablecoin issuer AML/CFT standards comment deadline</p>
+<p><strong>August 2026</strong> — 🇺🇸 USA: Treasury state-level crypto regime consultation expected conclusion</p>
+<p><strong>September 2026</strong> — 🇨🇦 Canada: CSA enhanced crypto platform custody requirements effective</p>
+<p><strong>Q3 2026</strong> — 🇺🇸 USA: OCC digital asset custody guidance update expected</p>
+<p><strong>Q3 2026</strong> — 🇨🇦 Canada: FINTRAC Travel Rule phased compliance checkpoint</p>
+<p><strong>Q4 2026</strong> — 🇦🇷 Argentina: CNV VASP registration regime compliance deadline</p>
+<p><strong>Q4 2026</strong> — 🇨🇱 Chile: CMF Fintech Law implementing regulations finalized</p>
+<p><strong>Q4 2026</strong> — 🇨🇴 Colombia: SFC comprehensive VASP framework effective</p>
+<p><strong>Q4 2026</strong> — 🇰🇾 Cayman Islands: CIMA VASP framework registration deadline</p></div></div>
 
 
-<a class='doc-btn' href='https://docs.google.com/document/d/1SnGXBbMSlaVNCj51BxWRhtoYIpgHPhp0c-3cDFWVKqc/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
+<a class='doc-btn' href='https://docs.google.com/document/d/1Xvb8M7cCurqAw2yDF9mHeDgrFH5SZDNzyo57R9J_TBQ/edit?usp=drivesdk' target='_blank'>Open in Google Docs &#8599;</a>
 
 <script>
 document.addEventListener('click', function(e) {
