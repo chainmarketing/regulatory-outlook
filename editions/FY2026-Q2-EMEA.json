@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-15",
   "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "European regulators are shifting from policy design to active enforcement across 27 member states simultaneously. The EU's MiCA regime becomes fully operational July 1 with over 30 technical standards taking effect, while AMLA launches direct supervision of high-risk CASPs in Q3. UK's FCA opens its authorization gateway September 2026, creating parallel compliance deadlines for firms operating across both jurisdictions. Middle East and African markets are accelerating VASP licensing frameworks t",
+  "summary": "EMEA executes the most comprehensive crypto regulatory infrastructure activation in history. Thirty-nine EU events center on MiCA's July 1 implementation, with over 30 technical standards published through December and AMLA launching direct supervision of high-risk CASPs in Q3. The UK opens its crypto authorisation gateway in September while finalising stablecoin prudential requirements for January 2027. Sixteen Middle Eastern jurisdictions advance licensing frameworks, with UAE's September fint",
   "events_analysed": 85,
   "countries_covered": 18,
-  "doc_url": "https://docs.google.com/document/d/12lixAb4xHsn4JNPY67NZ-36OZi_jLERcEUb0hnwrWgk/edit?usp=drivesdk",
-  "doc_id": "12lixAb4xHsn4JNPY67NZ-36OZi_jLERcEUb0hnwrWgk",
+  "doc_url": "https://docs.google.com/document/d/1YYH4wEv5GQK6lDOHgUtyOHHkNoywwd1FV9iTZGhp1HY/edit?usp=drivesdk",
+  "doc_id": "1YYH4wEv5GQK6lDOHgUtyOHHkNoywwd1FV9iTZGhp1HY",
   "edition_url": "editions/FY2026-Q2-EMEA.html",
   "data_url": "editions/FY2026-Q2-EMEA.json",
   "regulators": [
@@ -106,5 +106,5 @@
   ],
   "news_sources": 15,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-15T12:15:34.834996+00:00"
+  "generated_at": "2026-06-15T12:25:09.145814+00:00"
 }
