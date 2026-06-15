@@ -2,12 +2,12 @@
   {
     "region": "AMER",
     "quarter": "FY2026-Q2",
-    "date": "2026-06-06",
+    "date": "2026-06-15",
     "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-    "summary": "The Americas faces synchronized federal and state-level crypto compliance infrastructure buildout through September 2026. The United States dominates with 16 events\u2014FinCEN's foundational BSA/AML reform comment period closes June 9, GENIUS Act stablecoin issuer AML frameworks enter 60-day comment windows, and multiple states advance VASP licensing regimes. Canada implements FATF Travel Rule enforcement while Latin America's largest economies finalize VASP registration frameworks. This creates imm",
-    "events_analysed": 28,
+    "summary": "The Americas enters the most significant crypto regulatory implementation phase since 2013 BSA guidance. United States federal stablecoin framework (GENIUS Act) takes effect July 1 with three-agency rulemaking in progress, while FinCEN's fundamental BSA/AML reform comment period closes June 9\u2014both reshaping compliance infrastructure requirements for every VASP, bank, and stablecoin issuer. Canada implements differentiated stablecoin trading rules by September, and Latin American licensing deadli",
+    "events_analysed": 64,
     "countries_covered": 9,
-    "doc_url": "https://docs.google.com/document/d/1gsCXTZRrJn_DMhumIkzZ3uTdmEy1_g8js65_qYF9as8/edit?usp=drivesdk",
+    "doc_url": "https://docs.google.com/document/d/1P8pXwJSXXmFuBRZX3bzGquCrfqiCv9nIA-yHo7bLt8Y/edit?usp=drivesdk",
     "edition_url": "editions/FY2026-Q2-AMER.html",
     "data_url": "editions/FY2026-Q2-AMER.json",
     "regulators": [
@@ -59,27 +59,14 @@
     ]
   },
   {
-    "region": "NAM",
-    "quarter": "FY2026-Q2",
-    "date": "2026-06-06",
-    "title": "GTM Regulatory Outlook \u2014 NAM \u2014 Q2 FY2026 (May \u2013 July 2026)",
-    "summary": "International standard-setters FATF, FSB, and IOSCO are converging on Q3-Q4 2026 deliverables for DeFi AML, stablecoin oversight, and crypto market conduct\u2014frameworks that will cascade into U.S. and Canadian rulemaking through 2027. NAM Account Executives should position now with FIs, exchanges, and regulators who need compliance infrastructure *before* domestic rules codify these global standards.",
-    "events_analysed": 4,
-    "countries_covered": 0,
-    "doc_url": "https://docs.google.com/document/d/1VRZaMnxl5ueDyllxXYoj9PJ8z8Z-jbaDYkzeh8wmvUs/edit?usp=drivesdk",
-    "edition_url": "editions/FY2026-Q2-NAM.html",
-    "data_url": "editions/FY2026-Q2-NAM.json",
-    "regulators": []
-  },
-  {
     "region": "EMEA",
     "quarter": "FY2026-Q2",
-    "date": "2026-06-06",
+    "date": "2026-06-15",
     "title": "GTM Regulatory Outlook \u2014 EMEA \u2014 Q2 FY2026 (May \u2013 July 2026)",
-    "summary": "Twenty-one EU member states are executing MiCA implementation while AMLA becomes operational with direct supervision authority over highest-risk CASPs. The UK finalizes its parallel crypto authorization gateway and stablecoin framework, creating a two-speed EMEA regulatory landscape. Middle East and African markets are building FATF-aligned licensing regimes from scratch, driving greenfield compliance infrastructure demand across 35 jurisdictions through September.",
-    "events_analysed": 39,
+    "summary": "European regulators are shifting from policy design to active enforcement across 27 member states simultaneously. The EU's MiCA regime becomes fully operational July 1 with over 30 technical standards taking effect, while AMLA launches direct supervision of high-risk CASPs in Q3. UK's FCA opens its authorization gateway September 2026, creating parallel compliance deadlines for firms operating across both jurisdictions. Middle East and African markets are accelerating VASP licensing frameworks t",
+    "events_analysed": 85,
     "countries_covered": 18,
-    "doc_url": "https://docs.google.com/document/d/1G_1kJhbD4jVSvDmfKKr7gJbwLdFTnNptokah5SoV2Ho/edit?usp=drivesdk",
+    "doc_url": "https://docs.google.com/document/d/12lixAb4xHsn4JNPY67NZ-36OZi_jLERcEUb0hnwrWgk/edit?usp=drivesdk",
     "edition_url": "editions/FY2026-Q2-EMEA.html",
     "data_url": "editions/FY2026-Q2-EMEA.json",
     "regulators": [
@@ -158,12 +145,12 @@
   {
     "region": "APAC",
     "quarter": "FY2026-Q2",
-    "date": "2026-06-06",
+    "date": "2026-06-15",
     "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 FY2026 (May \u2013 July 2026)",
-    "summary": "Asia-Pacific regulators are executing the most synchronized compliance infrastructure buildout in the region's history. Nine jurisdictions face simultaneous VASP licensing deadlines, institutional custody framework launches, and AML enforcement escalations through September 2026. Australia leads the shift from implementation to enforcement while pioneering stablecoin payment licensing\u2014creating immediate demand for compliance infrastructure across exchanges, banks, and institutional service provi",
-    "events_analysed": 13,
+    "summary": "Asia-Pacific enters the most synchronized compliance infrastructure activation in the region's history. Fourteen jurisdictions face simultaneous VASP licensing deadlines, institutional custody launches, and AML enforcement escalations through September 2026. Japan's reclassification of crypto as investment products and Vietnam's 0.1% transaction tax create immediate compliance infrastructure demand across exchanges, banks, and traditional financial institutions entering crypto markets.",
+    "events_analysed": 56,
     "countries_covered": 13,
-    "doc_url": "https://docs.google.com/document/d/1aDayQsTEdmco6XYlkgfQ62raqWK2tTcqyl5hnzjuYDg/edit?usp=drivesdk",
+    "doc_url": "https://docs.google.com/document/d/1eWD7uXe32ysScy5zRbeIP066fukYDpNup_psTWHg2bM/edit?usp=drivesdk",
     "edition_url": "editions/FY2026-Q2-APAC.html",
     "data_url": "editions/FY2026-Q2-APAC.json",
     "regulators": [
@@ -228,6 +215,19 @@
         "focus": "Transaction taxation, digital asset legislation"
       }
     ]
+  },
+  {
+    "region": "NAM",
+    "quarter": "FY2026-Q2",
+    "date": "2026-06-06",
+    "title": "GTM Regulatory Outlook \u2014 NAM \u2014 Q2 FY2026 (May \u2013 July 2026)",
+    "summary": "International standard-setters FATF, FSB, and IOSCO are converging on Q3-Q4 2026 deliverables for DeFi AML, stablecoin oversight, and crypto market conduct\u2014frameworks that will cascade into U.S. and Canadian rulemaking through 2027. NAM Account Executives should position now with FIs, exchanges, and regulators who need compliance infrastructure *before* domestic rules codify these global standards.",
+    "events_analysed": 4,
+    "countries_covered": 0,
+    "doc_url": "https://docs.google.com/document/d/1VRZaMnxl5ueDyllxXYoj9PJ8z8Z-jbaDYkzeh8wmvUs/edit?usp=drivesdk",
+    "edition_url": "editions/FY2026-Q2-NAM.html",
+    "data_url": "editions/FY2026-Q2-NAM.json",
+    "regulators": []
   },
   {
     "region": "GLOBAL",
