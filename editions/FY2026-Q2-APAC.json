@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-15",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Asia-Pacific enters the most synchronized compliance infrastructure activation in the region's history. Fourteen jurisdictions face simultaneous VASP licensing deadlines, institutional custody launches, and AML enforcement escalations through September 2026. Japan's reclassification of crypto as investment products and Vietnam's 0.1% transaction tax create immediate compliance infrastructure demand across exchanges, banks, and traditional financial institutions entering crypto markets.",
+  "summary": "Asia-Pacific faces the most concentrated regulatory activation in crypto history. Fourteen jurisdictions launch simultaneous VASP licensing, institutional custody standards, and AML enforcement between June and September 2026. Japan's FIEA reclassification and Vietnam's 0.1% transaction tax create immediate compliance infrastructure demand across exchanges, banks, and traditional financial institutions entering digital asset markets.",
   "events_analysed": 56,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1eWD7uXe32ysScy5zRbeIP066fukYDpNup_psTWHg2bM/edit?usp=drivesdk",
-  "doc_id": "1eWD7uXe32ysScy5zRbeIP066fukYDpNup_psTWHg2bM",
+  "doc_url": "https://docs.google.com/document/d/15mnxxXQsV0dLLHZ7_ZARjJyp2sRDui_yysjcE9nlRPY/edit?usp=drivesdk",
+  "doc_id": "15mnxxXQsV0dLLHZ7_ZARjJyp2sRDui_yysjcE9nlRPY",
   "edition_url": "editions/FY2026-Q2-APAC.html",
   "data_url": "editions/FY2026-Q2-APAC.json",
   "regulators": [
@@ -93,5 +93,5 @@
   ],
   "news_sources": 17,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-15T12:15:34.834996+00:00"
+  "generated_at": "2026-06-15T12:25:09.145814+00:00"
 }
