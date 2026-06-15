@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-06-15",
   "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "The Americas enters the most significant crypto regulatory implementation phase since 2013 BSA guidance. United States federal stablecoin framework (GENIUS Act) takes effect July 1 with three-agency rulemaking in progress, while FinCEN's fundamental BSA/AML reform comment period closes June 9\u2014both reshaping compliance infrastructure requirements for every VASP, bank, and stablecoin issuer. Canada implements differentiated stablecoin trading rules by September, and Latin American licensing deadli",
+  "summary": "The Americas faces the largest compliance infrastructure buildout in regional history. Thirty-eight U.S. regulatory events converge between July and September \u2014 led by GENIUS Act stablecoin issuer supervision, FinCEN's BSA program overhaul, and enhanced VASP recordkeeping with $3,000 SAR thresholds. Brazil ends regulatory grandfathering in October, forcing immediate VASP compliance. Eleven Latin American markets advance licensing regimes while Canada operationalizes differentiated stablecoin fra",
   "events_analysed": 64,
   "countries_covered": 9,
-  "doc_url": "https://docs.google.com/document/d/1P8pXwJSXXmFuBRZX3bzGquCrfqiCv9nIA-yHo7bLt8Y/edit?usp=drivesdk",
-  "doc_id": "1P8pXwJSXXmFuBRZX3bzGquCrfqiCv9nIA-yHo7bLt8Y",
+  "doc_url": "https://docs.google.com/document/d/1jlcNkn7JJTMDyTz8h_h2viT7Fdak_Xtf_pXw5lKqtvI/edit?usp=drivesdk",
+  "doc_id": "1jlcNkn7JJTMDyTz8h_h2viT7Fdak_Xtf_pXw5lKqtvI",
   "edition_url": "editions/FY2026-Q2-AMER.html",
   "data_url": "editions/FY2026-Q2-AMER.json",
   "regulators": [
@@ -74,5 +74,5 @@
   ],
   "news_sources": 12,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-15T12:15:34.834996+00:00"
+  "generated_at": "2026-06-15T12:25:09.145814+00:00"
 }
