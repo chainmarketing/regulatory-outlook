@@ -1,64 +1,5 @@
 [
   {
-    "region": "AMER",
-    "quarter": "FY2026-Q2",
-    "date": "2026-07-10",
-    "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-    "summary": "The Americas enters the most concentrated regulatory implementation period in crypto history.",
-    "events_analysed": 64,
-    "countries_covered": 9,
-    "doc_url": "https://docs.google.com/document/d/1-F2ygDip5vrQGokIiAB6WvF_lsmJy3_rRNkFadIwuhg/edit",
-    "edition_url": "editions/FY2026-Q2-AMER.html",
-    "data_url": "editions/FY2026-Q2-AMER.json",
-    "regulators": [
-      {
-        "country": "USA",
-        "abbr": "SEC / CFTC / FinCEN / OCC",
-        "focus": "GENIUS Act implementation, BSA/AML reform, stablecoin rulemaking, DeFi enforcement"
-      },
-      {
-        "country": "Canada",
-        "abbr": "CSA / FINTRAC / OSFI",
-        "focus": "Enhanced registration, Travel Rule, crypto-asset risk weightings"
-      },
-      {
-        "country": "Brazil",
-        "abbr": "BCB / CVM",
-        "focus": "VASP reporting requirements, crypto securities framework"
-      },
-      {
-        "country": "Argentina",
-        "abbr": "CNV",
-        "focus": "VASP registration regime"
-      },
-      {
-        "country": "Chile",
-        "abbr": "CMF",
-        "focus": "Fintech Law crypto provisions"
-      },
-      {
-        "country": "Colombia",
-        "abbr": "SFC",
-        "focus": "Comprehensive crypto regulatory framework"
-      },
-      {
-        "country": "Mexico",
-        "abbr": "CNBV",
-        "focus": "Fintech Law crypto exchange regulation"
-      },
-      {
-        "country": "Bermuda",
-        "abbr": "BMA",
-        "focus": "Digital Asset Business Act oversight"
-      },
-      {
-        "country": "Cayman Islands",
-        "abbr": "CIMA",
-        "focus": "VASP framework implementation"
-      }
-    ]
-  },
-  {
     "region": "EMEA",
     "quarter": "FY2026-Q2",
     "date": "2026-07-10",
@@ -213,6 +154,65 @@
         "country": "Vietnam",
         "abbr": "SBV / MOF",
         "focus": "Transaction taxation, digital asset legislation"
+      }
+    ]
+  },
+  {
+    "region": "AMER",
+    "quarter": "FY2026-Q2",
+    "date": "2026-07-10",
+    "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
+    "summary": "The Americas enters the most aggressive 90-day compliance buildout period in crypto history: U.S. federal agencies publish 11 stablecoin AML/CFT rulemakings under the GENIUS Act while FinCEN's BSA reform closes June 9, triggering $180M+ in transaction monitoring infrastructure upgrades across 400+ banks, exchanges, and payment processors. State-level licensing regimes (California, Delaware, Treasury state framework consultation) create fragmented compliance requirements that only unified entity ",
+    "events_analysed": 96,
+    "countries_covered": 9,
+    "doc_url": "https://docs.google.com/document/d/1vFy6kjr9Lqj1plauX1A1E8SxkIHWWN1sQLj_Kr1_xRk/edit?usp=drivesdk",
+    "edition_url": "editions/FY2026-Q2-AMER.html",
+    "data_url": "editions/FY2026-Q2-AMER.json",
+    "regulators": [
+      {
+        "country": "USA",
+        "abbr": "SEC / CFTC / FinCEN / OCC",
+        "focus": "GENIUS Act implementation, BSA/AML reform, stablecoin rulemaking, DeFi enforcement"
+      },
+      {
+        "country": "Canada",
+        "abbr": "CSA / FINTRAC / OSFI",
+        "focus": "Enhanced registration, Travel Rule, crypto-asset risk weightings"
+      },
+      {
+        "country": "Brazil",
+        "abbr": "BCB / CVM",
+        "focus": "VASP reporting requirements, crypto securities framework"
+      },
+      {
+        "country": "Argentina",
+        "abbr": "CNV",
+        "focus": "VASP registration regime"
+      },
+      {
+        "country": "Chile",
+        "abbr": "CMF",
+        "focus": "Fintech Law crypto provisions"
+      },
+      {
+        "country": "Colombia",
+        "abbr": "SFC",
+        "focus": "Comprehensive crypto regulatory framework"
+      },
+      {
+        "country": "Mexico",
+        "abbr": "CNBV",
+        "focus": "Fintech Law crypto exchange regulation"
+      },
+      {
+        "country": "Bermuda",
+        "abbr": "BMA",
+        "focus": "Digital Asset Business Act oversight"
+      },
+      {
+        "country": "Cayman Islands",
+        "abbr": "CIMA",
+        "focus": "VASP framework implementation"
       }
     ]
   },
