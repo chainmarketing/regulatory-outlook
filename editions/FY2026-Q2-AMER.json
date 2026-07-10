@@ -4,11 +4,11 @@
   "quarter": "FY2026-Q2",
   "date": "2026-07-10",
   "title": "GTM Regulatory Outlook \u2014 Americas \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "The Americas enters the most concentrated regulatory implementation period in crypto history.",
-  "events_analysed": 64,
+  "summary": "The Americas enters the most aggressive 90-day compliance buildout period in crypto history: U.S. federal agencies publish 11 stablecoin AML/CFT rulemakings under the GENIUS Act while FinCEN's BSA reform closes June 9, triggering $180M+ in transaction monitoring infrastructure upgrades across 400+ banks, exchanges, and payment processors. State-level licensing regimes (California, Delaware, Treasury state framework consultation) create fragmented compliance requirements that only unified entity ",
+  "events_analysed": 96,
   "countries_covered": 9,
-  "doc_url": "https://docs.google.com/document/d/1-F2ygDip5vrQGokIiAB6WvF_lsmJy3_rRNkFadIwuhg/edit",
-  "doc_id": "1-F2ygDip5vrQGokIiAB6WvF_lsmJy3_rRNkFadIwuhg",
+  "doc_url": "https://docs.google.com/document/d/1vFy6kjr9Lqj1plauX1A1E8SxkIHWWN1sQLj_Kr1_xRk/edit?usp=drivesdk",
+  "doc_id": "1vFy6kjr9Lqj1plauX1A1E8SxkIHWWN1sQLj_Kr1_xRk",
   "edition_url": "editions/FY2026-Q2-AMER.html",
   "data_url": "editions/FY2026-Q2-AMER.json",
   "regulators": [
@@ -74,5 +74,5 @@
   ],
   "news_sources": 12,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-07-10T22:13:14.464935+00:00"
+  "generated_at": "2026-07-10T22:20:47.020183+00:00"
 }
