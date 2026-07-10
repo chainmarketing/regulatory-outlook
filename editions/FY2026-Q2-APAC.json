@@ -2,12 +2,12 @@
   "region": "APAC",
   "region_label": "Asia-Pacific",
   "quarter": "FY2026-Q2",
-  "date": "2026-06-15",
+  "date": "2026-07-10",
   "title": "GTM Regulatory Outlook \u2014 Asia-Pacific \u2014 Q2 FY2026 (May \u2013 July 2026)",
-  "summary": "Asia-Pacific activates the world's densest regulatory compliance layer between June and September 2026. Fourteen jurisdictions simultaneously enforce VASP licensing, institutional custody standards, and mandatory travel rule infrastructure\u2014Japan's FIEA reclassification moves crypto to investment-grade surveillance, Vietnam launches transaction taxation, and South Korea mandates real-time travel rule verification with automated rejection. Every exchange, bank custody desk, and licensed VASP needs",
+  "summary": "Asia-Pacific activates the world's densest regulatory compliance layer.",
   "events_analysed": 56,
   "countries_covered": 13,
-  "doc_url": "https://docs.google.com/document/d/1RVwMTZrrmOjIT0cQFKq1V-RaJiSOpnYKG9oWzhau78A/edit?usp=drivesdk",
+  "doc_url": "https://docs.google.com/document/d/1RVwMTZrrmOjIT0cQFKq1V-RaJiSOpnYKG9oWzhau78A/edit",
   "doc_id": "1RVwMTZrrmOjIT0cQFKq1V-RaJiSOpnYKG9oWzhau78A",
   "edition_url": "editions/FY2026-Q2-APAC.html",
   "data_url": "editions/FY2026-Q2-APAC.json",
@@ -93,5 +93,5 @@
   ],
   "news_sources": 17,
   "quarter_range": "May \u2013 July 2026",
-  "generated_at": "2026-06-15T12:31:44.539188+00:00"
+  "generated_at": "2026-07-10T22:13:14.464935+00:00"
 }
